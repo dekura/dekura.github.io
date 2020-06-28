@@ -562,6 +562,30 @@ biology problems is given.
 </tr>
 </table>
 
+
+## <i class="fa fa-microphone"></i> Presentation & Talks
+<table class="table table-hover">
+<tr>
+  <td class='col-md-2'>Mar 2020</td>
+  <td>
+    <a href="data/slides/20200321-fft.pdf" target="_blank">CUDA based Convolution and FFT on OPC</a>
+  </td>
+</tr>
+<tr>
+  <td class='col-md-2'>May 2020</td>
+  <td>
+    <a href="data/slides/20200514-opc.pdf" target="_blank">DLS-DMO: High Accuracy DL-Based OPC With DLS</a>
+  </td>
+</tr>
+<tr>
+  <td class='col-md-2'>Jun - 2020</td>
+  <td>
+    <a href="data/slides/pchsd-20200622.pdf" target="_blank">Point Cloud Hotspot Detection</a>
+  </td>
+</tr>
+</table>
+
+
 <!-- 
 ## <i class="fa fa-chevron-right"></i> Service
 <table class="table table-hover">

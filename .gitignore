@@ -8,3 +8,4 @@ _posts/ideas
 bower_components
 
 .jekyll-metadata
+.DS_Store
