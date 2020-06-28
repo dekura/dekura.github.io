@@ -577,12 +577,12 @@ biology problems is given.
     <a href="data/slides/20200514-opc.pdf" target="_blank">DLS-DMO: High Accuracy DL-Based OPC With DLS</a>
   </td>
 </tr>
-<tr>
+<!-- <tr>
   <td class='col-md-2'>Jun - 2020</td>
   <td>
     <a href="data/slides/pchsd-20200622.pdf" target="_blank">Point Cloud Hotspot Detection</a>
   </td>
-</tr>
+</tr> -->
 </table>
 
 
