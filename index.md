@@ -1,6 +1,6 @@
 ---
 layout: index
-title: Brandon Amos
+title: Guojin Chen
 ---
 
 ---
@@ -60,4 +60,4 @@ title: Brandon Amos
 
 ---
 
-Last updated on {% include last-updated.txt %}
+Last updated on {% include last-updated.txt %}, Thanks to Bamos for the [blog template](http://bamos.github.io/)

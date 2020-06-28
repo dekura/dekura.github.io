@@ -1,60 +1,54 @@
- I am a research scientist at <b>Facebook AI (FAIR)</b> in NYC and broadly study foundational topics and applications in <b>machine learning</b> (sometimes deep) and <b>optimization</b> (sometimes convex), including reinforcement learning, computer vision, language, statistics, and theory. I have a Ph.D. from <b>Carnegie Mellon University</b> and was advised by [Zico Kolter](http://zicokolter.com/) and supported by an <b>NSF graduate research fellowship.</b> My thesis is on [Differentiable Optimization-Based Modeling for Machine Learning](https://github.com/bamos/thesis). My publications are available below and on [my Google Scholar page](https://scholar.google.com/citations?user=d8gdZR4AAAAJ) and my open source contributions can be found on [my Github profile](https://github.com/bamos). I have also worked on <b>reinforcement learning</b> during an internship with [Nando de Freitas](https://www.cs.ubc.ca/~nando/) and [Misha Denil](http://mdenil.com/) at <b>DeepMind</b> in 2017 and on vision with [Vladlen Koltun](http://vladlen.info) at <b>Intel Labs</b> in 2018. <br><br>
+I am a research assistant(pre year Ph.D.) at <b>CUHK</b> in Hong Kong and broadly study foundational topics and applications in <b>machine learning in VLSI</b> (sometimes deep) and optimization, including reinforcement learning, computer vision. I am advised by <b>[Bei Yu](http://www.cse.cuhk.edu.hk/~byu/).</b>  I received my Bachelor Degree of Computer Science from [Huazhong University of Science and Technology](https://www.hust.edu.cn/). My open source contributions can be found on [my Github profile](https://github.com/dekura).
+ <!-- I have also worked on <b>reinforcement learning</b> during an internship with [Nando de Freitas](https://www.cs.ubc.ca/~nando/) and [Misha Denil](http://mdenil.com/) at <b>DeepMind</b> in 2017 and on vision with [Vladlen Koltun](http://vladlen.info) at <b>Intel Labs</b> in 2018. <br><br> -->
 
 
-## <i class="fa fa-chevron-right"></i> Education
+## <i class="fa fa-university"></i> Education
 
 <table class="table table-hover">
   <tr>
-    <td class="col-md-3">Aug 2014 - May 2019</td>
+    <td class="col-md-3">Aug 2021 - May 2024</td>
     <td>
         <strong>Ph.D. in Computer Science</strong>
-          (0.00/0.00)
         <br>
-      Carnegie Mellon University
+      The Chinese University of Hong Kong
     </td>
   </tr>
   <tr>
-    <td class="col-md-3">Aug 2014 - May 2016</td>
+    <td class="col-md-3">Aug 2019 - May 2020</td>
     <td>
         <strong>M.S. in Computer Science</strong>
-          (0.00/0.00)
         <br>
-      Carnegie Mellon University
+        The Chinese University of Hong Kong
     </td>
   </tr>
   <tr>
-    <td class="col-md-3">Aug 2011 - May 2014</td>
+    <td class="col-md-3">Aug 2015 - May 2019</td>
     <td>
         <strong>B.S. in Computer Science</strong>
-          (3.99/4.00)
         <br>
-      Virginia Tech
+        Huazhong University of Science and Technology
     </td>
   </tr>
   <tr>
-    <td class="col-md-3">Aug 2007 - May 2011</td>
+    <td class="col-md-3">Aug 2012 - May 2015</td>
     <td>
-      Northside High School (Roanoke, Virginia)
+      The fifth high school of Xiangyang (Hubei, China)
     </td>
   </tr>
 </table>
 
 
-## <i class="fa fa-chevron-right"></i> Experience
+## <i class="fa fa-briefcase"></i> Experience
 <table class="table table-hover">
 <tr>
-  <td class='col-md-3'>May 2019 - Present</td>
-  <td><strong>Facebook AI</strong>, Research Scientist</td>
-</tr>
-<tr>
+  <td class='col-md-3'>May 2020 - Present</td>
+  <td><strong>CUHK</strong>, Research Assistant</td>
 </tr>
 <tr>
   <td class='col-md-3'>June 2018 - Sept 2018</td>
-  <td><strong>Intel Labs</strong>, Research Intern</td>
+  <td><strong>Tencent Labs</strong>, Research Intern</td>
 </tr>
-<tr>
-</tr>
-<tr>
+<!-- <tr>
   <td class='col-md-3'>May 2017 - Oct 2017</td>
   <td><strong>Google DeepMind</strong>, Research Intern</td>
 </tr>
@@ -75,8 +69,8 @@
 <tr>
   <td class='col-md-3'>May 2013 - Aug 2013</td>
   <td><strong>Qualcomm</strong>, Software Engineer Intern</td>
-</tr>
-<tr>
+</tr> -->
+<!-- <tr>
 </tr>
 <tr>
   <td class='col-md-3'>May 2012 - Aug 2012</td>
@@ -89,10 +83,10 @@
   <td><strong>Sunapsys</strong>, Network Administrator Intern</td>
 </tr>
 <tr>
-</tr>
+</tr> -->
 </table>
 
-
+<!--
 ## <i class="fa fa-chevron-right"></i> Selected Publications <a href="https://github.com/bamos/cv/blob/master/publications/selected.bib"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
 
 <a href="https://scholar.google.com/citations?user=d8gdZR4AAAAJ" class="btn btn-primary" style="padding: 0.3em;">
@@ -520,10 +514,10 @@ biology problems is given.
 </td>
 </tr>
 
-</table>
+</table> -->
 
 
-## <i class="fa fa-chevron-right"></i> Teaching Experience
+<!-- ## <i class="fa fa-chevron-right"></i> Teaching Experience
 <table class="table table-hover">
 <tr>
   <td class='col-md-1'>S2017</td>
@@ -537,28 +531,38 @@ biology problems is given.
   <td class='col-md-1'>S2013</td>
   <td><strong>Software Design and Data Structures</strong> (VT CS 2114), TA</td>
 </tr>
-</table>
+</table> -->
 
 
 ## <i class="fa fa-chevron-right"></i> Honors & Awards
 <table class="table table-hover">
 <tr>
-  <td class='col-md-2'>2016 - 2019</td>
+  <td class='col-md-2'>May 2020</td>
   <td>
-    NSF Graduate Research Fellowship
-    <!--  -->
+    Distinguished Academic Performance Scholarship, CUHK.
   </td>
 </tr>
 <tr>
-  <td class='col-md-2'>2011 - 2014</td>
+  <td class='col-md-2'>Nov 2019</td>
   <td>
-    Eight undergraduate scholarships
-    <!--  -->
+    Entrance Scholarship, CUHK.
+  </td>
+</tr>
+<tr>
+  <td class='col-md-2'>2015 - 2019</td>
+  <td>
+    First Class Scholarship, HUST, the highest scholarship in HUST.
+  </td>
+</tr>
+<tr>
+  <td class='col-md-2'>Nov 2016</td>
+  <td>
+    National Encouragement Scholarship, HUST, Ministry of Education, PRC
   </td>
 </tr>
 </table>
 
-
+<!-- 
 ## <i class="fa fa-chevron-right"></i> Service
 <table class="table table-hover">
 <tr>
@@ -573,10 +577,10 @@ ICML 2018, NeurIPS 2018, NeurIPS Deep RL Workshop 2018, ICLR 2019 (outstanding r
 CMU CSD MS 2014-2015
   </td>
 </tr>
-</table>
+</table> -->
 
 
-## <i class="fa fa-chevron-right"></i> Skills
+## <i class="fa fa-laptop"></i> Skills
 <table class="table table-hover">
 <tr>
   <td class='col-md-2'>Languages</td>
@@ -598,7 +602,7 @@ Linux, OSX
 </tr>
 </table>
 
-
+<!-- 
 ## <i class="fa fa-chevron-right"></i> All Publications <a href="https://github.com/bamos/cv/blob/master/publications/all.bib"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
 
 <a href="https://scholar.google.com/citations?user=d8gdZR4AAAAJ" class="btn btn-primary" style="padding: 0.3em;">
@@ -1454,4 +1458,4 @@ malware machine learning classifiers.
 </td>
 </tr>
 
-</table>
+</table> -->
