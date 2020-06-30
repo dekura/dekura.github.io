@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "5776871",
+      "name": "calendar",
+      "font_class": "calendar",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
       "icon_id": "6151277",
       "name": "cloud download",
       "font_class": "clouddownload",
