@@ -609,13 +609,13 @@ CMU CSD MS 2014-2015
 <tr>
   <td class='col-md-2'>Languages</td>
   <td markdown="1">
-C, C++, Fortran, Haskell, Java, Lua, Make, *Mathematica*, Python, R, Scala
+C, C++, Golang, Ruby, Make, *Mathematica*, Python, R, Javascript
   </td>
 </tr>
 <tr>
   <td class='col-md-2'>Frameworks</td>
   <td markdown="1">
-NumPy, Pandas, PyTorch, SciPy, TensorFlow, Torch7
+NumPy, Pandas, PyTorch, SciPy, TensorFlow
   </td>
 </tr>
 <tr>
