@@ -2,7 +2,7 @@ I am a research assistant(pre year Ph.D.) at <b>CUHK</b> in Hong Kong and broadl
  <!-- I have also worked on <b>reinforcement learning</b> during an internship with [Nando de Freitas](https://www.cs.ubc.ca/~nando/) and [Misha Denil](http://mdenil.com/) at <b>DeepMind</b> in 2017 and on vision with [Vladlen Koltun](http://vladlen.info) at <b>Intel Labs</b> in 2018. <br><br> -->
 
 
-## <i class="fa fa-university"></i> Education
+## <i class="iconfont icon-education" style="font-size: 0.9em"></i> Education
 
 <table class="table table-hover">
   <tr>
@@ -38,7 +38,7 @@ I am a research assistant(pre year Ph.D.) at <b>CUHK</b> in Hong Kong and broadl
 </table>
 
 
-## <i class="fa fa-briefcase"></i> Experience
+## <i class="iconfont icon-gongzuojingyan" style="font-size: 0.9em"></i> Experience
 <table class="table table-hover">
 <tr>
   <td class='col-md-3'>May 2020 - Present</td>
@@ -534,7 +534,7 @@ biology problems is given.
 </table> -->
 
 
-## <i class="fa fa-chevron-right"></i> Honors & Awards
+## <i class="iconfont icon-award-solid" style="font-size: 0.9em"></i> Honors & Awards
 <table class="table table-hover">
 <tr>
   <td class='col-md-2'>May 2020</td>
@@ -563,7 +563,7 @@ biology problems is given.
 </table>
 
 
-## <i class="fa fa-microphone"></i> Presentation & Talks
+## <i class="iconfont icon-presentation" style="font-size: 0.9em"></i> Presentation & Talks
 <table class="table table-hover">
 <tr>
   <td class='col-md-2'>Mar 2020</td>
@@ -604,7 +604,7 @@ CMU CSD MS 2014-2015
 </table> -->
 
 
-## <i class="fa fa-laptop"></i> Skills
+## <i class="iconfont icon-laptop" style="font-size: 0.9em"></i> Skills
 <table class="table table-hover">
 <tr>
   <td class='col-md-2'>Languages</td>
