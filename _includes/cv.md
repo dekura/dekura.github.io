@@ -29,12 +29,12 @@ I am an MSc student at The Chinese University of Hong Kong (<b>CUHK</b>) and bro
         Huazhong University of Science and Technology
     </td>
   </tr>
-  <tr>
+  <!-- <tr>
     <td class="col-md-3">Aug 2012 - May 2015</td>
     <td>
       The fifth high school of Xiangyang (Hubei, China)
     </td>
-  </tr>
+  </tr> -->
 </table>
 
 
