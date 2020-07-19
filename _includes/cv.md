@@ -1,18 +1,18 @@
-I am a research assistant (pre year Ph.D.) at The Chinese University of Hong Kong (<b>CUHK</b>) and broadly study foundational topics and applications in <b>machine learning in VLSI</b> (sometimes deep) and optimization, including reinforcement learning, computer vision. I am advised by <b>[Bei Yu](http://www.cse.cuhk.edu.hk/~byu/).</b>  I received my Bachelor Degree of Computer Science from [Huazhong University of Science and Technology](https://www.hust.edu.cn/). My open source contributions can be found on [my Github profile](https://github.com/dekura).
+I am an MSc student at The Chinese University of Hong Kong (<b>CUHK</b>) and broadly study foundational topics and applications in <b>machine learning in VLSI</b> (sometimes deep) and optimization, including reinforcement learning, computer vision. I am advised by Prof. <b>[Bei Yu](http://www.cse.cuhk.edu.hk/~byu/).</b>  I received my Bachelor Degree of Computer Science from [Huazhong University of Science and Technology](https://www.hust.edu.cn/). My open source contributions can be found on [my Github profile](https://github.com/dekura).
  <!-- I have also worked on <b>reinforcement learning</b> during an internship with [Nando de Freitas](https://www.cs.ubc.ca/~nando/) and [Misha Denil](http://mdenil.com/) at <b>DeepMind</b> in 2017 and on vision with [Vladlen Koltun](http://vladlen.info) at <b>Intel Labs</b> in 2018. <br><br> -->
 
 
 ## <i class="iconfont icon-education" style="font-size: 0.9em"></i> Education
 
 <table class="table table-hover">
-  <tr>
+  <!-- <tr>
     <td class="col-md-3">Aug 2021 - May 2024</td>
     <td>
         <strong>Ph.D. in Computer Science</strong>
         <br>
       The Chinese University of Hong Kong
     </td>
-  </tr>
+  </tr> -->
   <tr>
     <td class="col-md-3">Aug 2019 - May 2020</td>
     <td>
