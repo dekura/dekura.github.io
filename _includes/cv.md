@@ -48,42 +48,6 @@ I am an MSc student at The Chinese University of Hong Kong (<b>CUHK</b>) and bro
   <td class='col-md-3'>June 2018 - Sept 2018</td>
   <td><strong>Tencent Labs</strong>, Research Intern</td>
 </tr>
-<!-- <tr>
-  <td class='col-md-3'>May 2017 - Oct 2017</td>
-  <td><strong>Google DeepMind</strong>, Research Intern</td>
-</tr>
-<tr>
-</tr>
-<tr>
-  <td class='col-md-3'>May 2014 - Aug 2014</td>
-  <td><strong>Adobe Research</strong>, Data Scientist Intern</td>
-</tr>
-<tr>
-</tr>
-<tr>
-  <td class='col-md-3'>Dec 2013 - Jan 2014</td>
-  <td><strong>Snowplow Analytics</strong>, Software Engineer Intern</td>
-</tr>
-<tr>
-</tr>
-<tr>
-  <td class='col-md-3'>May 2013 - Aug 2013</td>
-  <td><strong>Qualcomm</strong>, Software Engineer Intern</td>
-</tr> -->
-<!-- <tr>
-</tr>
-<tr>
-  <td class='col-md-3'>May 2012 - Aug 2012</td>
-  <td><strong>Phoenix Integration</strong>, Software Engineer Intern</td>
-</tr>
-<tr>
-</tr>
-<tr>
-  <td class='col-md-3'>Jan 2011 - Aug 2011</td>
-  <td><strong>Sunapsys</strong>, Network Administrator Intern</td>
-</tr>
-<tr>
-</tr> -->
 </table>
 
 <!--
@@ -652,7 +616,7 @@ Linux, OSX
     
     [C1]
 [<a href='javascript:;'
-    onclick='$("#abs_lambert2020objective_all_bib").toggle()'>abs</a>] [<a href='#' target='_blank'>pdf</a>] <br>
+    onclick='$("#abs_lambert2020objective_all_bib").toggle()'>abs</a>] [<a href='data/papers/C1-ICCAD20-DLS-OPC.pdf' target='_blank'>preprint</a>] <br>
 <div id="abs_lambert2020objective_all_bib" style="text-align: justify; display: none" markdown="1">
 Continuous scaling of the VLSI system leaves a great challenge on manufacturing and optical proximity correction (OPC) is widely applied in conventional design flow for manufacturability optimization.
 Traditional techniques conducted OPC by leveraging a lithography model and suffered from prohibitive computational overhead, and mostly focused on optimizing a single clip without addressing how to tackle the full chip.
