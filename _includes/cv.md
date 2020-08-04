@@ -613,10 +613,12 @@ Linux, OSX
     <strong>DAMO: Deep Agile Mask Optimization for Full Chip Scale</strong><br>
     <strong>Guojin Chen</strong>, Wanli Chen, Yuzhe Ma, Haoyu Yang and Bei Yu<br>
     IEEE/ACM International Conference on Computer-Aided Design <strong>ICCAD 2020</strong><br>
-    
+
     [C1]
-[<a href='javascript:;'
-    onclick='$("#abs_lambert2020objective_all_bib").toggle()'>abs</a>] [<a href='data/papers/C1-ICCAD20-DLS-OPC.pdf' target='_blank'>preprint</a>] <br>
+[<a href='javascript:;' onclick='$("#abs_lambert2020objective_all_bib").toggle()'>abs</a>]
+[<a href='data/papers/C1-ICCAD20-DLS-OPC.pdf' target='_blank'>preprint</a>]
+[<a href='https://arxiv.org/abs/2008.00806' target='_blank'>arXiv</a>]
+<br>
 <div id="abs_lambert2020objective_all_bib" style="text-align: justify; display: none" markdown="1">
 Continuous scaling of the VLSI system leaves a great challenge on manufacturing and optical proximity correction (OPC) is widely applied in conventional design flow for manufacturability optimization.
 Traditional techniques conducted OPC by leveraging a lithography model and suffered from prohibitive computational overhead, and mostly focused on optimizing a single clip without addressing how to tackle the full chip.
