@@ -616,7 +616,7 @@ Linux, OSX
 
     [C1]
 [<a href='javascript:;' onclick='$("#abs_lambert2020objective_all_bib").toggle()'>abs</a>]
-[<a href='data/papers/C1-ICCAD20-DLS-OPC.pdf' target='_blank'>preprint</a>]
+[<a href='data/papers/C1-ICCAD20-DAMO.pdf' target='_blank'>preprint</a>]
 [<a href='https://arxiv.org/abs/2008.00806' target='_blank'>arXiv</a>]
 <br>
 <div id="abs_lambert2020objective_all_bib" style="text-align: justify; display: none" markdown="1">
