@@ -634,7 +634,7 @@ Extensive experiments show that DAMO outperforms the state-of-the-art OPC soluti
 </table>
 
 
-<!-- 
+<!--
 <h2>2014</h2>
 <table class="table table-hover">
 
@@ -667,11 +667,11 @@ as proper partitioning can cause a 5x performance improvement.
     <strong>Global Parameter Estimation for a Eukaryotic Cell Cycle Model in Systems Biology</strong><br>
     T. Andrew, <strong>B. Amos</strong>, D. Easterling, C. Oguz, W. Baumann, J. Tyson, and L. Watson<br>
     SummerSim 2014<br>
-    
-    [2] 
+
+    [2]
 [<a href='javascript:;'
     onclick='$("#abs_andrew2014global_all_bib").toggle()'>abs</a>] [<a href='http://dl.acm.org/citation.cfm?id=2685662' target='_blank'>pdf</a>] <br>
-    
+
 <div id="abs_andrew2014global_all_bib" style="text-align: justify; display: none" markdown="1">
 The complicated process by which a yeast cell divides, known as the cell
 cycle, has been modeled by a system of 26 nonlinear ordinary differential
