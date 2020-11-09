@@ -1,5 +1,6 @@
 name: Guojin Chen
 url: https://dekura.github.io
+description: Home page of Guojin Chen, CUHK
 destination: ./_site
 twitter: dekura11
 lsi: false
@@ -10,9 +11,12 @@ kramdown:
   parse_block_html: true
   syntax_highlighter: rouge
 permalink: pretty
+#seo
+tagline: Guojin Chen's Awesome Site | Home site for Guojin Chen CUHK
 #paginate: 5
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 exclude:
   - .travis.yml

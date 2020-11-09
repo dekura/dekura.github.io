@@ -4,3 +4,4 @@ gem 'github-pages', "177"
 gem 'html5_validator', '~> 1.0'
 gem 'w3c_validators', '~> 1.2'
 gem 'html-proofer', '~> 3.0.6'
+gem 'jekyll-seo-tag'
