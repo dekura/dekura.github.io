@@ -6,13 +6,6 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "7435589",
-      "name": "Google scholar",
-      "font_class": "Googlescholar",
-      "unicode": "e735",
-      "unicode_decimal": 59189
-    },
-    {
       "icon_id": "5776871",
       "name": "calendar",
       "font_class": "calendar",
