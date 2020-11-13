@@ -12,7 +12,7 @@ kramdown:
   syntax_highlighter: rouge
 permalink: pretty
 #seo
-tagline: Guojin Chen's Awesome Site | Home site for Guojin Chen @ CUHK-CSE
+tagline: Home site for Guojin Chen @ CUHK-CSE | PhD | VLSI | Machine Learning
 #paginate: 5
 plugins:
   - jekyll-sitemap
