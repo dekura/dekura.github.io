@@ -622,6 +622,7 @@ Linux, OSX
 [<a href='javascript:;' onclick='$("#abs_lambert2020objective_all_bib").toggle()'>abs</a>]
 [<a href='data/papers/C1-ICCAD20-DAMO.pdf' target='_blank'>preprint</a>]
 [<a href='https://arxiv.org/abs/2008.00806' target='_blank'>arXiv</a>]
+[<a href='https://whova.com/portal/webapp/iccad_202011/Agenda/1273042/' target='_blank'>whova</a>]
 <br>
 <div id="abs_lambert2020objective_all_bib" style="text-align: justify; display: none" markdown="1">
 Continuous scaling of the VLSI system leaves a great challenge on manufacturing and optical proximity correction (OPC) is widely applied in conventional design flow for manufacturability optimization.
