@@ -6,13 +6,6 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "1282364",
-      "name": "Publications",
-      "font_class": "Publications",
-      "unicode": "e625",
-      "unicode_decimal": 58917
-    },
-    {
       "icon_id": "10100833",
       "name": "icon-papers",
       "font_class": "icon-papers",

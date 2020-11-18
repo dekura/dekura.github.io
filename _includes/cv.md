@@ -603,11 +603,11 @@ Linux, OSX
 
 <!-- for publication -->
 
-## <i class="fa fa-chevron-right"></i> All Publications <a href="https://github.com/bamos/cv/blob/master/publications/all.bib"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
+## <i class="iconfont icon-Publications" style="font-size: 1.2em"></i> All Publications
 
-<!-- <a href="https://scholar.google.com/citations?user=d8gdZR4AAAAJ" class="btn btn-primary" style="padding: 0.3em;">
-  <i class="ai ai-google-scholar"></i> Google Scholar
-</a> -->
+<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ&hl=zh-CN" class="btn btn-primary" style="padding: 0.3em;">
+  <i class="iconfont icon-Googlescholar"></i> Google Scholar
+</a>
 
 <h2>2020</h2>
 <table class="table table-hover">
@@ -636,28 +636,27 @@ Extensive experiments show that DAMO outperforms the state-of-the-art OPC soluti
 </td>
 </tr>
 
-<!-- DATE -->
-<!-- <tr>
+<tr>
 <td>
     <strong>A GPU-enabled Level Set Method for Mask Optimization</strong><br>
     Ziyang Yu, <strong>Guojin Chen</strong>, Yuzhe Ma and Bei Yu<br>
     IEEE/ACM Proceedings Design, Automation and Test in Europe, <strong>DATE 2021</strong><br>
     [C2]
-[<a href='javascript:;' onclick='$("#abs_lambert2020objective_all_bib").toggle()'>abs</a>]
-[<a href='data/papers/C1-ICCAD20-DAMO.pdf' target='_blank'>preprint</a>]
-[<a href='https://arxiv.org/abs/2008.00806' target='_blank'>arXiv</a>]
+<!-- [<a href='javascript:;' onclick='$("#abs_levelset_all_bib").toggle()'>abs</a>] -->
+<!-- [<a href='data/papers/C1-ICCAD20-DAMO.pdf' target='_blank'>preprint</a>] -->
+<!-- [<a href='https://arxiv.org/abs/2008.00806' target='_blank'>arXiv</a>] -->
 <br>
-<div id="abs_lambert2020objective_all_bib" style="text-align: justify; display: none" markdown="1">
+<!-- <div id="abs_levelset_all_bib" style="text-align: justify; display: none" markdown="1">
 Continuous scaling of the VLSI system leaves a great challenge on manufacturing and optical proximity correction (OPC) is widely applied in conventional design flow for manufacturability optimization.
 Traditional techniques conducted OPC by leveraging a lithography model and suffered from prohibitive computational overhead, and mostly focused on optimizing a single clip without addressing how to tackle the full chip.
 In this paper, we present DAMO, a high performance and scalable deep learning-enabled OPC system for full chip scale.
 It is an end-to-end mask optimization paradigm which contains a Deep Lithography Simulator (DLS) for lithography modeling and a Deep Mask Generator (DMG) for mask pattern generation.
 Moreover, a novel layout splitting algorithm customized for DAMO is proposed to handle the full chip OPC problem.
 Extensive experiments show that DAMO outperforms the state-of-the-art OPC solutions in both academia and industrial commercial toolkit.
-</div>
+</div> -->
 
 </td>
-</tr> -->
+</tr>
 
 </table>
 
