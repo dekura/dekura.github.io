@@ -60,4 +60,4 @@ title: Guojin Chen
 
 ---
 
-Last updated on {% include last-updated.txt %}, thanks to Bamos for the [blog template](http://bamos.github.io/).
+Last updated on {% include last-updated.txt %}, thanks to [Bamos](https://bamos.github.io/) for the blog template.
