@@ -661,6 +661,22 @@ Extensive experiments show that DAMO outperforms the state-of-the-art OPC soluti
 </table>
 
 
+## <i class="iconfont icon-CertificateInformat" style="font-size: 0.9em"></i> Certificates
+<table class="table table-hover">
+<tr>
+  <td class='col-md-2'>Nov 2020</td>
+  <td>
+    <a href="data/certificates/2020_ICCAD_CAD_speaker_certificate.pdf" target="_blank">ICCAD 2020 Speaker Certificate of Appreciation</a>
+  </td>
+</tr>
+<!-- <tr>
+  <td class='col-md-2'>Jun - 2020</td>
+  <td>
+    <a href="data/slides/pchsd-20200622.pdf" target="_blank">Point Cloud Hotspot Detection</a>
+  </td>
+</tr> -->
+</table>
+
 <!--
 <h2>2014</h2>
 <table class="table table-hover">

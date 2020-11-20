@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "2455048",
+      "name": "Certificate Informat",
+      "font_class": "CertificateInformat",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
       "icon_id": "1282364",
       "name": "Publications",
       "font_class": "Publications",
