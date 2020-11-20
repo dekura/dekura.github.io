@@ -666,7 +666,7 @@ Extensive experiments show that DAMO outperforms the state-of-the-art OPC soluti
 <tr>
   <td class='col-md-2'>Nov 2020</td>
   <td>
-    <a href="data/certificates/2020_ICCAD_CAD_speaker_certificate.pdf" target="_blank">ICCAD 2020 Speaker Certificate of Appreciation</a>
+    <a href="data/certificates/2020_ICCAD_CAD_speaker_certificate.pdf" target="_blank">ICCAD 2020 Speaker Certificate of Appreciation Presented to <strong>Guojin Chen</strong>.</a>
   </td>
 </tr>
 <!-- <tr>
