@@ -510,12 +510,12 @@ biology problems is given.
     Distinguished Academic Performance Scholarship, CUHK.
   </td>
 </tr>
-<tr>
+<!-- <tr>
   <td class='col-md-2'>Nov 2019</td>
   <td>
     Entrance Scholarship, CUHK.
   </td>
-</tr>
+</tr> -->
 <tr>
   <td class='col-md-2'>2015 - 2019</td>
   <td>
