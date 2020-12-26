@@ -602,11 +602,9 @@ Linux, OSX
 
 <!-- for publication -->
 
-## <i class="iconfont icon-Publications" style="font-size: 1.2em"></i> All Publications
+## <i class="iconfont icon-Publications" style="font-size: 1.2em"></i> All Publications <a href="https://scholar.google.com/citations?user=842nSvkAAAAJ&hl=zh-CN" class="btn btn-primary" style="padding: 0.3em;"> <i class="iconfont icon-Googlescholar"></i> Google Scholar </a>
 
-<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ&hl=zh-CN" class="btn btn-primary" style="padding: 0.3em;">
-  <i class="iconfont icon-Googlescholar"></i> Google Scholar
-</a>
+
 
 <h2>2020</h2>
 <table class="table table-hover">
