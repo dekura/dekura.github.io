@@ -575,19 +575,19 @@ CMU CSD MS 2014-2015
 <table class="table table-hover">
 <tr>
   <td class='col-md-2'>Languages</td>
-  <td markdown="1">
+  <td>
 C, C++, Golang, Python, Make, *LaTeX*, Ruby, R, Javascript
   </td>
 </tr>
 <tr>
   <td class='col-md-2'>Frameworks</td>
-  <td markdown="1">
+  <td>
 NumPy, Pandas, PyTorch, SciPy, TensorFlow
   </td>
 </tr>
 <tr>
   <td class='col-md-2'>Systems</td>
-  <td markdown="1">
+  <td>
 Linux, OSX
   </td>
 </tr>
