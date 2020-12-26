@@ -576,7 +576,7 @@ CMU CSD MS 2014-2015
 <tr>
   <td class='col-md-2'>Languages</td>
   <td>
-C, C++, Golang, Python, Make, *LaTeX*, Ruby, R, Javascript
+C, C++, Golang, Python, Make, <i>LaTeX</i>, Ruby, R, Javascript
   </td>
 </tr>
 <tr>
