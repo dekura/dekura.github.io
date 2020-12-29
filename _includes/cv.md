@@ -571,7 +571,7 @@ CMU CSD MS 2014-2015
 </table> -->
 
 
-## <i class="iconfont icon-laptop" style="font-size: 0.9em"></i> Skills
+<!-- ## <i class="iconfont icon-laptop" style="font-size: 0.9em"></i> Skills
 <table class="table table-hover">
 <tr>
   <td class='col-md-2'>Languages</td>
@@ -592,7 +592,7 @@ Linux, OSX
   </td>
 </tr>
 </table>
-
+ -->
 
 
 
