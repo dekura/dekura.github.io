@@ -639,18 +639,19 @@ Extensive experiments show that DAMO outperforms the state-of-the-art OPC soluti
     Ziyang Yu, <strong>Guojin Chen</strong>, Yuzhe Ma and Bei Yu<br>
     IEEE/ACM Proceedings Design, Automation and Test in Europe, <strong>DATE 2021</strong><br>
     [C2]
-<!-- [<a href='javascript:;' onclick='$("#abs_levelset_all_bib").toggle()'>abs</a>] -->
-<!-- [<a href='data/papers/C1-ICCAD20-DAMO.pdf' target='_blank'>preprint</a>] -->
-<!-- [<a href='https://arxiv.org/abs/2008.00806' target='_blank'>arXiv</a>] -->
+[<a href='javascript:;' onclick='$("#abs_levelset_all_bib").toggle()'>abs</a>]
+[<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C115-DATE2021-LevelSet.pdf' target='_blank'>preprint</a>]
+[<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C115-DATE2021-LevelSet-slides.pdf' target='_blank'>slides</a>]
 <br>
-<!-- <div id="abs_levelset_all_bib" style="text-align: justify; display: none" markdown="1">
-Continuous scaling of the VLSI system leaves a great challenge on manufacturing and optical proximity correction (OPC) is widely applied in conventional design flow for manufacturability optimization.
-Traditional techniques conducted OPC by leveraging a lithography model and suffered from prohibitive computational overhead, and mostly focused on optimizing a single clip without addressing how to tackle the full chip.
-In this paper, we present DAMO, a high performance and scalable deep learning-enabled OPC system for full chip scale.
-It is an end-to-end mask optimization paradigm which contains a Deep Lithography Simulator (DLS) for lithography modeling and a Deep Mask Generator (DMG) for mask pattern generation.
-Moreover, a novel layout splitting algorithm customized for DAMO is proposed to handle the full chip OPC problem.
-Extensive experiments show that DAMO outperforms the state-of-the-art OPC solutions in both academia and industrial commercial toolkit.
-</div> -->
+<div id="abs_levelset_all_bib" style="text-align: justify; display: none" markdown="1">
+As the feature size of advanced integrated circuits keeps shrinking, resolution enhancement technique (RET) is utilized to improve the printability in the lithography process.
+Optical proximity correction (OPC) is one of the most widely used RETs aiming at compensating the mask to generate a more precise wafer image.
+In this paper, we put forward a level-set based OPC with high mask optimization quality and fast convergence.
+In order to suppress the disturbance of the condition fluctuation in lithography process, we propose a new process window-aware cost function.
+Then, a novel momentum-based evolution technique is adopted, which demonstrates substantial improvement.
+Moreover, graphics processing unit (GPU) is leveraged for accelerating the proposed algorithm.
+Experimental results on ICCAD 2013 benchmarks show that our algorithm outperforms all previous OPC algorithms in terms of both solution quality and runtime overhead.
+</div>
 
 </td>
 </tr>
