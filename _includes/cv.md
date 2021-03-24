@@ -39,10 +39,10 @@ I am a research assistant at The Chinese University of Hong Kong (<b>CUHK-CSE</b
 
 ## <i class="iconfont icon-gongzuojingyan" style="font-size: 0.9em"></i> Experience
 <table class="table table-hover">
-<tr>
+<!-- <tr>
   <td class='col-md-3'>Nov 2020 - Present</td>
   <td><strong>Smartmore Co.Ltd</strong>, Research Intern</td>
-</tr>
+</tr> -->
 <tr>
   <td class='col-md-3'>May 2020 - Present</td>
   <td><strong>CUHK</strong>, Research Assistant</td>
