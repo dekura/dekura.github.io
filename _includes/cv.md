@@ -612,19 +612,18 @@ Linux, OSX
     Wei Li, <strong>Guojin Chen</strong>, Haoyu Yang, Ran Chen and Bei Yu<br>
     ACM International Symposium on Physical Design, <strong>ISPD 2021</strong><br>
     [C3]
-<!-- [<a href='javascript:;' onclick='$("#abs_levelset_all_bib").toggle()'>abs</a>] -->
-<!-- [<a href='data/papers/C1-ICCAD20-DAMO.pdf' target='_blank'>preprint</a>] -->
-<!-- [<a href='https://arxiv.org/abs/2008.00806' target='_blank'>arXiv</a>] -->
+[<a href='javascript:;' onclick='$("#abs_pceda_invited").toggle()'>abs</a>]
+[<a href='http://www.cse.cuhk.edu.hk/~byu/papers/C116-ISPD2021-PointCloud.pdf' target='_blank'>preprint</a>]
+[<a href='http://www.cse.cuhk.edu.hk/~byu/papers/C116-ISPD2021-PointCloud-slides.pdf' target='_blank'>slides</a>]
+[<a href="data/bibtex/pceda_invited.bib" download="pceda_gjchen.bib">bibtex</a>]
 <br>
-<!-- <div id="abs_levelset_all_bib" style="text-align: justify; display: none" markdown="1">
-Continuous scaling of the VLSI system leaves a great challenge on manufacturing and optical proximity correction (OPC) is widely applied in conventional design flow for manufacturability optimization.
-Traditional techniques conducted OPC by leveraging a lithography model and suffered from prohibitive computational overhead, and mostly focused on optimizing a single clip without addressing how to tackle the full chip.
-In this paper, we present DAMO, a high performance and scalable deep learning-enabled OPC system for full chip scale.
-It is an end-to-end mask optimization paradigm which contains a Deep Lithography Simulator (DLS) for lithography modeling and a Deep Mask Generator (DMG) for mask pattern generation.
-Moreover, a novel layout splitting algorithm customized for DAMO is proposed to handle the full chip OPC problem.
-Extensive experiments show that DAMO outperforms the state-of-the-art OPC solutions in both academia and industrial commercial toolkit.
-</div> -->
-
+<div id="abs_pceda_invited" style="text-align: justify; display: none" markdown="1">
+The exploding of deep learning techniques have motivated the development in various fields, including intelligent EDA algorithms from physical implementation to design for manufacturability. Point cloud, defined as the set of data points in space, is one of the most important data representations in deep learning since it directly preserves the original geometric information without any discretization.
+However, there are still some challenges that stifle the applications of point clouds in the EDA field.
+In this paper, we first review previous works about deep learning in EDA and point clouds in other fields.
+Then, we discuss some challenges of point clouds in EDA raised by some intrinsic characteristics of point clouds.
+Finally, to stimulate future research, we present several possible applications of point clouds in EDA and demonstrate the feasibility by two case studies.
+</div>
 </td>
 </tr>
 </table>
@@ -668,6 +667,7 @@ Experimental results on ICCAD 2013 benchmarks show that our algorithm outperform
 [<a href='data/papers/C1-ICCAD20-DAMO.pdf' target='_blank'>preprint</a>]
 [<a href='https://arxiv.org/abs/2008.00806' target='_blank'>arXiv</a>]
 [<a href='https://whova.com/portal/webapp/iccad_202011/Agenda/1273042/' target='_blank'>whova</a>]
+[<a href="data/bibtex/damo_iccad_gjchen.bib" download="damo_iccad_gjchen.bib">bibtex</a>]
 <br>
 <div id="abs_lambert2020objective_all_bib" style="text-align: justify; display: none" markdown="1">
 Continuous scaling of the VLSI system leaves a great challenge on manufacturing and optical proximity correction (OPC) is widely applied in conventional design flow for manufacturability optimization.
