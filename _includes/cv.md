@@ -1,17 +1,17 @@
-I am a research assistant at The Chinese University of Hong Kong (<b>CUHK-CSE</b>) and my research interests include <b>deep learning in VLSI</b>, <b>reinforcement learning</b> and <b>computer vision</b>. I am advised by Prof. <b>[Bei Yu](http://www.cse.cuhk.edu.hk/~byu/).</b>  I received my Bachelor Degree of Computer Science from Huazhong University of Science and Technology. My open source contributions can be found on my [github profile](https://github.com/dekura).
+I am a first-year PhD at The Chinese University of Hong Kong (<b>CUHK-CSE</b>) advised by Prof. <b>[Bei Yu](http://www.cse.cuhk.edu.hk/~byu/)</b>. My research interests include <b>deep learning in VLSI</b>, <b>reinforcement learning</b> and <b>computer vision</b>. My open source contributions can be found on my [github profile](https://github.com/dekura).
 
 
 ## <i class="iconfont icon-education" style="font-size: 0.9em"></i> Education
 
 <table class="table table-hover">
-  <!-- <tr>
-    <td class="col-md-3">Aug 2021 - May 2024</td>
+  <tr>
+    <td class="col-md-3">Aug 2021 - Present</td>
     <td>
         <strong>Ph.D. in Computer Science</strong>
         <br>
       The Chinese University of Hong Kong
     </td>
-  </tr> -->
+  </tr>
   <tr>
     <td class="col-md-3">Aug 2019 - May 2020</td>
     <td>
@@ -44,7 +44,7 @@ I am a research assistant at The Chinese University of Hong Kong (<b>CUHK-CSE</b
   <td><strong>Smartmore Co.Ltd</strong>, Research Intern</td>
 </tr> -->
 <tr>
-  <td class='col-md-3'>May 2020 - Present</td>
+  <td class='col-md-3'>Aug 2020 - Aug 2021</td>
   <td><strong>CUHK</strong>, Research Assistant</td>
 </tr>
 <tr>
