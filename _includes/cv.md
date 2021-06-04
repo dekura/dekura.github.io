@@ -656,7 +656,7 @@ Experimental results on ICCAD 2013 benchmarks show that our algorithm outperform
 </tr>
 
 
-<tr>
+<tr style="background-color: #ffffd0">
 <td>
     <strong>DAMO: Deep Agile Mask Optimization for Full Chip Scale</strong><br>
     <strong>Guojin Chen</strong>, Wanli Chen, Yuzhe Ma, Haoyu Yang and Bei Yu<br>
