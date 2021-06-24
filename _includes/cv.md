@@ -1,4 +1,7 @@
-I am a first-year PhD at The Chinese University of Hong Kong (<b>CUHK-CSE</b>) advised by Prof. <b>[Bei Yu](http://www.cse.cuhk.edu.hk/~byu/)</b>. My research interests include <b>deep learning in VLSI</b>, <b>reinforcement learning</b> and <b>computer vision</b>. My open source contributions can be found on my [github profile](https://github.com/dekura).
+Hi, I am now a first-year PhD at The Chinese University of Hong Kong (<b>CUHK-CSE</b>) advised by Prof. <b>[Bei Yu](http://www.cse.cuhk.edu.hk/~byu/)</b>. My research interests include <b>deep learning in VLSI</b>, <b>reinforcement learning</b> and <b>computer vision</b>. 
+Previously, I did some work on EDA related topics. Now I'm very interested in reinforcement learning on chips and large scale distributed training.
+I am also looking for academic visit or research interns.
+My open source contributions can be found on my [github profile](https://github.com/dekura). Please do not hesitate to contact me.
 
 
 ## <i class="iconfont icon-education" style="font-size: 0.9em"></i> Education
