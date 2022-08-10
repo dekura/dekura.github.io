@@ -46,7 +46,7 @@ Representative publications that I am a primary author on are
 <td>
 <img src="images/publications/ECCV22:hilbert-curve.png" onerror="this.style.display='none'" class="publicationImg" />
 <em>Efficient Point Cloud Analysis Using Hilbert Curve.</em> <br>
-Wanli&nbsp;Chen, Xinge&nbsp;Zhu, Guojin&nbsp;Chen, and Bei&nbsp;Yu<br>
+<a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://xingezhu.me/' target='_blank'>Xinge&nbsp;Zhu</a>, Guojin&nbsp;Chen, and <a href='http://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
 ECCV 2022  <br>
 
 </td>
@@ -62,7 +62,7 @@ ECCV 2022  <br>
 <em>AdaOPC: A Self-Adaptive Mask Optimization Framework For Real Design Patterns</em> 
 [<a href='javascript:;'
     onclick='$("#abs_ICCAD22:AdaOPC").toggle()'>abs</a>]<br>
-Wenqian&nbsp;Zhao, Xufeng&nbsp;Yao, Ziyang&nbsp;Yu, Guojin&nbsp;Chen, Yuzhe&nbsp;Ma, Bei&nbsp;Yu, and Martin&nbsp;Wong<br>
+<a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://appsrv.cse.cuhk.edu.hk/~xfyao/' target='_blank'>Xufeng&nbsp;Yao</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='http://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ&hl=en' target='_blank'>Martin&nbsp;Wong</a><br>
 ICCAD 2022  <br>
 
 </td>
@@ -81,7 +81,7 @@ ICCAD 2022  <br>
 <em>DevelSet: Deep Neural Level Set for Instant Mask optimization</em> 
 [<a href='javascript:;'
     onclick='$("#abs_ICCAD21:develset").toggle()'>abs</a>]<br>
-Guojin&nbsp;Chen, Wanli&nbsp;Chen, Yuzhe&nbsp;Ma, Haoyu&nbsp;Yang, and Bei&nbsp;Yu<br>
+Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='http://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
 ICCAD 2021  <br>
 
 </td>
@@ -95,7 +95,7 @@ ICCAD 2021  <br>
 <td>
 <img src="images/publications/ISPD21:learn-pointcloud.png" onerror="this.style.display='none'" class="publicationImg" />
 <em>Learning Point Clouds in EDA. **(Invited Paper)**</em> <br>
-Wei&nbsp;Li, Guojin&nbsp;Chen, Haoyu&nbsp;Yang, Ran&nbsp;Chen, and Bei&nbsp;Yu<br>
+<a href='https://wadmes.github.io/cv/' target='_blank'>Wei&nbsp;Li</a>, Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://appsrv.cse.cuhk.edu.hk/~rchen/' target='_blank'>Ran&nbsp;Chen</a>, and <a href='http://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
 ISPD 2021  <br>
 
 </td>
@@ -114,7 +114,7 @@ ISPD 2021  <br>
 <em>DAMO: deep agile mask optimization for full chip scale</em> 
 [<a href='javascript:;'
     onclick='$("#abs_ICCAD20:damo").toggle()'>abs</a>]<br>
-Guojin&nbsp;Chen, Wanli&nbsp;Chen, Yuzhe&nbsp;Ma, Haoyu&nbsp;Yang, and Bei&nbsp;Yu<br>
+Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='http://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
 ICCAD 2020  <br>
 
 <div id="abs_ICCAD20:damo" style="text-align: justify; display: none" markdown="1">
@@ -134,7 +134,7 @@ Continuous scaling of the VLSI system leaves a great challenge on manufacturing 
 <em>A GPU-enabled Level Set Method for Mask Optimization</em> 
 [<a href='javascript:;'
     onclick='$("#abs_DATE21:levelset").toggle()'>abs</a>]<br>
-Ziyang&nbsp;Yu, Guojin&nbsp;Chen, Yuzhe&nbsp;Ma, and Bei&nbsp;Yu<br>
+<a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='http://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
 DATE 2020  <br>
 
 <div id="abs_DATE21:levelset" style="text-align: justify; display: none" markdown="1">
