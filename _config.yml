@@ -1,7 +1,7 @@
-name: Brandon Amos
-url: http://bamos.github.io
+name: Chen Guojin
+url: http://dekura.github.io
 destination: ./_site
-twitter: brandondamos
+twitter: dekura11
 lsi: false
 port: 4000
 markdown: kramdown
