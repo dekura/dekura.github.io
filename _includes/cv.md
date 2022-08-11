@@ -20,6 +20,13 @@ My open source contributions can be found on my <a href="https://github.com/deku
   </tr>
   <tr>
     <td>
+      <span class='cvdate'>2019&nbsp;-&nbsp;2020</span>
+      <strong>M.S. in Computer Science</strong>, <em>The Chinese University of Hong Kong</em>
+      <br>
+    </td>
+  </tr>
+  <tr>
+    <td>
       <span class='cvdate'>2015&nbsp;-&nbsp;2019</span>
       <strong>B.S. in Computer Science</strong>, <em>Huazhong University of Science and Technology</em>
       <br>
@@ -34,35 +41,35 @@ My open source contributions can be found on my <a href="https://github.com/deku
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ&hl">Google Scholar</a>; 5071+ citations, h-index: 29+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ&hl">Google Scholar</a>; 24+ citations, h-index: 3+]
 
 <h2>2022</h2>
 <table class="table table-hover">
 
-<tr id="tr-ECCV22:hilbert-curve" >
+<tr id="tr-ECCV22_hilbert-curve" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-1.
+[C6] 
 </td>
 <td>
-<img src="images/publications/ECCV22:hilbert-curve.png" onerror="this.style.display='none'" class="publicationImg" />
+<img src="images/publications/ECCV22_hilbert-curve.png" onerror="this.style.display='none'" class="publicationImg" />
 <em>Efficient Point Cloud Analysis Using Hilbert Curve.</em> <br>
-<a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://xingezhu.me/' target='_blank'>Xinge&nbsp;Zhu</a>, Guojin&nbsp;Chen, and <a href='http://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
+<a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://xingezhu.me/' target='_blank'>Xinge&nbsp;Zhu</a>, Guojin&nbsp;Chen, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
 ECCV 2022  <br>
 
 </td>
 </tr>
 
 
-<tr id="tr-ICCAD22:AdaOPC" >
+<tr id="tr-ICCAD22_AdaOPC" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-2.
+[C5] 
 </td>
 <td>
-<img src="images/publications/ICCAD22:AdaOPC.png" onerror="this.style.display='none'" class="publicationImg" />
+<img src="images/publications/ICCAD22_AdaOPC.png" onerror="this.style.display='none'" class="publicationImg" />
 <em>AdaOPC: A Self-Adaptive Mask Optimization Framework For Real Design Patterns</em> 
 [<a href='javascript:;'
-    onclick='$("#abs_ICCAD22:AdaOPC").toggle()'>abs</a>]<br>
-<a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://appsrv.cse.cuhk.edu.hk/~xfyao/' target='_blank'>Xufeng&nbsp;Yao</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='http://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ&hl=en' target='_blank'>Martin&nbsp;Wong</a><br>
+    onclick='$("#abs_ICCAD22_AdaOPCC").toggle()'>abs</a>]<br>
+<a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://appsrv.cse.cuhk.edu.hk/~xfyao/' target='_blank'>Xufeng&nbsp;Yao</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ&hl=en' target='_blank'>Martin&nbsp;Wong</a><br>
 ICCAD 2022  <br>
 
 </td>
@@ -72,31 +79,41 @@ ICCAD 2022  <br>
 <h2>2021</h2>
 <table class="table table-hover">
 
-<tr id="tr-ICCAD21:develset" >
+<tr id="tr-ICCAD21_develset" style="background-color: #ffffd0">
 <td align='right' style='padding-left:0;padding-right:0;'>
-3.
+[C4] 
 </td>
 <td>
-<img src="images/publications/ICCAD21:develset.png" onerror="this.style.display='none'" class="publicationImg" />
-<em>DevelSet: Deep Neural Level Set for Instant Mask optimization</em> 
+<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C124-ICCAD2021-DevelSet.pdf' target='_blank'><img src="images/publications/ICCAD21_develset.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
+<em><a href='https://www.cse.cuhk.edu.hk/~byu/papers/C124-ICCAD2021-DevelSet.pdf' target='_blank'>DevelSet: Deep Neural Level Set for Instant Mask optimization</a> </em> 
 [<a href='javascript:;'
-    onclick='$("#abs_ICCAD21:develset").toggle()'>abs</a>]<br>
-Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='http://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
+    onclick='$("#abs_ICCAD21_develsetC").toggle()'>abs</a>]<br>
+Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
 ICCAD 2021  <br>
+
+<div id="abs_ICCAD21_develsetC" style="text-align: justify; display: none" markdown="1">
+With the feature size continuously shrinking in advanced technology nodes, mask optimization is increasingly crucial in the conventional design flow, accompanied by an explosive growth in prohibitive computational overhead in optical proximity correction (OPC) methods. Recently, inverse lithography technique (ILT) has drawn significant attention and is becoming prevalent in emerging OPC solutions. However, ILT methods are either time-consuming or in weak performance of mask printability and manufacturability. In this paper, we present DevelSet, a GPU and deep neural network (DNN) accelerated level set OPC framework for metal layer. We first improve the conventional level set-based ILT algorithm by introducing the curvature term to reduce mask complexity and applying GPU acceleration to overcome computational bottlenecks. To further enhance printability and fast iterative convergence, we propose a novel deep neural network delicately designed with level set intrinsic principles to facilitate the joint optimization of DNN and GPU accelerated level set optimizer. Experimental results show that DevelSet framework surpasses the state-of-theart methods in printability and boost the runtime performance achieving instant level (around 1 second).
+</div>
 
 </td>
 </tr>
 
 
-<tr id="tr-ISPD21:learn-pointcloud" >
+<tr id="tr-ISPD21_learn-pointcloud" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-4.
+[C3] 
 </td>
 <td>
-<img src="images/publications/ISPD21:learn-pointcloud.png" onerror="this.style.display='none'" class="publicationImg" />
-<em>Learning Point Clouds in EDA. **(Invited Paper)**</em> <br>
-<a href='https://wadmes.github.io/cv/' target='_blank'>Wei&nbsp;Li</a>, Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://appsrv.cse.cuhk.edu.hk/~rchen/' target='_blank'>Ran&nbsp;Chen</a>, and <a href='http://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
+<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C116-ISPD2021-PointCloud.pdf' target='_blank'><img src="images/publications/ISPD21_learn-pointcloud.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
+<em><a href='https://www.cse.cuhk.edu.hk/~byu/papers/C116-ISPD2021-PointCloud.pdf' target='_blank'>Learning Point Clouds in EDA. **(Invited Paper)**</a> </em> 
+[<a href='javascript:;'
+    onclick='$("#abs_ISPD21_learn-pointcloudC").toggle()'>abs</a>]<br>
+<a href='https://wadmes.github.io/cv/' target='_blank'>Wei&nbsp;Li</a>, Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://appsrv.cse.cuhk.edu.hk/~rchen/' target='_blank'>Ran&nbsp;Chen</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
 ISPD 2021  <br>
+
+<div id="abs_ISPD21_learn-pointcloudC" style="text-align: justify; display: none" markdown="1">
+The exploding of deep learning techniques have motivated the development in various fields, including intelligent EDA algorithms from physical implementation to design for manufacturability. Point cloud, defined as the set of data points in space, is one of the most important data representations in deep learning since it directly preserves the original geometric information without any discretization. However, there are still some challenges that stifle the applications of point clouds in the EDA field. In this paper, we first review previous works about deep learning in EDA and point clouds in other fields. Then, we discuss some challenges of point clouds in EDA raised by some intrinsic characteristics of point clouds. Finally, to stimulate future research, we present several possible applications of point clouds in EDA and demonstrate the feasibility by two case studies.
+</div>
 
 </td>
 </tr>
@@ -105,19 +122,19 @@ ISPD 2021  <br>
 <h2>2020</h2>
 <table class="table table-hover">
 
-<tr id="tr-ICCAD20:damo" >
+<tr id="tr-ICCAD20_damo" style="background-color: #ffffd0">
 <td align='right' style='padding-left:0;padding-right:0;'>
-5.
+[C2] 
 </td>
 <td>
-<img src="images/publications/ICCAD20:damo.png" onerror="this.style.display='none'" class="publicationImg" />
-<em>DAMO: deep agile mask optimization for full chip scale</em> 
+<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C104-ICCAD2020-DAMO.pdf' target='_blank'><img src="images/publications/ICCAD20_damo.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
+<em><a href='https://www.cse.cuhk.edu.hk/~byu/papers/C104-ICCAD2020-DAMO.pdf' target='_blank'>DAMO: Deep Agile Mask Optimization for Full Chip Scale</a> </em> 
 [<a href='javascript:;'
-    onclick='$("#abs_ICCAD20:damo").toggle()'>abs</a>]<br>
-Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='http://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
+    onclick='$("#abs_ICCAD20_damoC").toggle()'>abs</a>]<br>
+Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
 ICCAD 2020  <br>
 
-<div id="abs_ICCAD20:damo" style="text-align: justify; display: none" markdown="1">
+<div id="abs_ICCAD20_damoC" style="text-align: justify; display: none" markdown="1">
 Continuous scaling of the VLSI system leaves a great challenge on manufacturing and optical proximity correction (OPC) is widely applied in conventional design flow for manufacturability optimization. Traditional techniques conducted OPC by leveraging a lithography model and suffered from prohibitive computational overhead, and mostly focused on optimizing a single clip without addressing how to tackle the full chip. In this paper, we present DAMO, a high performance and scalable deep learning-enabled OPC system for full chip scale. It is an end-to-end mask optimization paradigm which contains a Deep Lithography Simulator (DLS) for lithography modeling and a Deep Mask Generator (DMG) for mask pattern generation. Moreover, a novel layout splitting algorithm customized for DAMO is proposed to handle the full chip OPC problem. Extensive experiments show that DAMO outperforms the state-of-the-art OPC solutions in both academia and industrial commercial toolkit.
 </div>
 
@@ -125,19 +142,19 @@ Continuous scaling of the VLSI system leaves a great challenge on manufacturing 
 </tr>
 
 
-<tr id="tr-DATE21:levelset" >
+<tr id="tr-DATE21_levelset" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-6.
+[C1] 
 </td>
 <td>
-<img src="images/publications/DATE21:levelset.png" onerror="this.style.display='none'" class="publicationImg" />
+<img src="images/publications/DATE21_levelset.png" onerror="this.style.display='none'" class="publicationImg" />
 <em>A GPU-enabled Level Set Method for Mask Optimization</em> 
 [<a href='javascript:;'
-    onclick='$("#abs_DATE21:levelset").toggle()'>abs</a>]<br>
-<a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='http://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
+    onclick='$("#abs_DATE21_levelsetC").toggle()'>abs</a>]<br>
+<a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
 DATE 2020  <br>
 
-<div id="abs_DATE21:levelset" style="text-align: justify; display: none" markdown="1">
+<div id="abs_DATE21_levelsetC" style="text-align: justify; display: none" markdown="1">
 As the feature size of advanced integrated circuits keeps shrinking, resolution enhancement technique (RET) is utilized to improve the printability in the lithography process. Optical proximity correction (OPC) is one of the most widely used RETs aiming at compensating the mask to generate a more precise wafer image. In this paper, we put forward a level-set based OPC with high mask optimization quality and fast convergence. In order to suppress the disturbance of the condition fluctuation in lithography process, we propose a new process window-aware cost function. Then, a novel momentum-based evolution technique is adopted, which demonstrates substantial improvement. Moreover, graphics processing unit (GPU) is leveraged for accelerating the proposed algorithm. Experimental results on ICCAD 2013 benchmarks show that our algorithm outperforms all previous OPC algorithms in terms of both solution quality and runtime overhead.
 </div>
 

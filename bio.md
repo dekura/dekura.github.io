@@ -1,6 +1,1 @@
-Brandon Amos (http://bamos.github.io) is a Research Scientist at Meta AI's FAIR in NYC.
-He holds a PhD in Computer Science from Carnegie Mellon University supported by the USA National Science
-Foundation Graduate Research Fellowship (NSF GRFP), and has worked at Adobe Research, DeepMind,
-and Intel Labs prior to joining Meta. His research interests are in machine learning and
-optimization, with a focus on reinforcement learning, control, and recently on
-optimal transport, and geometry.
+Guojin Chen (https://gjchen.me) is now a Ph.D. student at The Chinese University of Hong Kong (CUHK-CSE) advised by Prof. Bei Yu. His research interests include (1) Machine Learning in VLSI Design for Manufacturability, (2) computer vision. He did some work focusing on computational lithography and mask optimization. Now, He is also looking for academic visit or research interns. His open source contributions can be found on his github profile (https://github.com/dekura).
