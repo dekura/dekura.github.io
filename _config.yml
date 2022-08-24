@@ -1,5 +1,6 @@
 name: Guojin Chen @ CUHK-CSE
-url: http://dekura.github.io
+title: Guojin Chen @ CUHK-CSE
+url: https://gjchen.me
 description: Home page of Guojin Chen @ CUHK-CSE. He is now PhD student at The Chinese University of Hong Kong (CUHK-CSE) and his research interests include deep learning in VLSI, reinforcement learning and computer vision. He is advised by Prof. Bei Yu.
 destination: ./_site
 twitter: joyg_phd
@@ -12,7 +13,7 @@ kramdown:
   syntax_highlighter: rouge
 permalink: pretty
 #seo
-tagline: Home site for Guojin Chen @ CUHK-CSE | PhD | VLSI | Machine Learning
+tagline: Home site for Guojin Chen @ CUHK-CSE | PhD | VLSI | Machine Learning | Guojin Chen | Guojin | CUHK | CSE | CS
 #paginate: 5
 plugins:
   - jekyll-sitemap

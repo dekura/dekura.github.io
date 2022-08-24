@@ -5,8 +5,9 @@ My research interests include (1) <b>Machine Learning in VLSI Design for Manufac
 I did some work focusing on computational lithography and mask optimization.
 Now, I am also looking for academic visit or research interns.
 My open source contributions can be found on my <a href="https://github.com/dekura" target="_blank">github profile</a>.
-</p><br>
+</p>
 
+---
 
 ## <i class="fa fa-chevron-right"></i> Education
 
