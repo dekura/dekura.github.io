@@ -41,14 +41,14 @@ My open source contributions can be found on my <a href="https://github.com/deku
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 31+ citations, h-index: 3+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 24+ citations, h-index: 3+]
 
 <h2>2022</h2>
 <table class="table table-hover">
 
 <tr id="tr-ECCV22_hilbert-curve" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-[C7] 
+[C6] 
 </td>
 <td>
 <img src="images/publications/ECCV22_hilbert-curve.png" onerror="this.style.display='none'" class="publicationImg" />
@@ -62,7 +62,7 @@ ECCV 2022  <br>
 
 <tr id="tr-ICCAD22_AdaOPC" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-[C6] 
+[C5] 
 </td>
 <td>
 <img src="images/publications/ICCAD22_AdaOPC.png" onerror="this.style.display='none'" class="publicationImg" />
@@ -70,22 +70,6 @@ ECCV 2022  <br>
 [<a href='javascript:;'
     onclick='$("#abs_ICCAD22_AdaOPCC").toggle()'>abs</a>]<br>
 <a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://appsrv.cse.cuhk.edu.hk/~xfyao/' target='_blank'>Xufeng&nbsp;Yao</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a><br>
-ICCAD 2022  <br>
-
-</td>
-</tr>
-
-
-<tr id="tr-ICCAD22:LayouTransformer" >
-<td align='right' style='padding-left:0;padding-right:0;'>
-[C5] 
-</td>
-<td>
-<img src="images/publications/ICCAD22:LayouTransformer.png" onerror="this.style.display='none'" class="publicationImg" />
-<em>LayouTransformer: Generating Layout Patterns with Transformer via Sequential Pattern Modeling</em> 
-[<a href='javascript:;'
-    onclick='$("#abs_ICCAD22:LayouTransformerC").toggle()'>abs</a>]<br>
-<a href='https://scholar.google.com/citations?user=jwHflLcAAAAJ' target='_blank'>Liangjian&nbsp;Wen</a>, <a href='https://yeezhu.github.io/' target='_blank'>Yi&nbsp;Zhu</a>, <a href='https://noahlab.com.hk/' target='_blank'>Lei&nbsp;Ye</a>, Guojin&nbsp;Chen, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, <a href='https://scholar.google.com/citations?user=sKauaAwAAAAJ' target='_blank'>Jianzhuang&nbsp;Liu</a>, and <a href='https://scholar.google.com/citations?user=-CJ5LkMAAAAJ' target='_blank'>Chunjing&nbsp;Xu</a><br>
 ICCAD 2022  <br>
 
 </td>
