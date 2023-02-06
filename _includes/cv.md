@@ -41,8 +41,27 @@ My open source contributions can be found on my <a href="https://github.com/deku
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 24+ citations, h-index: 3+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 45+ citations, h-index: 3+]
 
+<h2>2023</h2>
+<table class="table table-hover">
+
+<tr id="tr-SPIE23_GPULD" >
+<td align='right' style='padding-left:0;padding-right:0;'>
+[C7] 
+</td>
+<td>
+<img src="images/publications/SPIE23_GPULD.png" onerror="this.style.display='none'" class="publicationImg" />
+<em>A GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition</em> 
+[<a href='javascript:;'
+    onclick='$("#abs_SPIE23_GPULDC").toggle()'>abs</a>]<br>
+Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
+SPIE 2023  <br>
+
+</td>
+</tr>
+
+</table>
 <h2>2022</h2>
 <table class="table table-hover">
 
@@ -88,7 +107,7 @@ ICCAD 2022  <br>
 <em><a href='https://www.cse.cuhk.edu.hk/~byu/papers/C124-ICCAD2021-DevelSet.pdf' target='_blank'>DevelSet: Deep Neural Level Set for Instant Mask optimization</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_ICCAD21_develsetC").toggle()'>abs</a>]<br>
-Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
+Guojin&nbsp;Chen, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, <a href='https://liuhongduosc.github.io/' target='_blank'>Hongduo&nbsp;Liu</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
 ICCAD 2021  <br>
 
 <div id="abs_ICCAD21_develsetC" style="text-align: justify; display: none" markdown="1">
