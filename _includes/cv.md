@@ -46,6 +46,34 @@ Representative publications that I am a primary author on are
 <h2>2023</h2>
 <table class="table table-hover">
 
+<tr id="tr-DAC23_Nitho" style="background-color: #ffffd0">
+<td align='right' style='padding-left:0;padding-right:0;'>
+[C9] 
+</td>
+<td>
+<img src="images/publications/DAC23_Nitho.png" onerror="this.style.display='none'" class="publicationImg" />
+<em>Physics-Informed Optical Kernel Regression Using Complex-valued Neural Fields</em> <br>
+Guojin&nbsp;Chen, <a href='https://scholar.google.com/citations?user=FjZurHkAAAAJ' target='_blank'>Zehua&nbsp;Pei</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a><br>
+DAC 2023  <br>
+
+</td>
+</tr>
+
+
+<tr id="tr-DAC23_Diff" >
+<td align='right' style='padding-left:0;padding-right:0;'>
+[C8] 
+</td>
+<td>
+<img src="images/publications/DAC23_Diff.png" onerror="this.style.display='none'" class="publicationImg" />
+<em>DiffPattern: Layout Pattern Generation via Discrete Diffusion</em> <br>
+<a href='https://shiningsord.github.io/' target='_blank'>Zixiao&nbsp;Wang</a>, <a href='https://shiningsord.github.io/' target='_blank'>Yunheng&nbsp;Shen</a>, <a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://ybai62868.github.io/' target='_blank'>Yang&nbsp;Bai</a>, Guojin&nbsp;Chen, <a href='https://www.cse.cuhk.edu.hk/people/faculty/farzan-farnia/' target='_blank'>Farzan&nbsp;Farnia</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a><br>
+DAC 2023  <br>
+
+</td>
+</tr>
+
+
 <tr id="tr-SPIE23_GPULD" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 [C7] 
