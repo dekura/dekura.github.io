@@ -50,7 +50,7 @@ Representative publications that I am a primary author on are
 <table class="table table-hover">
 <tr id="tr-DAC23_Nitho" style="background-color: #ffffd0">
 <td align='right'>
-C9.
+C10.
 </td>
 <td>
     Physics-Informed Optical Kernel Regression Using Complex-valued Neural Fields <br>
@@ -63,7 +63,7 @@ C9.
 
 <tr id="tr-DAC23_Diff" >
 <td align='right'>
-C8.
+C9.
 </td>
 <td>
     DiffPattern: Layout Pattern Generation via Discrete Diffusion <br>
@@ -76,7 +76,7 @@ C8.
 
 <tr id="tr-SPIE23_GPULD" style="background-color: #ffffd0">
 <td align='right'>
-C7.
+C8.
 </td>
 <td>
     A GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition <br>
@@ -89,12 +89,25 @@ C7.
 
 <tr id="tr-ECCV22_hilbert-curve" >
 <td align='right'>
-C6.
+C7.
 </td>
 <td>
     Efficient Point Cloud Analysis Using Hilbert Curve. <br>
     <em><a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://xingezhu.me/' target='_blank'>Xinge&nbsp;Zhu</a>, Guojin&nbsp;Chen, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ECCV 2022  <br>
+    
+</td>
+</tr>
+
+
+<tr id="tr-ICCAD22:LayouTransformer" >
+<td align='right'>
+C6.
+</td>
+<td>
+    LayouTransformer: Generating Layout Patterns with Transformer via Sequential Pattern Modeling <br>
+    <em><a href='https://scholar.google.com/citations?user=jwHflLcAAAAJ' target='_blank'>Liangjian&nbsp;Wen</a>, <a href='https://yeezhu.github.io/' target='_blank'>Yi&nbsp;Zhu</a>, <a href='https://noahlab.com.hk/' target='_blank'>Lei&nbsp;Ye</a>, Guojin&nbsp;Chen, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, <a href='https://scholar.google.com/citations?user=sKauaAwAAAAJ' target='_blank'>Jianzhuang&nbsp;Liu</a>, and <a href='https://scholar.google.com/citations?user=-CJ5LkMAAAAJ' target='_blank'>Chunjing&nbsp;Xu</a></em><br>
+    ICCAD 2022  <br>
     
 </td>
 </tr>
