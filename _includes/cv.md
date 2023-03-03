@@ -54,7 +54,7 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-DAC23_Nitho" style="background-color: #ffffd0">
 <td align='right'>
-C10.
+[C10]
 </td>
 <td>
     Physics-Informed Optical Kernel Regression Using Complex-valued Neural Fields <br>
@@ -67,7 +67,7 @@ C10.
 
 <tr id="tr-DAC23_Diff" >
 <td align='right'>
-C9.
+[C9]
 </td>
 <td>
     DiffPattern: Layout Pattern Generation via Discrete Diffusion <br>
@@ -80,7 +80,7 @@ C9.
 
 <tr id="tr-SPIE23_GPULD" style="background-color: #ffffd0">
 <td align='right'>
-C8.
+[C8]
 </td>
 <td>
     A GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition <br>
@@ -93,7 +93,7 @@ C8.
 
 <tr id="tr-ECCV22_hilbert-curve" >
 <td align='right'>
-C7.
+[C7]
 </td>
 <td>
     Efficient Point Cloud Analysis Using Hilbert Curve. [<a href='https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136620717.pdf' target='_blank'>paper</a>] <br>
@@ -106,7 +106,7 @@ C7.
 
 <tr id="tr-ICCAD22:LayouTransformer" >
 <td align='right'>
-C6.
+[C6]
 </td>
 <td>
     LayouTransformer: Generating Layout Patterns with Transformer via Sequential Pattern Modeling [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C146-ICCAD2022-LayouTransformer.pdf' target='_blank'>paper</a>] <br>
@@ -119,7 +119,7 @@ C6.
 
 <tr id="tr-ICCAD22_AdaOPC" >
 <td align='right'>
-C5.
+[C5]
 </td>
 <td>
     AdaOPC: A Self-Adaptive Mask Optimization Framework For Real Design Patterns [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C148-ICCAD2022-AdaOPC.pdf' target='_blank'>paper</a>] <br>
@@ -132,7 +132,7 @@ C5.
 
 <tr id="tr-ICCAD21_develset" style="background-color: #ffffd0">
 <td align='right'>
-C4.
+[C4]
 </td>
 <td>
     DevelSet: Deep Neural Level Set for Instant Mask optimization 
@@ -151,7 +151,7 @@ With the feature size continuously shrinking in advanced technology nodes, mask 
 
 <tr id="tr-ISPD21_learn-pointcloud" >
 <td align='right'>
-C3.
+[C3]
 </td>
 <td>
     Learning Point Clouds in EDA. **(Invited Paper)** 
@@ -170,7 +170,7 @@ The exploding of deep learning techniques have motivated the development in vari
 
 <tr id="tr-ICCAD20_damo" style="background-color: #ffffd0">
 <td align='right'>
-C2.
+[C2]
 </td>
 <td>
     DAMO: Deep Agile Mask Optimization for Full Chip Scale 
@@ -189,7 +189,7 @@ Continuous scaling of the VLSI system leaves a great challenge on manufacturing 
 
 <tr id="tr-DATE21_levelset" >
 <td align='right'>
-C1.
+[C1]
 </td>
 <td>
     A GPU-enabled Level Set Method for Mask Optimization 
@@ -213,9 +213,9 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 
 <table class="table table-hover">
 
-<tr id="tr-9777761" >
+<tr id="tr-9777761" style="background-color: #ffffd0">
 <td align='right'>
-J2.
+[J2]
 </td>
 <td>
     A GPU-Enabled Level-Set Method for Mask Optimization [<a href='https://ieeexplore.ieee.org/document/9777761' target='_blank'>paper</a>] <br>
@@ -226,13 +226,13 @@ J2.
 </tr>
 
 
-<tr id="tr-DAMO_TCAD" >
+<tr id="tr-DAMO_TCAD" style="background-color: #ffffd0">
 <td align='right'>
-J1.
+[J1]
 </td>
 <td>
     DAMO: Deep Agile Mask Optimization for Full-Chip Scale [<a href='https://ieeexplore.ieee.org/document/9552247' target='_blank'>paper</a>] <br>
-    <em>Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, Qi&nbsp;Sun, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    <em>Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://scholar.google.com/citations?user=4OnODOAAAAAJ' target='_blank'>Qi&nbsp;Sun</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     TCAD 2022  <br>
     
 </td>
