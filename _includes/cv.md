@@ -41,13 +41,17 @@ The list is under construction and you are welcomed to submit your publications 
 
 ## <i class="fa fa-chevron-right"></i> Publications
 
-<!-- [<a href="https://github.com/bamos/cv/blob/master/publications/all.bib">BibTeX</a>] -->
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
 [<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 45+ citations, h-index: 3+]
 
+
+
+### <i class="fa fa-chevron-right"></i> Conference
+
 <table class="table table-hover">
+
 <tr id="tr-DAC23_Nitho" style="background-color: #ffffd0">
 <td align='right'>
 C10.
@@ -92,7 +96,7 @@ C8.
 C7.
 </td>
 <td>
-    Efficient Point Cloud Analysis Using Hilbert Curve. <br>
+    Efficient Point Cloud Analysis Using Hilbert Curve. [<a href='https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136620717.pdf' target='_blank'>paper</a>] <br>
     <em><a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://xingezhu.me/' target='_blank'>Xinge&nbsp;Zhu</a>, Guojin&nbsp;Chen, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ECCV 2022  <br>
     
@@ -105,7 +109,7 @@ C7.
 C6.
 </td>
 <td>
-    LayouTransformer: Generating Layout Patterns with Transformer via Sequential Pattern Modeling <br>
+    LayouTransformer: Generating Layout Patterns with Transformer via Sequential Pattern Modeling [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C146-ICCAD2022-LayouTransformer.pdf' target='_blank'>paper</a>] <br>
     <em><a href='https://scholar.google.com/citations?user=jwHflLcAAAAJ' target='_blank'>Liangjian&nbsp;Wen</a>, <a href='https://yeezhu.github.io/' target='_blank'>Yi&nbsp;Zhu</a>, <a href='https://noahlab.com.hk/' target='_blank'>Lei&nbsp;Ye</a>, Guojin&nbsp;Chen, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, <a href='https://scholar.google.com/citations?user=sKauaAwAAAAJ' target='_blank'>Jianzhuang&nbsp;Liu</a>, and <a href='https://scholar.google.com/citations?user=-CJ5LkMAAAAJ' target='_blank'>Chunjing&nbsp;Xu</a></em><br>
     ICCAD 2022  <br>
     
@@ -118,9 +122,7 @@ C6.
 C5.
 </td>
 <td>
-    AdaOPC: A Self-Adaptive Mask Optimization Framework For Real Design Patterns 
-[<a href='javascript:;'
-    onclick='$("#abs_ICCAD22_AdaOPCC").toggle()'>abs</a>]<br>
+    AdaOPC: A Self-Adaptive Mask Optimization Framework For Real Design Patterns [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C148-ICCAD2022-AdaOPC.pdf' target='_blank'>paper</a>] <br>
     <em><a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://appsrv.cse.cuhk.edu.hk/~xfyao/' target='_blank'>Xufeng&nbsp;Yao</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a></em><br>
     ICCAD 2022  <br>
     
@@ -192,7 +194,7 @@ C1.
 <td>
     A GPU-enabled Level Set Method for Mask Optimization 
 [<a href='javascript:;'
-    onclick='$("#abs_DATE21_levelsetC").toggle()'>abs</a>]<br>
+    onclick='$("#abs_DATE21_levelsetC").toggle()'>abs</a>] [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C115-DATE2021-LevelSet.pdf' target='_blank'>paper</a>] <br>
     <em><a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     DATE 2020  <br>
     
@@ -200,6 +202,39 @@ C1.
 As the feature size of advanced integrated circuits keeps shrinking, resolution enhancement technique (RET) is utilized to improve the printability in the lithography process. Optical proximity correction (OPC) is one of the most widely used RETs aiming at compensating the mask to generate a more precise wafer image. In this paper, we put forward a level-set based OPC with high mask optimization quality and fast convergence. In order to suppress the disturbance of the condition fluctuation in lithography process, we propose a new process window-aware cost function. Then, a novel momentum-based evolution technique is adopted, which demonstrates substantial improvement. Moreover, graphics processing unit (GPU) is leveraged for accelerating the proposed algorithm. Experimental results on ICCAD 2013 benchmarks show that our algorithm outperforms all previous OPC algorithms in terms of both solution quality and runtime overhead.
 </div>
 
+</td>
+</tr>
+
+</table>
+
+
+
+### <i class="fa fa-chevron-right"></i> Journal
+
+<table class="table table-hover">
+
+<tr id="tr-9777761" >
+<td align='right'>
+J2.
+</td>
+<td>
+    A GPU-Enabled Level-Set Method for Mask Optimization [<a href='https://ieeexplore.ieee.org/document/9777761' target='_blank'>paper</a>] <br>
+    <em><a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    TCAD 2023  <br>
+    
+</td>
+</tr>
+
+
+<tr id="tr-DAMO_TCAD" >
+<td align='right'>
+J1.
+</td>
+<td>
+    DAMO: Deep Agile Mask Optimization for Full-Chip Scale [<a href='https://ieeexplore.ieee.org/document/9552247' target='_blank'>paper</a>] <br>
+    <em>Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, Qi&nbsp;Sun, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    TCAD 2022  <br>
+    
 </td>
 </tr>
 
