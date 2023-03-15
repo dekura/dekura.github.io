@@ -239,6 +239,32 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 </table>
 
 
+## <i class="fa fa-chevron-right"></i> Professional Activities
+
+### <i class="fa fa-chevron-right"></i> Paper Review / External Review
+
+<table class="table table-hover">
+<tr>
+  <td style='padding-right:0;'>
+  <span class='cvdate'>2023</span>
+      Design Automation Conference (DAC)
+  </td>
+</tr>
+<tr>
+  <td style='padding-right:0;'>
+  <span class='cvdate'>2022</span>
+      AAAI Conference on Artificial Intelligence (AAAI)
+  </td>
+</tr>
+<tr>
+  <td style='padding-right:0;'>
+  <span class='cvdate'>2022-2023</span>
+      IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
+  </td>
+</tr>
+</table>
+
+
 ## <i class="fa fa-chevron-right"></i> Teaching
 <table class="table table-hover">
 <tr>
