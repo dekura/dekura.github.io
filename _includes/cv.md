@@ -55,7 +55,7 @@ Representative publications that I am a primary author on are
 [C10]
 </td>
 <td>
-    Physics-Informed Optical Kernel Regression Using Complex-valued Neural Fields <br>
+    Physics-Informed Optical Kernel Regression Using Complex-valued Neural Fields [<a href='https://arxiv.org/abs/2303.08435' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://scholar.google.com/citations?user=FjZurHkAAAAJ' target='_blank'>Zehua&nbsp;Pei</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a></em><br>
     DAC 2023  <br>
     
