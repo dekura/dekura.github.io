@@ -135,7 +135,7 @@ Representative publications that I am a primary author on are
 <td>
     DevelSet: Deep Neural Level Set for Instant Mask optimization 
 [<a href='javascript:;'
-    onclick='$("#abs_ICCAD21_develsetC").toggle()'>abs</a>] [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C124-ICCAD2021-DevelSet.pdf' target='_blank'>paper</a>] <br>
+    onclick='$("#abs_ICCAD21_develsetC").toggle()'>abs</a>] [<a href='https://arxiv.org/abs/2303.12529' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, <a href='https://liuhongduosc.github.io/' target='_blank'>Hongduo&nbsp;Liu</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ICCAD 2021  <br>
     
@@ -173,7 +173,7 @@ The exploding of deep learning techniques have motivated the development in vari
 <td>
     DAMO: Deep Agile Mask Optimization for Full Chip Scale 
 [<a href='javascript:;'
-    onclick='$("#abs_ICCAD20_damoC").toggle()'>abs</a>] [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C104-ICCAD2020-DAMO.pdf' target='_blank'>paper</a>] <br>
+    onclick='$("#abs_ICCAD20_damoC").toggle()'>abs</a>] [<a href='https://arxiv.org/abs/2008.00806' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ICCAD 2020  <br>
     
