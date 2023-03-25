@@ -42,7 +42,7 @@ The list is under construction and you are welcomed to submit your publications 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 45+ citations, h-index: 3+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 46+ citations, h-index: 3+]
 
 
 
@@ -81,7 +81,7 @@ Representative publications that I am a primary author on are
 [C8]
 </td>
 <td>
-    A GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition <br>
+    GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition <br>
     <em>Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     SPIE 2023  <br>
     
