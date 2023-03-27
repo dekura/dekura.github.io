@@ -52,7 +52,7 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-DAC23_Nitho" style="background-color: #ffffd0">
 <td align='right'>
-[C10]
+[C11]
 </td>
 <td>
     Physics-Informed Optical Kernel Regression Using Complex-valued Neural Fields [<a href='https://arxiv.org/abs/2303.08435' target='_blank'>paper</a>] <br>
@@ -65,7 +65,7 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-DAC23_Diff" >
 <td align='right'>
-[C9]
+[C10]
 </td>
 <td>
     DiffPattern: Layout Pattern Generation via Discrete Diffusion <br>
@@ -78,12 +78,25 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-SPIE23_GPULD" style="background-color: #ffffd0">
 <td align='right'>
-[C8]
+[C9]
 </td>
 <td>
     GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition <br>
     <em>Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     SPIE 2023  <br>
+    
+</td>
+</tr>
+
+
+<tr id="tr-OPC_OpenILT" style="background-color: #ffffd0">
+<td align='right'>
+[C8]
+</td>
+<td>
+    OpenILT: An Open-source Platform for Inverse Lithography Technology Research [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>paper</a>]  [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>code</a>] <br>
+    <em>Su&nbsp;Zheng, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, Binwu&nbsp;Zhu, Guojin&nbsp;Chen, <a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, Shuo&nbsp;Yin, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    Github 2023  <br>
     
 </td>
 </tr>
