@@ -68,7 +68,7 @@ Representative publications that I am a primary author on are
 [C10]
 </td>
 <td>
-    DiffPattern: Layout Pattern Generation via Discrete Diffusion <br>
+    DiffPattern: Layout Pattern Generation via Discrete Diffusion [<a href='https://arxiv.org/abs/2303.13060' target='_blank'>paper</a>] <br>
     <em><a href='https://shiningsord.github.io/' target='_blank'>Zixiao&nbsp;Wang</a>, <a href='https://shiningsord.github.io/' target='_blank'>Yunheng&nbsp;Shen</a>, <a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://ybai62868.github.io/' target='_blank'>Yang&nbsp;Bai</a>, Guojin&nbsp;Chen, <a href='https://www.cse.cuhk.edu.hk/people/faculty/farzan-farnia/' target='_blank'>Farzan&nbsp;Farnia</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     DAC 2023  <br>
     
@@ -96,7 +96,7 @@ Representative publications that I am a primary author on are
 <td>
     OpenILT: An Open-source Platform for Inverse Lithography Technology Research [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>paper</a>]  [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>code</a>] <br>
     <em>Su&nbsp;Zheng, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, Binwu&nbsp;Zhu, Guojin&nbsp;Chen, <a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, Shuo&nbsp;Yin, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
-    Github 2023  <br>
+    GitHub 2023  <br>
     
 </td>
 </tr>
