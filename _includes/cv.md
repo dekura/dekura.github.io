@@ -95,7 +95,7 @@ Representative publications that I am a primary author on are
 </td>
 <td>
     OpenILT: An Open-source Platform for Inverse Lithography Technology Research [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>paper</a>]  [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>code</a>] <br>
-    <em>Su&nbsp;Zheng, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, Binwu&nbsp;Zhu, Guojin&nbsp;Chen, <a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, Shuo&nbsp;Yin, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    <em><a href='https://shelljane.github.io/' target='_blank'>Su&nbsp;Zheng</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://kins1ley.github.io/' target='_blank'>Binwu&nbsp;Zhu</a>, Guojin&nbsp;Chen, <a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://sawydust1228.github.io/' target='_blank'>Shuo&nbsp;Yin</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     GitHub 2023  <br>
     
 </td>
