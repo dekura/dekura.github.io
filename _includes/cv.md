@@ -81,7 +81,7 @@ Representative publications that I am a primary author on are
 [C9]
 </td>
 <td>
-    GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition <br>
+    GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition [<a href='https://arxiv.org/abs/2303.14335' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     SPIE 2023  <br>
     
