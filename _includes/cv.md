@@ -10,33 +10,6 @@ The list is under construction and you are welcomed to submit your publications 
 </p><br>
 
 
-## <i class="fa fa-chevron-right"></i> Education
-
-<table class="table table-hover">
-  <tr>
-    <td>
-      <span class='cvdate'>2021&nbsp;-&nbsp;Present</span>
-      <strong>Ph.D. in Computer Science</strong>, <em>The Chinese University of Hong Kong</em>
-      <br>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <span class='cvdate'>2019&nbsp;-&nbsp;2020</span>
-      <strong>M.S. in Computer Science</strong>, <em>The Chinese University of Hong Kong</em>
-      <br>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <span class='cvdate'>2015&nbsp;-&nbsp;2019</span>
-      <strong>B.S. in Computer Science</strong>, <em>Huazhong University of Science and Technology</em>
-      <br>
-    </td>
-  </tr>
-</table>
-
-
 ## <i class="fa fa-chevron-right"></i> Publications
 
 Representative publications that I am a primary author on are
