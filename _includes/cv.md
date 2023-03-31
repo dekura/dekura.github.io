@@ -25,7 +25,7 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-DAC23_Nitho" style="background-color: #ffffd0">
 <td align='right'>
-[C11]
+[C10]
 </td>
 <td>
     Physics-Informed Optical Kernel Regression Using Complex-valued Neural Fields [<a href='https://arxiv.org/abs/2303.08435' target='_blank'>paper</a>] <br>
@@ -38,7 +38,7 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-DAC23_Diff" >
 <td align='right'>
-[C10]
+[C9]
 </td>
 <td>
     DiffPattern: Layout Pattern Generation via Discrete Diffusion [<a href='https://arxiv.org/abs/2303.13060' target='_blank'>paper</a>] <br>
@@ -51,7 +51,7 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-SPIE23_GPULD" style="background-color: #ffffd0">
 <td align='right'>
-[C9]
+[C8]
 </td>
 <td>
     GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition [<a href='https://arxiv.org/abs/2303.14335' target='_blank'>paper</a>] <br>
@@ -64,7 +64,7 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-OPC_OpenILT" style="background-color: #ffffd0">
 <td align='right'>
-[C8]
+[C7]
 </td>
 <td>
     OpenILT: An Open-source Platform for Inverse Lithography Technology Research [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>paper</a>]  [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>code</a>] <br>
@@ -77,25 +77,12 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-ECCV22_hilbert-curve" >
 <td align='right'>
-[C7]
+[C6]
 </td>
 <td>
     Efficient Point Cloud Analysis Using Hilbert Curve. [<a href='https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136620717.pdf' target='_blank'>paper</a>] <br>
     <em><a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://xingezhu.me/' target='_blank'>Xinge&nbsp;Zhu</a>, Guojin&nbsp;Chen, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ECCV 2022  <br>
-    
-</td>
-</tr>
-
-
-<tr id="tr-ICCAD22:LayouTransformer" >
-<td align='right'>
-[C6]
-</td>
-<td>
-    LayouTransformer: Generating Layout Patterns with Transformer via Sequential Pattern Modeling [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C146-ICCAD2022-LayouTransformer.pdf' target='_blank'>paper</a>] <br>
-    <em><a href='https://scholar.google.com/citations?user=jwHflLcAAAAJ' target='_blank'>Liangjian&nbsp;Wen</a>, <a href='https://yeezhu.github.io/' target='_blank'>Yi&nbsp;Zhu</a>, <a href='https://noahlab.com.hk/' target='_blank'>Lei&nbsp;Ye</a>, Guojin&nbsp;Chen, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, <a href='https://scholar.google.com/citations?user=sKauaAwAAAAJ' target='_blank'>Jianzhuang&nbsp;Liu</a>, and <a href='https://scholar.google.com/citations?user=-CJ5LkMAAAAJ' target='_blank'>Chunjing&nbsp;Xu</a></em><br>
-    ICCAD 2022  <br>
     
 </td>
 </tr>
