@@ -10,39 +10,12 @@ The list is under construction and you are welcomed to submit your publications 
 </p><br>
 
 
-## <i class="fa fa-chevron-right"></i> Education
-
-<table class="table table-hover">
-  <tr>
-    <td>
-      <span class='cvdate'>2021&nbsp;-&nbsp;Present</span>
-      <strong>Ph.D. in Computer Science</strong>, <em>The Chinese University of Hong Kong</em>
-      <br>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <span class='cvdate'>2019&nbsp;-&nbsp;2020</span>
-      <strong>M.S. in Computer Science</strong>, <em>The Chinese University of Hong Kong</em>
-      <br>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <span class='cvdate'>2015&nbsp;-&nbsp;2019</span>
-      <strong>B.S. in Computer Science</strong>, <em>Huazhong University of Science and Technology</em>
-      <br>
-    </td>
-  </tr>
-</table>
-
-
 ## <i class="fa fa-chevron-right"></i> Publications
 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 45+ citations, h-index: 3+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 53+ citations, h-index: 4+]
 
 
 
@@ -52,7 +25,7 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-DAC23_Nitho" style="background-color: #ffffd0">
 <td align='right'>
-[C10]
+[C11]
 </td>
 <td>
     Physics-Informed Optical Kernel Regression Using Complex-valued Neural Fields [<a href='https://arxiv.org/abs/2303.08435' target='_blank'>paper</a>] <br>
@@ -65,10 +38,10 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-DAC23_Diff" >
 <td align='right'>
-[C9]
+[C10]
 </td>
 <td>
-    DiffPattern: Layout Pattern Generation via Discrete Diffusion <br>
+    DiffPattern: Layout Pattern Generation via Discrete Diffusion [<a href='https://arxiv.org/abs/2303.13060' target='_blank'>paper</a>] <br>
     <em><a href='https://shiningsord.github.io/' target='_blank'>Zixiao&nbsp;Wang</a>, <a href='https://shiningsord.github.io/' target='_blank'>Yunheng&nbsp;Shen</a>, <a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://ybai62868.github.io/' target='_blank'>Yang&nbsp;Bai</a>, Guojin&nbsp;Chen, <a href='https://www.cse.cuhk.edu.hk/people/faculty/farzan-farnia/' target='_blank'>Farzan&nbsp;Farnia</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     DAC 2023  <br>
     
@@ -78,12 +51,25 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-SPIE23_GPULD" style="background-color: #ffffd0">
 <td align='right'>
+[C9]
+</td>
+<td>
+    GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition [<a href='https://arxiv.org/abs/2303.14335' target='_blank'>paper</a>] <br>
+    <em>Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    SPIE 2023  <br>
+    
+</td>
+</tr>
+
+
+<tr id="tr-OPC_OpenILT" style="background-color: #ffffd0">
+<td align='right'>
 [C8]
 </td>
 <td>
-    A GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition <br>
-    <em>Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
-    SPIE 2023  <br>
+    OpenILT: An Open-source Platform for Inverse Lithography Technology Research [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>paper</a>]  [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>code</a>] <br>
+    <em><a href='https://shelljane.github.io/' target='_blank'>Su&nbsp;Zheng</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://kins1ley.github.io/' target='_blank'>Binwu&nbsp;Zhu</a>, Guojin&nbsp;Chen, <a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://sawydust1228.github.io/' target='_blank'>Shuo&nbsp;Yin</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    GitHub 2023  <br>
     
 </td>
 </tr>
@@ -135,7 +121,7 @@ Representative publications that I am a primary author on are
 <td>
     DevelSet: Deep Neural Level Set for Instant Mask optimization 
 [<a href='javascript:;'
-    onclick='$("#abs_ICCAD21_develsetC").toggle()'>abs</a>] [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C124-ICCAD2021-DevelSet.pdf' target='_blank'>paper</a>] <br>
+    onclick='$("#abs_ICCAD21_develsetC").toggle()'>abs</a>] [<a href='https://arxiv.org/abs/2303.12529' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, <a href='https://liuhongduosc.github.io/' target='_blank'>Hongduo&nbsp;Liu</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ICCAD 2021  <br>
     
@@ -173,7 +159,7 @@ The exploding of deep learning techniques have motivated the development in vari
 <td>
     DAMO: Deep Agile Mask Optimization for Full Chip Scale 
 [<a href='javascript:;'
-    onclick='$("#abs_ICCAD20_damoC").toggle()'>abs</a>] [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C104-ICCAD2020-DAMO.pdf' target='_blank'>paper</a>] <br>
+    onclick='$("#abs_ICCAD20_damoC").toggle()'>abs</a>] [<a href='https://arxiv.org/abs/2008.00806' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ICCAD 2020  <br>
     
