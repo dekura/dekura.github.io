@@ -19,7 +19,7 @@ The list is under construction and you are welcomed to submit your publications 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 58+ citations, h-index: 4+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 61+ citations, h-index: 4+]
 
 
 
@@ -190,11 +190,24 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 
 <tr id="tr-9777761" style="background-color: #ffffd0">
 <td align='right'>
-[J2]
+[J3]
 </td>
 <td>
     A GPU-Enabled Level-Set Method for Mask Optimization [<a href='https://ieeexplore.ieee.org/document/9777761' target='_blank'>paper</a>] <br>
     <em><a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    TCAD 2023  <br>
+    
+</td>
+</tr>
+
+
+<tr id="tr-DevelSet_TCAD" style="background-color: #ffffd0">
+<td align='right'>
+[J2]
+</td>
+<td>
+    DevelSet: Deep Neural Level Set for Instant Mask optimization <br>
+    <em>Guojin&nbsp;Chen, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, <a href='https://liuhongduosc.github.io/' target='_blank'>Hongduo&nbsp;Liu</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     TCAD 2023  <br>
     
 </td>
