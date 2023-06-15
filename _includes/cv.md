@@ -1,17 +1,8 @@
 <p align='justify'>
 Greetings! I'm a Ph.D. candidate at The Chinese University of Hong Kong (CUHK-CSE),
 where I'm fortunate to work under the guidance of Professor <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> and co-supervised by Professor  <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D. F. Wong</a>.
-My primary research area revolves around <b>computational lithography</b> and <b>mask optimization</b>, which involves developing algorithms to enhance the manufacturing process of integrated circuits.
-I'm also interested in exploring (1) the potential of <b>deep learning in VLSI design</b> and (2) <b>utilizing physics-informed networks to tackle EDA area problems</b>.
-
-Furthermore, I'm actively seeking opportunities to broaden my research experience by embarking on academic visits or research internships.
-I'm enthusiastic about collaborating with experts in the field and contributing to innovative projects.
-Please feel free to contact me if you have any suggestions or potential collaborations in mind.
+My primary research area revolves around design for manufacturing.
 </p>
-<p align='justify'>
-I'm also maintaining a curated list of <b>AI for EDA</b> papers. Check it out here: <a href="https://ai4eda.github.io" target="_blank">Awesome AI for EDA</a>.
-The list is under construction and you are welcomed to submit your publications follow <a href="https://ai4eda.github.io/about/" target="_blank">the instructions</a>.
-</p><br>
 
 
 ## <i class="fa fa-chevron-right"></i> Publications
@@ -190,11 +181,24 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 
 <tr id="tr-9777761" style="background-color: #ffffd0">
 <td align='right'>
-[J2]
+[J3]
 </td>
 <td>
     A GPU-Enabled Level-Set Method for Mask Optimization [<a href='https://ieeexplore.ieee.org/document/9777761' target='_blank'>paper</a>] <br>
     <em><a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    TCAD 2023  <br>
+    
+</td>
+</tr>
+
+
+<tr id="tr-DevelSet_TCAD" style="background-color: #ffffd0">
+<td align='right'>
+[J2]
+</td>
+<td>
+    DevelSet: Deep Neural Level Set for Instant Mask optimization <br>
+    <em>Guojin&nbsp;Chen, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, <a href='https://liuhongduosc.github.io/' target='_blank'>Hongduo&nbsp;Liu</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     TCAD 2023  <br>
     
 </td>
@@ -213,32 +217,6 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 </td>
 </tr>
 
-</table>
-
-
-## <i class="fa fa-chevron-right"></i> Professional Activities
-
-### <i class="fa fa-chevron-right"></i> Paper Review / External Review
-
-<table class="table table-hover">
-<tr>
-  <td style='padding-right:0;'>
-  <span class='cvdate'>2023</span>
-      Design Automation Conference (DAC)
-  </td>
-</tr>
-<tr>
-  <td style='padding-right:0;'>
-  <span class='cvdate'>2022</span>
-      AAAI Conference on Artificial Intelligence (AAAI)
-  </td>
-</tr>
-<tr>
-  <td style='padding-right:0;'>
-  <span class='cvdate'>2022-2023</span>
-      IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
-  </td>
-</tr>
 </table>
 
 
