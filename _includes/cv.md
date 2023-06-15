@@ -10,7 +10,7 @@ My primary research area revolves around design for manufacturing.
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 58+ citations, h-index: 4+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 61+ citations, h-index: 4+]
 
 
 
