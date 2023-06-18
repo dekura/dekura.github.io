@@ -1,8 +1,17 @@
 <p align='justify'>
 Greetings! I'm a Ph.D. candidate at The Chinese University of Hong Kong (CUHK-CSE),
 where I'm fortunate to work under the guidance of Professor <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> and co-supervised by Professor  <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D. F. Wong</a>.
-My primary research area revolves around design for manufacturing.
+My primary research area revolves around <b>computational lithography</b> and <b>mask optimization</b>, which involves developing algorithms to enhance the manufacturing process of integrated circuits.
+I'm also interested in exploring (1) the potential of <b>deep learning in VLSI design</b> and (2) <b>utilizing physics-informed networks to tackle EDA area problems</b>.
+
+Furthermore, I'm actively seeking opportunities to broaden my research experience by embarking on academic visits or research internships.
+I'm enthusiastic about collaborating with experts in the field and contributing to innovative projects.
+Please feel free to contact me if you have any suggestions or potential collaborations in mind.
 </p>
+<p align='justify'>
+I'm also maintaining a curated list of <b>AI for EDA</b> papers. Check it out here: <a href="https://ai4eda.github.io" target="_blank">Awesome AI for EDA</a>.
+The list is under construction and you are welcomed to submit your publications follow <a href="https://ai4eda.github.io/about/" target="_blank">the instructions</a>.
+</p><br>
 
 
 ## <i class="fa fa-chevron-right"></i> Publications
@@ -10,7 +19,7 @@ My primary research area revolves around design for manufacturing.
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 58+ citations, h-index: 4+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 61+ citations, h-index: 4+]
 
 
 
@@ -20,7 +29,7 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-DAC23_Nitho" style="background-color: #ffffd0">
 <td align='right'>
-[C10]
+[C11]
 </td>
 <td>
     Physics-Informed Optical Kernel Regression Using Complex-valued Neural Fields [<a href='https://arxiv.org/abs/2303.08435' target='_blank'>paper</a>] <br>
@@ -33,7 +42,7 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-DAC23_Diff" >
 <td align='right'>
-[C9]
+[C10]
 </td>
 <td>
     DiffPattern: Layout Pattern Generation via Discrete Diffusion [<a href='https://arxiv.org/abs/2303.13060' target='_blank'>paper</a>] <br>
@@ -46,7 +55,7 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-SPIE23_GPULD" style="background-color: #ffffd0">
 <td align='right'>
-[C8]
+[C9]
 </td>
 <td>
     GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition [<a href='https://arxiv.org/abs/2303.14335' target='_blank'>paper</a>] <br>
@@ -59,7 +68,7 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-OPC_OpenILT" style="background-color: #ffffd0">
 <td align='right'>
-[C7]
+[C8]
 </td>
 <td>
     OpenILT: An Open-source Platform for Inverse Lithography Technology Research [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>paper</a>]  [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>code</a>] <br>
@@ -72,7 +81,7 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-ECCV22_hilbert-curve" >
 <td align='right'>
-[C6]
+[C7]
 </td>
 <td>
     Efficient Point Cloud Analysis Using Hilbert Curve. [<a href='https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136620717.pdf' target='_blank'>paper</a>] <br>
@@ -85,11 +94,24 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-ICCAD22_AdaOPC" >
 <td align='right'>
-[C5]
+[C6]
 </td>
 <td>
     AdaOPC: A Self-Adaptive Mask Optimization Framework For Real Design Patterns [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C148-ICCAD2022-AdaOPC.pdf' target='_blank'>paper</a>] <br>
     <em><a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://appsrv.cse.cuhk.edu.hk/~xfyao/' target='_blank'>Xufeng&nbsp;Yao</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a></em><br>
+    ICCAD 2022  <br>
+    
+</td>
+</tr>
+
+
+<tr id="tr-ICCAD22:LayouTransformer" >
+<td align='right'>
+[C5]
+</td>
+<td>
+    LayouTransformer: Generating Layout Patterns with Transformer via Sequential Pattern Modeling [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C146-ICCAD2022-LayouTransformer.pdf' target='_blank'>paper</a>] <br>
+    <em><a href='https://scholar.google.com/citations?user=jwHflLcAAAAJ' target='_blank'>Liangjian&nbsp;Wen</a>, <a href='https://yeezhu.github.io/' target='_blank'>Yi&nbsp;Zhu</a>, <a href='https://noahlab.com.hk/' target='_blank'>Lei&nbsp;Ye</a>, Guojin&nbsp;Chen, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, <a href='https://scholar.google.com/citations?user=sKauaAwAAAAJ' target='_blank'>Jianzhuang&nbsp;Liu</a>, and <a href='https://scholar.google.com/citations?user=-CJ5LkMAAAAJ' target='_blank'>Chunjing&nbsp;Xu</a></em><br>
     ICCAD 2022  <br>
     
 </td>
@@ -217,6 +239,32 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 </td>
 </tr>
 
+</table>
+
+
+## <i class="fa fa-chevron-right"></i> Professional Activities
+
+### <i class="fa fa-chevron-right"></i> Paper Review / External Review
+
+<table class="table table-hover">
+<tr>
+  <td style='padding-right:0;'>
+  <span class='cvdate'>2023</span>
+      Design Automation Conference (DAC)
+  </td>
+</tr>
+<tr>
+  <td style='padding-right:0;'>
+  <span class='cvdate'>2022</span>
+      AAAI Conference on Artificial Intelligence (AAAI)
+  </td>
+</tr>
+<tr>
+  <td style='padding-right:0;'>
+  <span class='cvdate'>2022-2023</span>
+      IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
+  </td>
+</tr>
 </table>
 
 
