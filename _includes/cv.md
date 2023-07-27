@@ -1,10 +1,14 @@
 <p align='justify'>
-Greetings! I'm a Ph.D. candidate at The Chinese University of Hong Kong (CUHK-CSE),
-where I'm fortunate to work under the guidance of Professor <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> and co-supervised by Professor  <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D. F. Wong</a>.
-My primary research area revolves around <b>computational lithography</b> and <b>mask optimization</b>, which involves developing algorithms to enhance the manufacturing process of integrated circuits.
-I'm also interested in exploring (1) the potential of <b>deep learning in VLSI design</b> and (2) <b>utilizing physics-informed networks to tackle EDA area problems</b>.
+Greetings! I’m currently a Visiting Scholar at UT Austin,
+under the guidance of Professor <a href="http://users.ece.utexas.edu/~dpan/" target="_blank">David Z. Pan</a>.
+I'm thrilled to have this opportunity to collaborate and expand my research horizons at <a href="https://www.cerc.utexas.edu/utda/" target="_blank">UTDA</a>.
+I am also a Ph.D. candidate at The Chinese University of Hong Kong (CUHK-CSE),
+where I have been fortunate to work with Professor <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> and co-supervised by Professor <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D. F. Wong</a>.
+My primary research area revolves around <b>computational lithography</b> and <b>mask optimization</b>,
+focusing on developing algorithms to enhance the manufacturing process of integrated circuits.
+I'm also deeply interested in exploring the potential of <b>deep learning in VLSI design</b>
+and utilizing <b>physics-informed networks to tackle EDA area problems</b>.
 
-Furthermore, I'm actively seeking opportunities to broaden my research experience by embarking on academic visits or research internships.
 I'm enthusiastic about collaborating with experts in the field and contributing to innovative projects.
 Please feel free to contact me if you have any suggestions or potential collaborations in mind.
 </p>
@@ -26,6 +30,19 @@ Representative publications that I am a primary author on are
 ### <i class="fa fa-chevron-right"></i> Conference
 
 <table class="table table-hover">
+
+<tr id="tr-ICCAD23:AlphaSyn" >
+<td align='right'>
+[C12]
+</td>
+<td>
+    AlphaSyn: Logic Synthesis Optimization with Efficient Monte Carlo Tree Search <br>
+    <em><a href='https://scholar.google.com/citations?user=FjZurHkAAAAJ' target='_blank'>Zehua&nbsp;Pei</a>, <a href='https://gjchen.me' target='_blank'>Fangzhou&nbsp;Liu</a>, <a href='https://zleonhe.github.io/' target='_blank'>Zhuolun&nbsp;He</a>, Guojin&nbsp;Chen, <a href='https://gjchen.me' target='_blank'>Haisheng&nbsp;Zheng</a>, <a href='https://krz.engineer/' target='_blank'>Keren&nbsp;Zhu</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    ICCAD 2023  <br>
+    
+</td>
+</tr>
+
 
 <tr id="tr-DAC23_Nitho" style="background-color: #ffffd0">
 <td align='right'>
