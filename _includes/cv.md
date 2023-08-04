@@ -1,5 +1,5 @@
 <p align='justify'>
-Greetings! I’m currently a Visiting Scholar at UT Austin,
+Greetings! I’m currently a visiting student at UT Austin,
 under the guidance of Professor <a href="http://users.ece.utexas.edu/~dpan/" target="_blank">David Z. Pan</a>.
 I'm thrilled to have this opportunity to collaborate and expand my research horizons at <a href="https://www.cerc.utexas.edu/utda/" target="_blank">UTDA</a>.
 I am also a Ph.D. candidate at The Chinese University of Hong Kong (CUHK-CSE),
