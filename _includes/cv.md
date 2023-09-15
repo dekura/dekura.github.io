@@ -237,7 +237,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
     L2O-ILT: Learning to Optimize Inverse Lithography Techniques 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
 <br>
-    <em><a href='https://kins1ley.github.io/' target='_blank'>Binwu&nbsp;Zhu</a>, <a href='https://shelljane.github.io/' target='_blank'>Su&nbsp;Zheng</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, Fan&nbsp;Yang, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a></em><br>
+    <em><a href='https://kins1ley.github.io/' target='_blank'>Binwu&nbsp;Zhu</a>, <a href='https://shelljane.github.io/' target='_blank'>Su&nbsp;Zheng</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://sme.fudan.edu.cn/65/41/c31277a353601/page.htm' target='_blank'>Fan&nbsp;Yang</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a></em><br>
     TCAD 2023  <br>
     
 </td>
