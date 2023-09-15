@@ -7,7 +7,7 @@ layout: base
     <div class="col-md-6 col-md-offset-1 vcenter idxHdr">
       <div style='font-size: 2em; color: #4582ec; font-weight: bold; padding-bottom: 0.3em;'>Guojin Chen</div>
       {% comment %} <div style='font-size: 1.2em;'>
-        Research Scientist
+      Research Scientist
       </div> {% endcomment %}
       <div style='font-size: 1em; margin: 0.3em'>
         <a href="https://www.cse.cuhk.edu.hk/">Department of Computer Science and Engineering</a>
@@ -16,63 +16,93 @@ layout: base
         <a href="http://www.cuhk.edu.hk/">The Chinese University of Hong Kong</a>
       </div>
       <br/>
+      {% comment %}
       <div style="padding: 0.3em; background-color: #4582ec; display: inline-block; border-radius: 4px; font-size: 1em;">
-        <a href="data/cv.pdf" target='_blank' style='text-decoration: none;'>
-          <i style='color: white' class="fa fa-download"></i>
-        </a>
-        {% comment %} <a href="https://github.com/dekura/cv" target='_blank' style='text-decoration: none;'>
-          <i style='color: white' class="fa fa-code-fork"></i>
-        </a> {% endcomment %}
-        <a href="data/cv.pdf" target='_blank' style='color: white; text-decoration: none;'>Resume</a>
+      <a
+      href="data/cv.pdf"
+      target='_blank'
+      style='text-decoration: none;'>
+      <i style='color: white' class="fa fa-download"></i>
+      </a>
+      <a href="https://github.com/dekura/cv" target='_blank' style='text-decoration: none;'>
+      <i style='color: white' class="fa fa-code-fork"></i>
+      </a> 
+      <a
+      href="data/cv.pdf"
+      target='_blank'
+      style='color: white; text-decoration: none;'>CV</a>
       </div>
+      {% endcomment %}
 
       <ul class="list-inline idxIcons" style='font-size: 1.5em; margin-top: 0.5em;'>
         <li>
           <a href="http://github.com/dekura" target="_blank">
-            <i class="fa fa-fw fa-github"></i></a>
+            <i class="fa fa-fw fa-github"></i>
+          </a>
         </li>
         {% comment %} <li>
-          <a href="http://twitter.com/joyg_phd" target="_blank">
-            <i class="fa fa-fw fa-twitter"></i></a>
+        <a href="http://twitter.com/joyg_phd" target="_blank">
+        <i class="fa fa-fw fa-twitter"></i></a>
         </li> {% endcomment %}
         <li>
           <a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">
-          <i class="ai ai-google-scholar"></i></a>
+            <i class="ai ai-google-scholar"></i>
+          </a>
         </li>
         <li>
           <a href="http://www.linkedin.com/in/dekura" target="_blank">
-            <i class="fa fa-fw fa-linkedin"></i></a>
+            <i class="fa fa-fw fa-linkedin"></i>
+          </a>
         </li>
         <li>
-          <a href="mailto:cgjcuhk@gmail.com" target="_blank" style='text-decoration: none;'>
-            <i class="fa fa-fw fa-envelope" style='font-size: 1em;'></i></a>
+          <a
+            href="mailto:cgjcuhk@gmail.com"
+            target="_blank"
+            style='text-decoration: none;'>
+            <i class="fa fa-fw fa-envelope" style='font-size: 1em;'></i>
+          </a>
+        </li>
+        <li>
+          <div style="padding: 0.3em 0.3em 0.1em 0.3em; background-color: #4582ec; display: inline-block; border-radius: 5px; font-size: 0.7em;">
+            <a
+              href="data/cv.pdf"
+              target='_blank'
+              style='text-decoration: none;'>
+              <i style='color: white' class="fa fa-download"></i>
+            </a>
+            <a
+              href="data/cv.pdf"
+              target='_blank'
+              style='color: white; text-decoration: none;'>CV</a>
+          </div>
         </li>
         {% comment %} <li>
-          <a href="/atom.xml" target="_blank">
-            <i class="fa fa-fw fa-rss"></i></a>
+        <a href="/atom.xml" target="_blank">
+        <i class="fa fa-fw fa-rss"></i></a>
         </li> {% endcomment %}
       </ul>
     </div>
     <div class="col-md-3 vcenter idxHdr">
       <a href="/images/me_large.jpg">
-        <img src="/images/me.jpg"
-             style="border-radius: 20px; margin: 10px; max-width: none; width: 100%; min-height: 17em"
-             alt="Me."/>
+        <img
+          src="/images/me.jpg"
+          style="border-radius: 20px; margin: 10px; max-width: none; width: 100%; min-height: 17em"
+          alt="Me." />
       </a>
     </div>
   </div>
 
   <div class="row">
-        <blockquote class="col-sm-10 col-sm-offset-1">
-            <div class="col-sm-8" style="margin-left:1.1em">
-                Do Not Go Gentle Into That Good Night.
-            </div>
-            <div class="text-right">
-                --『 Interstellar 』, Dylan Thomas.
-            </div>
-        </blockquote>
+    <blockquote class="col-sm-10 col-sm-offset-1">
+      <div class="col-sm-8" style="margin-left:1.1em">
+        Do Not Go Gentle Into That Good Night.
+      </div>
+      <div class="text-right">
+        --『 Interstellar 』, Dylan Thomas.
+      </div>
+    </blockquote>
     <div class="col-md-12">
-        {{ content }}
+      {{ content }}
     </div>
   </div>
 </div>
