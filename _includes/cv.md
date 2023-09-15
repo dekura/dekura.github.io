@@ -29,19 +29,19 @@ Representative publications that I am a primary author on are
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 
 
-### <i class="fa fa-chevron-right"></i> Conference
+### <i class="fa fa-chevron-right"></i> Conference papers
 
 <table class="table table-hover">
 
 <tr id="tr-ICCAD23:AlphaSyn" >
 <td align='right'>
-[C12]
+[C11]
 </td>
 <td>
     AlphaSyn: Logic Synthesis Optimization with Efficient Monte Carlo Tree Search 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
 <br>
-    <em><a href='https://scholar.google.com/citations?user=FjZurHkAAAAJ' target='_blank'>Zehua&nbsp;Pei</a>, <a href='https://gjchen.me' target='_blank'>Fangzhou&nbsp;Liu</a>, <a href='https://zleonhe.github.io/' target='_blank'>Zhuolun&nbsp;He</a>, Guojin&nbsp;Chen, <a href='https://gjchen.me' target='_blank'>Haisheng&nbsp;Zheng</a>, <a href='https://krz.engineer/' target='_blank'>Keren&nbsp;Zhu</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    <em><a href='https://appsrv.cse.cuhk.edu.hk/~zhpei23/' target='_blank'>Zehua&nbsp;Pei</a>, <a href='https://gjchen.me' target='_blank'>Fangzhou&nbsp;Liu</a>, <a href='https://zleonhe.github.io/' target='_blank'>Zhuolun&nbsp;He</a>, Guojin&nbsp;Chen, <a href='https://gjchen.me' target='_blank'>Haisheng&nbsp;Zheng</a>, <a href='https://krz.engineer/' target='_blank'>Keren&nbsp;Zhu</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ICCAD 2023  <br>
     
 </td>
@@ -50,13 +50,13 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-DAC23_Nitho" style="background-color: #ffffd0">
 <td align='right'>
-[C11]
+[C10]
 </td>
 <td>
     Physics-Informed Optical Kernel Regression Using Complex-valued Neural Fields 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://arxiv.org/abs/2303.08435' target='_blank'>paper</a>] <br>
-    <em>Guojin&nbsp;Chen, <a href='https://scholar.google.com/citations?user=FjZurHkAAAAJ' target='_blank'>Zehua&nbsp;Pei</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a></em><br>
+<br>
+    <em>Guojin&nbsp;Chen, <a href='https://appsrv.cse.cuhk.edu.hk/~zhpei23/' target='_blank'>Zehua&nbsp;Pei</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a></em><br>
     DAC 2023  <br>
     
 </td>
@@ -65,12 +65,12 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-DAC23_Diff" >
 <td align='right'>
-[C10]
+[C9]
 </td>
 <td>
     DiffPattern: Layout Pattern Generation via Discrete Diffusion 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://arxiv.org/abs/2303.13060' target='_blank'>paper</a>] <br>
+<br>
     <em><a href='https://shiningsord.github.io/' target='_blank'>Zixiao&nbsp;Wang</a>, <a href='https://shiningsord.github.io/' target='_blank'>Yunheng&nbsp;Shen</a>, <a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://ybai62868.github.io/' target='_blank'>Yang&nbsp;Bai</a>, Guojin&nbsp;Chen, <a href='https://www.cse.cuhk.edu.hk/people/faculty/farzan-farnia/' target='_blank'>Farzan&nbsp;Farnia</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     DAC 2023  <br>
     
@@ -80,29 +80,14 @@ Representative publications that I am a primary author on are
 
 <tr id="tr-SPIE23_GPULD" style="background-color: #ffffd0">
 <td align='right'>
-[C9]
+[C8]
 </td>
 <td>
     GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://arxiv.org/abs/2303.14335' target='_blank'>paper</a>] <br>
+<br>
     <em>Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     SPIE 2023  <br>
-    
-</td>
-</tr>
-
-
-<tr id="tr-OPC_OpenILT" style="background-color: #ffffd0">
-<td align='right'>
-[C8]
-</td>
-<td>
-    OpenILT: An Open-source Platform for Inverse Lithography Technology Research 
-[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>paper</a>]  [<a href='https://github.com/OpenOPC/OpenILT' target='_blank'>code</a>] <br>
-    <em><a href='https://shelljane.github.io/' target='_blank'>Su&nbsp;Zheng</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://kins1ley.github.io/' target='_blank'>Binwu&nbsp;Zhu</a>, Guojin&nbsp;Chen, <a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://sawydust1228.github.io/' target='_blank'>Shuo&nbsp;Yin</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
-    GitHub 2023  <br>
     
 </td>
 </tr>
@@ -115,7 +100,7 @@ Representative publications that I am a primary author on are
 <td>
     Efficient Point Cloud Analysis Using Hilbert Curve. 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136620717.pdf' target='_blank'>paper</a>] <br>
+<br>
     <em><a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://xingezhu.me/' target='_blank'>Xinge&nbsp;Zhu</a>, Guojin&nbsp;Chen, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ECCV 2022  <br>
     
@@ -130,7 +115,7 @@ Representative publications that I am a primary author on are
 <td>
     AdaOPC: A Self-Adaptive Mask Optimization Framework For Real Design Patterns 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C148-ICCAD2022-AdaOPC.pdf' target='_blank'>paper</a>] <br>
+<br>
     <em><a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://appsrv.cse.cuhk.edu.hk/~xfyao/' target='_blank'>Xufeng&nbsp;Yao</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a></em><br>
     ICCAD 2022  <br>
     
@@ -145,7 +130,7 @@ Representative publications that I am a primary author on are
 <td>
     LayouTransformer: Generating Layout Patterns with Transformer via Sequential Pattern Modeling 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C146-ICCAD2022-LayouTransformer.pdf' target='_blank'>paper</a>] <br>
+<br>
     <em><a href='https://scholar.google.com/citations?user=jwHflLcAAAAJ' target='_blank'>Liangjian&nbsp;Wen</a>, <a href='https://yeezhu.github.io/' target='_blank'>Yi&nbsp;Zhu</a>, <a href='https://noahlab.com.hk/' target='_blank'>Lei&nbsp;Ye</a>, Guojin&nbsp;Chen, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, <a href='https://scholar.google.com/citations?user=sKauaAwAAAAJ' target='_blank'>Jianzhuang&nbsp;Liu</a>, and <a href='https://scholar.google.com/citations?user=-CJ5LkMAAAAJ' target='_blank'>Chunjing&nbsp;Xu</a></em><br>
     ICCAD 2022  <br>
     
@@ -162,7 +147,7 @@ Representative publications that I am a primary author on are
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
  
 [<a href='javascript:;'
-    onclick='$("#abs_ICCAD21_develsetC").toggle()'>abs</a>] [<a href='https://arxiv.org/abs/2303.12529' target='_blank'>paper</a>] <br>
+    onclick='$("#abs_ICCAD21_develsetC").toggle()'>abs</a>]<br>
     <em>Guojin&nbsp;Chen, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, <a href='https://liuhongduosc.github.io/' target='_blank'>Hongduo&nbsp;Liu</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ICCAD 2021  <br>
     
@@ -179,11 +164,11 @@ With the feature size continuously shrinking in advanced technology nodes, mask 
 [C3]
 </td>
 <td>
-    Learning Point Clouds in EDA. **(Invited Paper)** 
+    Learning Point Clouds in EDA. 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
  
 [<a href='javascript:;'
-    onclick='$("#abs_ISPD21_learn-pointcloudC").toggle()'>abs</a>] [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C116-ISPD2021-PointCloud.pdf' target='_blank'>paper</a>] <br>
+    onclick='$("#abs_ISPD21_learn-pointcloudC").toggle()'>abs</a>]<br>
     <em><a href='https://wadmes.github.io/cv/' target='_blank'>Wei&nbsp;Li</a>, Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://appsrv.cse.cuhk.edu.hk/~rchen/' target='_blank'>Ran&nbsp;Chen</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ISPD 2021  <br>
     
@@ -204,7 +189,7 @@ The exploding of deep learning techniques have motivated the development in vari
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
  
 [<a href='javascript:;'
-    onclick='$("#abs_ICCAD20_damoC").toggle()'>abs</a>] [<a href='https://arxiv.org/abs/2008.00806' target='_blank'>paper</a>] <br>
+    onclick='$("#abs_ICCAD20_damoC").toggle()'>abs</a>]<br>
     <em>Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ICCAD 2020  <br>
     
@@ -225,12 +210,12 @@ Continuous scaling of the VLSI system leaves a great challenge on manufacturing 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
  
 [<a href='javascript:;'
-    onclick='$("#abs_DATE21_levelsetC").toggle()'>abs</a>] [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C115-DATE2021-LevelSet.pdf' target='_blank'>paper</a>] <br>
+    onclick='$("#abs_DATE21_levelsetC").toggle()'>abs</a>]<br>
     <em><a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     DATE 2020  <br>
     
 <div id="abs_DATE21_levelsetC" style="text-align: justify; display: none" markdown="1">
-As the feature size of advanced integrated circuits keeps shrinking, resolution enhancement technique (RET) is utilized to improve the printability in the lithography process. Optical proximity correction (OPC) is one of the most widely used RETs aiming at compensating the mask to generate a more precise wafer image. In this paper, we put forward a level-set based OPC with high mask optimization quality and fast convergence. In order to suppress the disturbance of the condition fluctuation in lithography process, we propose a new process window-aware cost function. Then, a novel momentum-based evolution technique is adopted, which demonstrates substantial improvement. Moreover, graphics processing unit (GPU) is leveraged for accelerating the proposed algorithm. Experimental results on ICCAD 2013 benchmarks show that our algorithm outperforms all previous OPC algorithms in terms of both solution quality and runtime overhead.
+As the feature size of advanced integrated circuits keeps shrinking, resolution enhancement technique (RET) is utilized to improve the printability in the lithography process. Optical proximity correction (OPC) is one of the most widely used RETs aiming at compensating the mask to generate a more precise wafer image. In this paper, we put forward a level-set based OPC with high mask optimization quality and fast convergence. In order to suppress the disturbance of the condition fluctuation in lithography process, we propose a new process window-aware cost function. Then, a novel momentum-based evolution technique is adopted, which demonstrates substantial improvement. Moreover, graphics processing unit (GPU) is leveraged for accelerating the proposed algorithm. Experimental results on ICCAD 2013 benchmarks show that our algorithm outperforms all previous OPC algorithms in terms of both solution quality and runtime overhead. 
 </div>
 
 </td>
@@ -240,7 +225,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 
 
 
-### <i class="fa fa-chevron-right"></i> Journal
+### <i class="fa fa-chevron-right"></i> Journal papers
 
 <table class="table table-hover">
 
@@ -251,7 +236,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <td>
     A GPU-Enabled Level-Set Method for Mask Optimization 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://ieeexplore.ieee.org/document/9777761' target='_blank'>paper</a>] <br>
+<br>
     <em><a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     TCAD 2023  <br>
     
@@ -266,7 +251,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <td>
     DevelSet: Deep Neural Level Set for Instant Mask optimization 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://ieeexplore.ieee.org/document/10153412' target='_blank'>paper</a>] <br>
+<br>
     <em>Guojin&nbsp;Chen, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, <a href='https://liuhongduosc.github.io/' target='_blank'>Hongduo&nbsp;Liu</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     TCAD 2023  <br>
     
@@ -281,7 +266,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <td>
     DAMO: Deep Agile Mask Optimization for Full-Chip Scale 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://ieeexplore.ieee.org/document/9552247' target='_blank'>paper</a>] <br>
+<br>
     <em>Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://scholar.google.com/citations?user=4OnODOAAAAAJ' target='_blank'>Qi&nbsp;Sun</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     TCAD 2022  <br>
     
@@ -298,13 +283,13 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <table class="table table-hover">
 <tr>
   <td style='padding-right:0;'>
-  <span class='cvdate'>2023</span>
+  <span class='cvdate'>2021-2023</span>
       Design Automation Conference (DAC)
   </td>
 </tr>
 <tr>
   <td style='padding-right:0;'>
-  <span class='cvdate'>2022</span>
+  <span class='cvdate'>2022-2023</span>
       AAAI Conference on Artificial Intelligence (AAAI)
   </td>
 </tr>
