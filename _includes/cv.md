@@ -25,7 +25,7 @@ The list is under construction and you are welcomed to submit your publications 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 75+ citations, h-index: 4+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 83+ citations, h-index: 4+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 
 
@@ -55,7 +55,7 @@ Representative publications that I am a primary author on are
 <td>
     Physics-Informed Optical Kernel Regression Using Complex-valued Neural Fields 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://arxiv.org/abs/2303.08435' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://appsrv.cse.cuhk.edu.hk/~zhpei23/' target='_blank'>Zehua&nbsp;Pei</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a></em><br>
     DAC 2023  <br>
     
@@ -70,7 +70,7 @@ Representative publications that I am a primary author on are
 <td>
     DiffPattern: Layout Pattern Generation via Discrete Diffusion 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://arxiv.org/abs/2303.13060' target='_blank'>paper</a>] <br>
     <em><a href='https://shiningsord.github.io/' target='_blank'>Zixiao&nbsp;Wang</a>, <a href='https://shiningsord.github.io/' target='_blank'>Yunheng&nbsp;Shen</a>, <a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://ybai62868.github.io/' target='_blank'>Yang&nbsp;Bai</a>, Guojin&nbsp;Chen, <a href='https://www.cse.cuhk.edu.hk/people/faculty/farzan-farnia/' target='_blank'>Farzan&nbsp;Farnia</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     DAC 2023  <br>
     
@@ -85,7 +85,7 @@ Representative publications that I am a primary author on are
 <td>
     GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://arxiv.org/abs/2303.14335' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     SPIE 2023  <br>
     
@@ -100,7 +100,7 @@ Representative publications that I am a primary author on are
 <td>
     Efficient Point Cloud Analysis Using Hilbert Curve. 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136620717.pdf' target='_blank'>paper</a>] <br>
     <em><a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://xingezhu.me/' target='_blank'>Xinge&nbsp;Zhu</a>, Guojin&nbsp;Chen, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ECCV 2022  <br>
     
@@ -115,7 +115,7 @@ Representative publications that I am a primary author on are
 <td>
     AdaOPC: A Self-Adaptive Mask Optimization Framework For Real Design Patterns 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C148-ICCAD2022-AdaOPC.pdf' target='_blank'>paper</a>] <br>
     <em><a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://appsrv.cse.cuhk.edu.hk/~xfyao/' target='_blank'>Xufeng&nbsp;Yao</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a></em><br>
     ICCAD 2022  <br>
     
@@ -130,7 +130,7 @@ Representative publications that I am a primary author on are
 <td>
     LayouTransformer: Generating Layout Patterns with Transformer via Sequential Pattern Modeling 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C146-ICCAD2022-LayouTransformer.pdf' target='_blank'>paper</a>] <br>
     <em><a href='https://scholar.google.com/citations?user=jwHflLcAAAAJ' target='_blank'>Liangjian&nbsp;Wen</a>, <a href='https://yeezhu.github.io/' target='_blank'>Yi&nbsp;Zhu</a>, <a href='https://noahlab.com.hk/' target='_blank'>Lei&nbsp;Ye</a>, Guojin&nbsp;Chen, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, <a href='https://scholar.google.com/citations?user=sKauaAwAAAAJ' target='_blank'>Jianzhuang&nbsp;Liu</a>, and <a href='https://scholar.google.com/citations?user=-CJ5LkMAAAAJ' target='_blank'>Chunjing&nbsp;Xu</a></em><br>
     ICCAD 2022  <br>
     
@@ -147,7 +147,7 @@ Representative publications that I am a primary author on are
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
  
 [<a href='javascript:;'
-    onclick='$("#abs_ICCAD21_develsetC").toggle()'>abs</a>]<br>
+    onclick='$("#abs_ICCAD21_develsetC").toggle()'>abs</a>] [<a href='https://arxiv.org/abs/2303.12529' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, <a href='https://liuhongduosc.github.io/' target='_blank'>Hongduo&nbsp;Liu</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ICCAD 2021  <br>
     
@@ -168,7 +168,7 @@ With the feature size continuously shrinking in advanced technology nodes, mask 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
  
 [<a href='javascript:;'
-    onclick='$("#abs_ISPD21_learn-pointcloudC").toggle()'>abs</a>]<br>
+    onclick='$("#abs_ISPD21_learn-pointcloudC").toggle()'>abs</a>] [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C116-ISPD2021-PointCloud.pdf' target='_blank'>paper</a>] <br>
     <em><a href='https://wadmes.github.io/cv/' target='_blank'>Wei&nbsp;Li</a>, Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://appsrv.cse.cuhk.edu.hk/~rchen/' target='_blank'>Ran&nbsp;Chen</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ISPD 2021  <br>
     
@@ -189,7 +189,7 @@ The exploding of deep learning techniques have motivated the development in vari
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
  
 [<a href='javascript:;'
-    onclick='$("#abs_ICCAD20_damoC").toggle()'>abs</a>]<br>
+    onclick='$("#abs_ICCAD20_damoC").toggle()'>abs</a>] [<a href='https://arxiv.org/abs/2008.00806' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ICCAD 2020  <br>
     
@@ -210,7 +210,7 @@ Continuous scaling of the VLSI system leaves a great challenge on manufacturing 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
  
 [<a href='javascript:;'
-    onclick='$("#abs_DATE21_levelsetC").toggle()'>abs</a>]<br>
+    onclick='$("#abs_DATE21_levelsetC").toggle()'>abs</a>] [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C115-DATE2021-LevelSet.pdf' target='_blank'>paper</a>] <br>
     <em><a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     DATE 2020  <br>
     
@@ -251,7 +251,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <td>
     A GPU-Enabled Level-Set Method for Mask Optimization 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://ieeexplore.ieee.org/document/9777761' target='_blank'>paper</a>] <br>
     <em><a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     TCAD 2023  <br>
     
@@ -266,7 +266,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <td>
     DevelSet: Deep Neural Level Set for Instant Mask optimization 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://ieeexplore.ieee.org/document/10153412' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, <a href='https://liuhongduosc.github.io/' target='_blank'>Hongduo&nbsp;Liu</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     TCAD 2023  <br>
     
@@ -281,7 +281,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <td>
     DAMO: Deep Agile Mask Optimization for Full-Chip Scale 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://ieeexplore.ieee.org/document/9552247' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://cwanli.github.io/' target='_blank'>Wanli&nbsp;Chen</a>, <a href='https://scholar.google.com/citations?user=4OnODOAAAAAJ' target='_blank'>Qi&nbsp;Sun</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     TCAD 2022  <br>
     
