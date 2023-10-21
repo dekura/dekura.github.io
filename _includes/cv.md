@@ -229,21 +229,6 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 
 <table class="table table-hover">
 
-<tr id="tr-LayouTransformer_plus_TCAD" >
-<td align='right'>
-[J5]
-</td>
-<td>
-    LayouTransformer++: Sequential Pattern Modeling with Transformer for Generating Layout Patterns 
-[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
-    <em><a href='https://scholar.google.com/citations?user=jwHflLcAAAAJ' target='_blank'>Liangjian&nbsp;Wen</a>, <a href='https://yeezhu.github.io/' target='_blank'>Yi&nbsp;Zhu</a>, <a href='https://noahlab.com.hk/' target='_blank'>Lei&nbsp;Ye</a>, Guojin&nbsp;Chen, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, <a href='https://scholar.google.com/citations?user=sKauaAwAAAAJ' target='_blank'>Jianzhuang&nbsp;Liu</a>, and <a href='https://scholar.google.com/citations?user=-CJ5LkMAAAAJ' target='_blank'>Chunjing&nbsp;Xu</a></em><br>
-    TCAD 2023  <br>
-    
-</td>
-</tr>
-
-
 <tr id="tr-L2OILT_TCAD" >
 <td align='right'>
 [J4]
