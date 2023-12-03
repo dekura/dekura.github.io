@@ -25,7 +25,7 @@ The list is under construction and you are welcomed to submit your publications 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 83+ citations, h-index: 4+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 94+ citations, h-index: 5+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 
 
@@ -57,7 +57,7 @@ Representative publications that I am a primary author on are
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
  [<a href='https://arxiv.org/abs/2303.08435' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://appsrv.cse.cuhk.edu.hk/~zhpei23/' target='_blank'>Zehua&nbsp;Pei</a>, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a></em><br>
-    DAC 2023  <br>
+    DAC 2023 (Best score in DFM track.) <br>
     
 </td>
 </tr>
