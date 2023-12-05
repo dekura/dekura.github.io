@@ -40,7 +40,7 @@ Representative publications that I am a primary author on are
 <td>
     AlphaSyn: Logic Synthesis Optimization with Efficient Monte Carlo Tree Search 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C184-ICCAD2023-AlphaSyn.pdf' target='_blank'>paper</a>] <br>
     <em><a href='https://appsrv.cse.cuhk.edu.hk/~zhpei23/' target='_blank'>Zehua&nbsp;Pei</a>, <a href='https://gjchen.me' target='_blank'>Fangzhou&nbsp;Liu</a>, <a href='https://zleonhe.github.io/' target='_blank'>Zhuolun&nbsp;He</a>, Guojin&nbsp;Chen, <a href='https://gjchen.me' target='_blank'>Haisheng&nbsp;Zheng</a>, <a href='https://krz.engineer/' target='_blank'>Keren&nbsp;Zhu</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     ICCAD 2023  <br>
     
