@@ -14,10 +14,24 @@ and utilizing <b>physics-informed networks to tackle EDA area problems</b>.
 I'm enthusiastic about collaborating with experts in the field and contributing to innovative projects.
 Please feel free to contact me if you have any suggestions or potential collaborations in mind.
 </p>
+<div class="well">
+<div class="media">
+<div class="media-left media-middle col-xs-3 col-md-1">
+<a href="https://ai4eda.github.io/" target="_blank">
+    <img class="media-object img-rounded" src="/images/ai4eda.png" alt="AI for EDA">
+</a>
+</div>
+<h4 class="media-heading"><a href="https://ai4eda.github.io/" target="_blank">AI for EDA</a></h4>
+<div class="media-body media-middle">
 <p align='justify'>
-I'm also maintaining a curated list of <b>AI for EDA</b> papers. Check it out here: <a href="https://ai4eda.github.io" target="_blank">Awesome AI for EDA</a>.
-The list is under construction and you are welcomed to submit your publications follow <a href="https://ai4eda.github.io/about/" target="_blank">the instructions</a>.
-</p><br>
+I'm also maintaining a curated list of <b>AI for EDA</b> papers. Check it out here:
+<a href="https://ai4eda.github.io" target="_blank">Awesome AI for EDA</a>. <br>
+The list is under construction and you are welcomed to submit your publications follow
+<a href="https://ai4eda.github.io/about/" target="_blank">the instructions</a>.
+</p>
+</div>
+</div>
+</div>
 
 
 ## <i class="fa fa-chevron-right"></i> Publications
@@ -25,7 +39,7 @@ The list is under construction and you are welcomed to submit your publications 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 94+ citations, h-index: 5+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 103+ citations, h-index: 5+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 
 
