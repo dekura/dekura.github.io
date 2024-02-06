@@ -266,7 +266,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
     Ultra-Fast Source Mask Optimization via Conditional Discrete Diffusion 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
 <br>
-    <em>Guojin&nbsp;Chen, <a href='https://shiningsord.github.io/' target='_blank'>Zixiao&nbsp;Wang</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, <a href='https://www.ece.utexas.edu/people/faculty/david-z-pan' target='_blank'>David&nbsp;Z.&nbsp;Pan</a>, and Martin&nbsp;D.F.&nbsp;Wong</em><br>
+    <em>Guojin&nbsp;Chen, <a href='https://shiningsord.github.io/' target='_blank'>Zixiao&nbsp;Wang</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, <a href='https://www.ece.utexas.edu/people/faculty/david-z-pan' target='_blank'>David&nbsp;Z.&nbsp;Pan</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;D.F.&nbsp;Wong</a></em><br>
     TCAD 2024  <br>
     
 </td>
