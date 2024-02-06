@@ -47,6 +47,21 @@ Representative publications that I am a primary author on are
 
 <table class="table table-hover">
 
+<tr id="tr-SPIE24_difflitho" style="background-color: #ffffd0">
+<td align='right'>
+[C12]
+</td>
+<td>
+    Open-Source Differentiable Lithography Imaging Framework 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+<br>
+    <em>Guojin&nbsp;Chen, <a href='https://true-genghao.github.io/genghao/' target='_blank'>Hao&nbsp;Geng</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://www.ece.utexas.edu/people/faculty/david-z-pan' target='_blank'>David&nbsp;Z.&nbsp;Pan</a></em><br>
+    SPIE 2024  <br>
+    
+</td>
+</tr>
+
+
 <tr id="tr-ICCAD23:AlphaSyn" >
 <td align='right'>
 [C11]
@@ -242,6 +257,21 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 ### <i class="fa fa-chevron-right"></i> Journal papers
 
 <table class="table table-hover">
+
+<tr id="tr-TCAD_DiffSMO" style="background-color: #ffffd0">
+<td align='right'>
+[J5]
+</td>
+<td>
+    Ultra-Fast Source Mask Optimization via Conditional Discrete Diffusion 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+<br>
+    <em>Guojin&nbsp;Chen, <a href='https://shiningsord.github.io/' target='_blank'>Zixiao&nbsp;Wang</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, <a href='https://www.ece.utexas.edu/people/faculty/david-z-pan' target='_blank'>David&nbsp;Z.&nbsp;Pan</a>, and Martin&nbsp;D.F.&nbsp;Wong</em><br>
+    TCAD 2024  <br>
+    
+</td>
+</tr>
+
 
 <tr id="tr-L2OILT_TCAD" >
 <td align='right'>
