@@ -288,7 +288,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 </tr>
 
 
-<tr id="tr-TCAD_GPU_LevelSet" style="background-color: #ffffd0">
+<tr id="tr-TCAD_GPU_LevelSet" >
 <td align='right'>
 [J3]
 </td>
