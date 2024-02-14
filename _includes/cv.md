@@ -39,13 +39,58 @@ The list is under construction and you are welcomed to submit your publications 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 103+ citations, h-index: 5+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 110+ citations, h-index: 5+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 
 
 ### <i class="fa fa-chevron-right"></i> Conference papers
 
 <table class="table table-hover">
+
+<tr id="tr-DAC24_BiSMO" style="background-color: #ffffd0">
+<td align='right'>
+[C15]
+</td>
+<td>
+    Efficient Bilevel Source Mask Optimization 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+<br>
+    <em>Guojin&nbsp;Chen, <a href='https://true-genghao.github.io/genghao/' target='_blank'>Hongquan&nbsp;He</a>, <a href='https://shipxu123.github.io/' target='_blank'>Peng&nbsp;Xu</a>, <a href='https://true-genghao.github.io/genghao/' target='_blank'>Hao&nbsp;Geng</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    DAC 2024  <br>
+    
+</td>
+</tr>
+
+
+<tr id="tr-DAC24_CircleOPC" >
+<td align='right'>
+[C14]
+</td>
+<td>
+    Fracturing-aware Curvilinear ILT via Circular E-beam Mask Writer 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+<br>
+    <em><a href='https://yxgnahz.github.io/' target='_blank'>Xinyun&nbsp;Zhang</a>, <a href='https://shelljane.github.io/' target='_blank'>Su&nbsp;Zheng</a>, Guojin&nbsp;Chen, <a href='https://kins1ley.github.io/' target='_blank'>Binwu&nbsp;Zhu</a>, <a href='https://www.cse.cuhk.edu.hk/people/faculty/henry-hong-xu/' target='_blank'>Hong&nbsp;Xu</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    DAC 2024  <br>
+    
+</td>
+</tr>
+
+
+<tr id="tr-DAC24_AnaRouting" >
+<td align='right'>
+[C13]
+</td>
+<td>
+    Performance-driven Analog Routing via Heterogeneous 3DGNN and Potential Relaxation 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+<br>
+    <em><a href='https://shipxu123.github.io/' target='_blank'>Peng&nbsp;Xu</a>, Guojin&nbsp;Chen, <a href='https://krz.engineer/' target='_blank'>Keren&nbsp;Zhu</a>, <a href='https://mypage.cuhk.edu.cn/academics/chentinghuan/' target='_blank'>Tinghuan&nbsp;Chen</a>, <a href='https://scholar.google.com/citations?user=TRDUYkAAAAAJ&hl=en' target='_blank'>Tsung-Yi&nbsp;Ho</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    DAC 2024  <br>
+    
+</td>
+</tr>
+
 
 <tr id="tr-SPIE24_difflitho" style="background-color: #ffffd0">
 <td align='right'>
