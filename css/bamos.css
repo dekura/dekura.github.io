@@ -100,3 +100,7 @@ img {
     float: right;
     margin-left: .5em;
 }
+
+.borderless td, .borderless th {
+    border: none;
+}
