@@ -56,7 +56,7 @@ Representative publications that I am a primary author on are
 <td>
     Efficient Bilevel Source Mask Optimization 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='/data/papers/DAC24_BiSMO.pdf' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://true-genghao.github.io/genghao/' target='_blank'>Hongquan&nbsp;He</a>, <a href='https://shipxu123.github.io/' target='_blank'>Peng&nbsp;Xu</a>, <a href='https://true-genghao.github.io/genghao/' target='_blank'>Hao&nbsp;Geng</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     DAC 2024  <br>
     
