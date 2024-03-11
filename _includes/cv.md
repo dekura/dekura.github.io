@@ -56,7 +56,7 @@ Representative publications that I am a primary author on are
 <td>
     Efficient Bilevel Source Mask Optimization 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='/data/papers/DAC24_BiSMO.pdf' target='_blank'>paper</a>] <br>
+ [<a href='/data/papers/DAC24-BiSMO.pdf' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://true-genghao.github.io/genghao/' target='_blank'>Hongquan&nbsp;He</a>, <a href='https://shipxu123.github.io/' target='_blank'>Peng&nbsp;Xu</a>, <a href='https://true-genghao.github.io/genghao/' target='_blank'>Hao&nbsp;Geng</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     DAC 2024  <br>
     
@@ -101,7 +101,7 @@ Representative publications that I am a primary author on are
 <td>
     Open-Source Differentiable Lithography Imaging Framework 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://www.cse.cuhk.edu.hk/~byu/papers/C201-SPIE2024-OpenLitho.pdf' target='_blank'>paper</a>]  [<a href='https://github.com/TorchOPC/TorchLitho' target='_blank'>code</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://true-genghao.github.io/genghao/' target='_blank'>Hao&nbsp;Geng</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://www.ece.utexas.edu/people/faculty/david-z-pan' target='_blank'>David&nbsp;Z.&nbsp;Pan</a></em><br>
     SPIE 2024  <br>
     
