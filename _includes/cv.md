@@ -1,22 +1,18 @@
 <p align='justify'>
-Greetings! I’m currently a visiting student at UT Austin,
-under the guidance of Professor <a href="http://users.ece.utexas.edu/~dpan/" target="_blank">David Z. Pan</a>.
+Greetings! I'm currently a visiting student at UT Austin, under the guidance of Professor <a href="http://users.ece.utexas.edu/~dpan/" target="_blank">David Z. Pan</a>.
 I'm thrilled to have this opportunity to collaborate and expand my research horizons at <a href="https://www.cerc.utexas.edu/utda/" target="_blank">UTDA</a>.
+I am also a Ph.D. candidate at The Chinese University of Hong Kong (CUHK-CSE), where I have been fortunate to work with Professor <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> and co-supervised by Professor <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D. F. Wong</a>.
 </p>
-<p align='justify'>
-I am also a Ph.D. candidate at The Chinese University of Hong Kong (CUHK-CSE),
-where I have been fortunate to work with Professor <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> and co-supervised by Professor <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D. F. Wong</a>.
-My primary research area revolves around <b>computational lithography</b> and <b>mask optimization</b>,
-focusing on developing algorithms to enhance the manufacturing process of integrated circuits.
-I'm also deeply interested in exploring the potential of <b>deep learning in VLSI design</b>
-and utilizing <b>physics-informed networks to tackle EDA area problems</b>.
-
-I'm enthusiastic about collaborating with experts in the field and contributing to innovative projects.
-Please feel free to contact me if you have any suggestions or potential collaborations in mind.
-</p>
-<div class="well">
+<h3>Research Interests:</h3>
+<ul>
+  <li>Scaling deep learning: large language models, LLM on EDA, large-scale layout representaion learning.</li>
+  <li>Design for manufacturing: computational lithography, mask optimization, OPC, SMO.</li>
+  <li>Optimization: bi-level & multi-level optimization, GPU acceleration, level-set optimization.</li>
+  <li>Deep learning in VLSI design: physics-informed networks for EDA problems</li>
+</ul>
+<div class="well" style="padding:15px">
 <div class="media">
-<div class="media-left media-middle col-xs-3 col-md-1">
+<div class="media-left media-middle col-xs-3 col-sm-2 col-md-1">
 <a href="https://ai4eda.github.io/" target="_blank">
     <img class="media-object img-rounded" src="/images/ai4eda.png" alt="AI for EDA">
 </a>
@@ -25,7 +21,7 @@ Please feel free to contact me if you have any suggestions or potential collabor
 <img style="border:none;max-height:.9em;margin:0;padding:0" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fai4eda.github.io%2F&labelColor=%231863e6&countColor=%23d9e3f0&style=flat-square&labelStyle=upper" />
 </h4>
 <div class="media-body media-middle">
-<p align='justify'>
+<p style="margin:0">
 I'm also maintaining a curated list of <b>AI for EDA</b> papers. Check it out here:
 <a href="https://ai4eda.github.io" target="_blank">Awesome AI for EDA</a>. <br>
 The list is under construction and you are welcomed to submit your publications follow
@@ -41,7 +37,7 @@ The list is under construction and you are welcomed to submit your publications 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 134+ citations, h-index: 6+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 137+ citations, h-index: 6+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 
 
@@ -400,7 +396,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 47 | 2024</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 50 | 2024</span>
     <a href="https://github.com/TorchOPC/TorchLitho">TorchOPC/TorchLitho</a> &nbsp;
     Differentiable computational lithography with PyTorch
     <!--  -->
@@ -411,7 +407,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 79 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 81 | 2023</span>
     <a href="https://github.com/OpenOPC/OpenILT">OpenOPC/OpenILT</a> &nbsp;
     Open-source inverse lithography technology (ILT) framework
     <!--  -->
@@ -422,7 +418,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 86 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 87 | 2023</span>
     <a href="https://github.com/ai4eda/awesome-AI4EDA">ai4eda/awesome-AI4EDA</a> &nbsp;
     A curated paper list of existing AI for EDA studies.
     <!--  -->
