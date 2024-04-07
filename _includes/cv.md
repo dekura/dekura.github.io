@@ -37,8 +37,9 @@ The list is under construction and you are welcomed to submit your publications 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ">Google Scholar</a>; 137+ citations, h-index: 6+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 137+ citations, h-index: 6+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
+[<a href="https://orcid.org/0000-0001-9457-9583" target="_blank">ORCID</a>]
 
 
 ### <i class="fa fa-chevron-right"></i> Conference papers
