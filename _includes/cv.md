@@ -302,6 +302,21 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 
 <table class="table table-hover">
 
+<tr id="tr-TODAES_DEEPOTF" >
+<td align='right'>
+[J6]
+</td>
+<td>
+    DeepOTF: Learning Equations-constrained Prediction for Electromagnetic Behavior 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+<br>
+    <em><a href='https://shipxu123.github.io/' target='_blank'>Peng&nbsp;Xu</a>, <a href='https://scholar.google.com/citations?user=TRDUYkAAAAAJ&hl=en' target='_blank'>Siyuan&nbsp;Xu</a>, <a href='https://mypage.cuhk.edu.cn/academics/chentinghuan/' target='_blank'>Tinghuan&nbsp;Chen</a>, Guojin&nbsp;Chen, <a href='https://scholar.google.com/citations?user=TRDUYkAAAAAJ&hl=en' target='_blank'>Tsung-Yi&nbsp;Ho</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    TODAES 2024  <br>
+    
+</td>
+</tr>
+
+
 <tr id="tr-TCAD_DiffSMO" style="background-color: #ffffd0">
 <td align='right'>
 [J5]
@@ -309,7 +324,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <td>
     Ultra-Fast Source Mask Optimization via Conditional Discrete Diffusion 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://ieeexplore.ieee.org/document/10419017' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://shiningsord.github.io/' target='_blank'>Zixiao&nbsp;Wang</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, <a href='https://www.ece.utexas.edu/people/faculty/david-z-pan' target='_blank'>David&nbsp;Z.&nbsp;Pan</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;D.F.&nbsp;Wong</a></em><br>
     TCAD 2024  <br>
     
@@ -324,7 +339,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <td>
     L2O-ILT: Learning to Optimize Inverse Lithography Techniques 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://dl.acm.org/doi/abs/10.1109/TCAD.2023.3323164' target='_blank'>paper</a>] <br>
     <em><a href='https://kins1ley.github.io/' target='_blank'>Binwu&nbsp;Zhu</a>, <a href='https://shelljane.github.io/' target='_blank'>Su&nbsp;Zheng</a>, <a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://sme.fudan.edu.cn/65/41/c31277a353601/page.htm' target='_blank'>Fan&nbsp;Yang</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;Wong</a></em><br>
     TCAD 2023  <br>
     
