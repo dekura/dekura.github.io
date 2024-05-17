@@ -5,7 +5,7 @@ I am also a Ph.D. candidate at The Chinese University of Hong Kong (CUHK-CSE), w
 </p>
 <h3>Research Interests:</h3>
 <ul>
-  <li>Scaling deep learning: large language models, LLM on EDA, large-scale layout representaion learning.</li>
+  <li>Scaling deep learning: large language models, LLM on EDA, large-scale layout representation learning.</li>
   <li>Design for manufacturing: computational lithography, mask optimization, OPC, SMO.</li>
   <li>Optimization: bi-level & multi-level optimization, GPU acceleration, level-set optimization.</li>
   <li>Deep learning in VLSI design: physics-informed networks for EDA problems</li>
