@@ -1,7 +1,7 @@
 <p align='justify'>
 Greetings! I'm currently an intern at NVIDIA research, work with <a href="https://phdyang007.github.io/" target="_blank">Haoyu Yang</a> and <a href="https://research.nvidia.com/person/haoxing-mark-ren" target="_blank">Mark Ren</a>.
 I'm thrilled to have this opportunity to collaborate and expand my research horizons at <a href="https://www.nvidia.com/en-us/research/" target="_blank">NVIDIA research</a>.
-I am also a Ph.D. candidate at The Chinese University of Hong Kong (CUHK-CSE), where I have been fortunate to work with Professor <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> and co-supervised by Professor <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D. F. Wong</a>.
+I am also a final-year Ph.D. candidate at The Chinese University of Hong Kong (CUHK-CSE), where I have been fortunate to work with Professor <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> and co-supervised by Professor <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D. F. Wong</a>.
 </p>
 <h3>Research Interests:</h3>
 <ul>
