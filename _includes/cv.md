@@ -36,7 +36,7 @@ The list is under construction and you are welcomed to submit your publications 
 <table class="table table-hover">
 <tr>
   <td style='padding-right:0;'>
-    <span class='cvdate'>2024.05&nbsp;-&nbsp;Present </span>
+    <span class='cvdate'>2024.04&nbsp;-&nbsp;Present </span>
     <p markdown="1" style='margin: 0'>
     <img src="/images/logos/nvidia.svg" alt="Logo" style="border:none;height:1.5rem;margin:0;padding:0">&nbsp;
     <strong>NVIDIA</strong> &nbsp;
@@ -49,7 +49,7 @@ The list is under construction and you are welcomed to submit your publications 
     </tr>
 <tr>
   <td style='padding-right:0;'>
-    <span class='cvdate'>2023.08&nbsp;-&nbsp;2024.5 </span>
+    <span class='cvdate'>2023.08&nbsp;-&nbsp;2024.4 </span>
     <p markdown="1" style='margin: 0'>
     <img src="/images/logos/utlogo.svg" alt="Logo" style="border:none;height:1.5rem;margin:0;padding:0">&nbsp;
     <strong>The University of Texas at Austin</strong> &nbsp;
