@@ -40,7 +40,7 @@ The list is under construction and you are welcomed to submit your publications 
     <p markdown="1" style='margin: 0'>
     <img src="/images/logos/nvidia.svg" alt="Logo" style="border:none;height:1.5rem;margin:0;padding:0">&nbsp;
     <strong>NVIDIA</strong> &nbsp;
-    <span style="color:grey;">Research Intern</span> \\
+    <span style="color:grey;">Research Scientist Intern</span> \\
         <span markdown="1" style="color:grey;font-size:1.3rem;margin: 0">
         Mentor & Manager. <a href="https://phdyang007.github.io/" target="_blank">Haoyu Yang</a> & <a href="https://research.nvidia.com/person/haoxing-mark-ren" target="_blank">Mark Ren</a>
         </span><span class='cvdate' style="color:grey;font-size:1.3rem;margin: 0">Austin, TX </span>
@@ -53,7 +53,7 @@ The list is under construction and you are welcomed to submit your publications 
     <p markdown="1" style='margin: 0'>
     <img src="/images/logos/utlogo.svg" alt="Logo" style="border:none;height:1.5rem;margin:0;padding:0">&nbsp;
     <strong>The University of Texas at Austin</strong> &nbsp;
-    <span style="color:grey;">Visiting Ph.D. Student</span> \\
+    <span style="color:grey;">Visiting Scholar</span> \\
         <span markdown="1" style="color:grey;font-size:1.3rem;margin: 0">
         Supervisor : Prof. <a href="https://users.ece.utexas.edu/~dpan/" target="_blank">David Z. Pan</a>
         </span><span class='cvdate' style="color:grey;font-size:1.3rem;margin: 0">Austin, TX </span>
