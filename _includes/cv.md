@@ -436,6 +436,25 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 </table>
 
 
+
+### <i class="fa fa-chevron-right"></i> Preprints
+
+<table class="table table-hover">
+
+<tr id="tr-chen2024llm" >
+<td align='right'>
+[P1]
+</td>
+<td>
+LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Generation 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+ [<a href='https://arxiv.org/abs/2406.05250' target='_blank'>paper</a>]  arXiv 2024  <br>
+</td>
+</tr>
+
+</table>
+
+
 ## <i class="fa fa-chevron-right"></i> News
 <div class="well well-sm" style="max-height: 15em; overflow: auto">
 <ul class="list-group">
