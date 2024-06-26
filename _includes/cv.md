@@ -473,6 +473,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 ## <i class="fa fa-chevron-right"></i> News
 <div class="well well-sm" style="max-height: 15em; overflow: auto">
 <ul class="list-group">
+        <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>June. 24, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Attending DAC 2024, San Francisco, CA.</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>Apr. 29, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Starting internship at NVIDIA Research. Let's rock'n'roll! Many thanks to my mentor Haoyu Yang and Mark Ren.</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>Feb. 25, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Traveling to SPIE24, San Jose. <a href="https://docs.google.com/presentation/d/1t6okbiCGKr6iiM3_e9QquwA9AvI_WPmB/edit?usp=sharing&ouid=105429981784179566910&rtpof=true&sd=true" target="_blank">[slides]</a>, <a href="https://github.com/TorchOPC/TorchLitho" target="_blank">[codes]</a></li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>Feb. 13, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Three papers got accepted by DAC 2024.</li>
