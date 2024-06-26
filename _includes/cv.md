@@ -79,7 +79,7 @@ The list is under construction and you are welcomed to submit your publications 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 174+ citations, h-index: 7+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 178+ citations, h-index: 7+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 [<a href="https://orcid.org/0000-0001-9457-9583" target="_blank">ORCID</a>]
 
@@ -87,6 +87,21 @@ Representative publications that I am a primary author on are
 ### <i class="fa fa-chevron-right"></i> Conference papers
 
 <table class="table table-hover">
+
+<tr id="tr-ICCAD24:DiffOPC" style="background-color: #ffffd0">
+<td align='right'>
+[C16]
+</td>
+<td>
+    Differentiable Edge-based OPC 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+<br>
+    <em>Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://research.nvidia.com/person/haoxing-mark-ren' target='_blank'>Haoxing&nbsp;Ren</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://www.ece.utexas.edu/people/faculty/david-z-pan' target='_blank'>David&nbsp;Z.&nbsp;Pan</a></em><br>
+    ICCAD 2024  <br>
+    
+</td>
+</tr>
+
 
 <tr id="tr-DAC24_BiSMO" style="background-color: #ffffd0">
 <td align='right'>
@@ -474,7 +489,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 88 | 2024</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 97 | 2024</span>
     <a href="https://github.com/TorchOPC/TorchLitho">TorchOPC/TorchLitho</a> &nbsp;
     Differentiable computational lithography with PyTorch
     <!--  -->
