@@ -1,6 +1,5 @@
 <p align='justify'>
-Greetings! I'm currently an intern at Google DeepMind.
-I'm thrilled to have this opportunity to collaborate and expand my research horizons at <a href="https://deepmind.google/" target="_blank">Google DeepMind</a>.
+Greetings! I'm currently an intern at  <a href="https://deepmind.google/" target="_blank">Google DeepMind</a>.
 I am also a final-year Ph.D. candidate at The Chinese University of Hong Kong (CUHK-CSE), where I have been fortunate to work with Professor <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> and co-supervised by Professor <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D. F. Wong</a>.
 </p>
 <h3>Research Interests:</h3>
@@ -38,7 +37,7 @@ The list is under construction and you are welcomed to submit your publications 
   <td style='padding-right:0;'>
     <span class='cvdate'>2024.07&nbsp;-&nbsp;Present </span>
     <p markdown="1" style='margin: 0'>
-    <img src="/images/logos/DeepMind.svg" alt="Logo" style="border:none;height:1.5rem;margin:0;padding:0">&nbsp;
+    <img src="/images/logos/deepmind_large.svg" alt="Logo" style="border:none;height:1.5rem;margin:0;padding:0">&nbsp;
     <strong>Google DeepMind</strong> &nbsp;
     <span style="color:grey;">Ph.D. Student Researcher</span> \\
 <span class='cvdate' style="color:grey;font-size:1.3rem;margin: 0">Mountain view, CA </span>
@@ -90,7 +89,7 @@ The list is under construction and you are welcomed to submit your publications 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 174+ citations, h-index: 7+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 193+ citations, h-index: 8+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 [<a href="https://orcid.org/0000-0001-9457-9583" target="_blank">ORCID</a>]
 
@@ -502,7 +501,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 88 | 2024</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 112 | 2024</span>
     <a href="https://github.com/TorchOPC/TorchLitho">TorchOPC/TorchLitho</a> &nbsp;
     Differentiable computational lithography with PyTorch
     <!--  -->
@@ -513,7 +512,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 92 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 100 | 2023</span>
     <a href="https://github.com/OpenOPC/OpenILT">OpenOPC/OpenILT</a> &nbsp;
     Open-source inverse lithography technology (ILT) framework
     <!--  -->
@@ -524,7 +523,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 98 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 105 | 2023</span>
     <a href="https://github.com/ai4eda/awesome-AI4EDA">ai4eda/awesome-AI4EDA</a> &nbsp;
     A curated paper list of existing AI for EDA studies.
     <!--  -->
