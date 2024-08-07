@@ -9,26 +9,6 @@ I am also a final-year Ph.D. candidate at The Chinese University of Hong Kong (C
   <li>Optimization: bi-level & multi-level optimization, GPU acceleration, level-set optimization.</li>
   <li>Deep learning in VLSI design: physics-informed networks for EDA problems</li>
 </ul>
-<div class="well" style="padding:15px">
-<div class="media">
-<div class="media-left media-middle col-xs-3 col-sm-2 col-md-1">
-<a href="https://ai4eda.github.io/" target="_blank">
-    <img class="media-object img-rounded" src="/images/ai4eda.png" alt="AI for EDA">
-</a>
-</div>
-<h4 class="media-heading"><a href="https://ai4eda.github.io/" target="_blank">AI for EDA</a>
-<img style="border:none;max-height:.9em;margin:0;padding:0" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fai4eda.github.io%2F&labelColor=%231863e6&countColor=%23d9e3f0&style=flat-square&labelStyle=upper" />
-</h4>
-<div class="media-body media-middle">
-<p style="margin:0">
-I'm also maintaining a curated list of <b>AI for EDA</b> papers. Check it out here:
-<a href="https://ai4eda.github.io" target="_blank">Awesome AI for EDA</a>. <br>
-The list is under construction and you are welcomed to submit your publications follow
-<a href="https://ai4eda.github.io/about/" target="_blank">the instructions</a>.
-</p>
-</div>
-</div>
-</div>
 
 
 ## <i class="fa fa-chevron-right"></i> Experiences
@@ -83,13 +63,34 @@ The list is under construction and you are welcomed to submit your publications 
     </tr>
 </table>
 
+<div class="well" style="padding:15px">
+<div class="media">
+<div class="media-left media-middle col-xs-3 col-sm-2 col-md-1">
+<a href="https://ai4eda.github.io/" target="_blank">
+    <img class="media-object img-rounded" src="/images/ai4eda.png" alt="AI for EDA">
+</a>
+</div>
+<h4 class="media-heading"><a href="https://ai4eda.github.io/" target="_blank">AI for EDA</a>
+<img style="border:none;max-height:.9em;margin:0;padding:0" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fai4eda.github.io%2F&labelColor=%231863e6&countColor=%23d9e3f0&style=flat-square&labelStyle=upper" />
+</h4>
+<div class="media-body media-middle">
+<p style="margin:0">
+I'm also maintaining a curated list of <b>AI for EDA</b> papers. Check it out here:
+<a href="https://ai4eda.github.io" target="_blank">Awesome AI for EDA</a>. <br>
+The list is under construction and you are welcomed to submit your publications follow
+<a href="https://ai4eda.github.io/about/" target="_blank">the instructions</a>.
+</p>
+</div>
+</div>
+</div>
+
 
 ## <i class="fa fa-chevron-right"></i> Publications
 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 193+ citations, h-index: 8+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 200+ citations, h-index: 8+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 [<a href="https://orcid.org/0000-0001-9457-9583" target="_blank">ORCID</a>]
 
@@ -483,6 +484,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 ## <i class="fa fa-chevron-right"></i> News
 <div class="well well-sm" style="max-height: 15em; overflow: auto">
 <ul class="list-group">
+        <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>Aug. 07, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Good day! My google scholar citation reached 200. Small step for others, big step for me!</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>July. 22, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Starting internship at Google DeepMind, Mountain View, CA.</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>June. 24, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Attending DAC 2024, San Francisco, CA.</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>Apr. 29, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Starting internship at NVIDIA Research. Let's rock'n'roll! Many thanks to my mentor Haoyu Yang and Mark Ren.</li>
@@ -501,7 +503,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 112 | 2024</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 119 | 2024</span>
     <a href="https://github.com/TorchOPC/TorchLitho">TorchOPC/TorchLitho</a> &nbsp;
     Differentiable computational lithography with PyTorch
     <!--  -->
@@ -512,7 +514,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 100 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 101 | 2023</span>
     <a href="https://github.com/OpenOPC/OpenILT">OpenOPC/OpenILT</a> &nbsp;
     Open-source inverse lithography technology (ILT) framework
     <!--  -->
@@ -523,7 +525,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 105 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 109 | 2023</span>
     <a href="https://github.com/ai4eda/awesome-AI4EDA">ai4eda/awesome-AI4EDA</a> &nbsp;
     A curated paper list of existing AI for EDA studies.
     <!--  -->
