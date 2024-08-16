@@ -90,7 +90,7 @@ The list is under construction and you are welcomed to submit your publications 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 200+ citations, h-index: 8+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 212+ citations, h-index: 8+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 [<a href="https://orcid.org/0000-0001-9457-9583" target="_blank">ORCID</a>]
 
@@ -503,7 +503,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 119 | 2024</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 130 | 2024</span>
     <a href="https://github.com/TorchOPC/TorchLitho">TorchOPC/TorchLitho</a> &nbsp;
     Differentiable computational lithography with PyTorch
     <!--  -->
@@ -514,7 +514,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 101 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 103 | 2023</span>
     <a href="https://github.com/OpenOPC/OpenILT">OpenOPC/OpenILT</a> &nbsp;
     Open-source inverse lithography technology (ILT) framework
     <!--  -->
@@ -525,7 +525,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 109 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 110 | 2023</span>
     <a href="https://github.com/ai4eda/awesome-AI4EDA">ai4eda/awesome-AI4EDA</a> &nbsp;
     A curated paper list of existing AI for EDA studies.
     <!--  -->
@@ -543,19 +543,25 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <table class="table table-hover">
 <tr>
   <td style='padding-right:0;'>
-  <span class='cvdate'>2021-2023</span>
+  <span class='cvdate'>2023-2024</span>
+      Neural Information Processing Systems (NeurIPS)
+  </td>
+</tr>
+<tr>
+  <td style='padding-right:0;'>
+  <span class='cvdate'>2021-2024</span>
       Design Automation Conference (DAC)
   </td>
 </tr>
 <tr>
   <td style='padding-right:0;'>
-  <span class='cvdate'>2022-2023</span>
+  <span class='cvdate'>2022-2025</span>
       AAAI Conference on Artificial Intelligence (AAAI)
   </td>
 </tr>
 <tr>
   <td style='padding-right:0;'>
-  <span class='cvdate'>2022-2023</span>
+  <span class='cvdate'>2022-2024</span>
       IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
   </td>
 </tr>
