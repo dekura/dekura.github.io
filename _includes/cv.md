@@ -4,8 +4,8 @@ I am also a final-year Ph.D. candidate at The Chinese University of Hong Kong (C
 </p>
 <h3>Research Interests:</h3>
 <ul>
-  <li>Scaling deep learning: large language models, LLM on EDA, large-scale layout representation learning.</li>
-  <li>Design for manufacturing: computational lithography, mask optimization, OPC, SMO.</li>
+  <li>Scaling deep learning: large language models, LLM on EDA, large-scale layout representation learning. [<a href="https://arxiv.org/abs/2406.05250" target="_blank">arxiv'24</a>]</li>
+  <li>Design for manufacturing: computational lithography [<a href="https://www.cse.cuhk.edu.hk/~byu/papers/C201-SPIE2024-OpenLitho.pdf" target="_blank">SPIE'24</a>'23], OPC [DAC'24'23,ICCAD'24'23'22'21'20], SMO [<a href="https://arxiv.org/abs/2405.09548" target="_blank">DAC'24</a>].</li>
   <li>Optimization: bi-level & multi-level optimization, GPU acceleration, level-set optimization.</li>
   <li>Deep learning in VLSI design: physics-informed networks for EDA problems</li>
 </ul>
@@ -121,7 +121,7 @@ Representative publications that I am a primary author on are
 <td>
     Efficient Bilevel Source Mask Optimization 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='/data/papers/DAC24-BiSMO.pdf' target='_blank'>paper</a>] <br>
+ [<a href='https://arxiv.org/abs/2405.09548' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://true-genghao.github.io/genghao/' target='_blank'>Hongquan&nbsp;He</a>, <a href='https://shipxu123.github.io/' target='_blank'>Peng&nbsp;Xu</a>, <a href='https://true-genghao.github.io/genghao/' target='_blank'>Hao&nbsp;Geng</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
     DAC 2024  <br>
     
