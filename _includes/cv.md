@@ -96,7 +96,7 @@ The list is under construction and you are welcomed to submit your publications 
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 212+ citations, h-index: 8+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 213+ citations, h-index: 8+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 [<a href="https://orcid.org/0000-0001-9457-9583" target="_blank">ORCID</a>]
 
@@ -112,7 +112,7 @@ Representative publications that I am a primary author on are
 <td>
     Differentiable Edge-based OPC 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
-<br>
+ [<a href='https://arxiv.org/abs/2408.08969' target='_blank'>paper</a>] <br>
     <em>Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://research.nvidia.com/person/haoxing-mark-ren' target='_blank'>Haoxing&nbsp;Ren</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://www.ece.utexas.edu/people/faculty/david-z-pan' target='_blank'>David&nbsp;Z.&nbsp;Pan</a></em><br>
     ICCAD 2024  <br>
     
@@ -509,7 +509,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 130 | 2024</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 135 | 2024</span>
     <a href="https://github.com/TorchOPC/TorchLitho">TorchOPC/TorchLitho</a> &nbsp;
     Differentiable computational lithography with PyTorch
     <!--  -->
@@ -520,7 +520,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 103 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 104 | 2023</span>
     <a href="https://github.com/OpenOPC/OpenILT">OpenOPC/OpenILT</a> &nbsp;
     Open-source inverse lithography technology (ILT) framework
     <!--  -->
@@ -531,7 +531,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 110 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 112 | 2023</span>
     <a href="https://github.com/ai4eda/awesome-AI4EDA">ai4eda/awesome-AI4EDA</a> &nbsp;
     A curated paper list of existing AI for EDA studies.
     <!--  -->
