@@ -480,7 +480,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <td>
 LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Generation 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://arxiv.org/abs/2406.05250' target='_blank'>paper</a>]  arXiv 2024  <br>
+ [<a href='https://arxiv.org/abs/2406.05250' target='_blank'>paper</a>]  [<a href='https://github.com/dekura/LLANA' target='_blank'>code</a>]  arXiv 2024  <br>
 </td>
 </tr>
 
@@ -520,6 +520,17 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
   <td>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 8 | 2024</span>
+    <a href="https://github.com/dekura/LLANA">dekura/LLANA</a> &nbsp;
+    LLM-Enhanced Bayesian Optimization for Efficient Analog Constraint Generation
+    <!--  -->
+    <!--     dekura/LLANA  -->
+    <!--  -->
+  </td>
+</tr>
+<tr>
+  <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
+  <td>
     <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 104 | 2023</span>
     <a href="https://github.com/OpenOPC/OpenILT">OpenOPC/OpenILT</a> &nbsp;
     Open-source inverse lithography technology (ILT) framework
@@ -529,7 +540,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
   </td>
 </tr>
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
+  <td align='right' style='padding-right:0;padding-left:0;'>4.</td>
   <td>
     <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 112 | 2023</span>
     <a href="https://github.com/ai4eda/awesome-AI4EDA">ai4eda/awesome-AI4EDA</a> &nbsp;
