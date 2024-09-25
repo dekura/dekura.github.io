@@ -100,6 +100,21 @@ Representative publications that I am a primary author on are
 
 <table class="table table-hover">
 
+<tr id="tr-anonymous2024pace" >
+<td align='right'>
+[C17]
+</td>
+<td>
+    PACE: Pacing Operator Learning to Accurate Optical Field Simulation for Complicated Photonic Devices 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+ [<a href='https://openreview.net/forum?id=uXJlgkWdcI' target='_blank'>paper</a>] <br>
+    <em><a href='https://zhuhanqing.github.io/' target='_blank'>Hanqing&nbsp;Zhu</a>, <a href='https://wenyancong.com/' target='_blank'>Wenyan&nbsp;Cong</a>, Guojin&nbsp;Chen, <a href='https://www.linkedin.com/in/shupeng-ning/' target='_blank'>Shupeng&nbsp;Ning</a>, <a href='https://www.ece.utexas.edu/people/faculty/ray-chen' target='_blank'>Ray&nbsp;Chen</a>, <a href='https://scopex-asu.github.io/' target='_blank'>Jiaqi&nbsp;Gu</a>, and <a href='https://www.ece.utexas.edu/people/faculty/david-z-pan' target='_blank'>David&nbsp;Z.&nbsp;Pan</a></em><br>
+    NeurIPS 2024  <br>
+    
+</td>
+</tr>
+
+
 <tr id="tr-ICCAD24:DiffOPC" style="background-color: #ffffd0">
 <td align='right'>
 [C16]
@@ -504,7 +519,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 159 | 2024</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 161 | 2024</span>
     <a href="https://github.com/TorchOPC/TorchLitho">TorchOPC/TorchLitho</a> &nbsp;
     Differentiable computational lithography with PyTorch
     <!--  -->
@@ -526,7 +541,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 110 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 113 | 2023</span>
     <a href="https://github.com/OpenOPC/OpenILT">OpenOPC/OpenILT</a> &nbsp;
     Open-source inverse lithography technology (ILT) framework
     <!--  -->
