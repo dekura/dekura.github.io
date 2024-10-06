@@ -2,18 +2,19 @@
 Greetings! I'm currently a student researcher at  <a href="https://deepmind.google/" target="_blank">Google DeepMind</a>.
 I am also a final-year Ph.D. candidate at Chinese University of Hong Kong (CUHK-CSE), where I have been fortunate to work with Professor <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> and co-supervised by Professor <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D. F. Wong</a>.
 </p>
+<p style="text-align: center;"><span style="color: red;">I am on the job market for 2024-2025, appreciate any opportunities!</span></p>
 <h3>Research Interests:</h3>
 <ul>
+  <li>Scaling deep learning:
+  large language models, agent systems<span style="color:#9a9a9a">[arxiv'<a href="https://arxiv.org/abs/2408.12775" target="_blank">24</a>]</span>, LLM on EDA <span style="color:#9a9a9a">[arxiv'<a href="https://arxiv.org/abs/2406.05250" target="_blank">24</a>]</span>,
+  large-scale layout representation learning <span style="color:#9a9a9a">[ICCAD'<a href="https://www.cse.cuhk.edu.hk/~byu/papers/C146-ICCAD2022-LayouTransformer.pdf" target="_blank">22</a>]</span>.
+  </li>
   <li>Design for manufacturing:
   computational lithography <span style="color:#9a9a9a">[SPIE'<a href="https://www.cse.cuhk.edu.hk/~byu/papers/C201-SPIE2024-OpenLitho.pdf" target="_blank">24</a>'<a href="https://arxiv.org/abs/2303.14335" target="_blank">23</a>]</span>,
   OPC <span style="color:#9a9a9a">[DAC'<a href="https://arxiv.org/abs/2408.08969" target="_blank">24</a>'<a href="https://arxiv.org/abs/2303.08435" target="_blank">23</a>,ICCAD'<a href="https://arxiv.org/abs/2408.08969" target="_blank">24</a>'<a href="https://www.cse.cuhk.edu.hk/~byu/papers/C148-ICCAD2022-AdaOPC.pdf" target="_blank">22</a>'<a href="https://arxiv.org/abs/2303.12529" target="_blank">21</a>'<a href="https://arxiv.org/abs/2008.00806" target="_blank">20</a>]</span>,
   SMO <span style="color:#9a9a9a">[DAC'<a href="https://arxiv.org/abs/2405.09548" target="_blank">24</a>, TCAD'<a href="https://ieeexplore.ieee.org/document/10419017" target="_blank">24</a>]</span>.</li>
   <li>Optimization: bi-level & multi-level optimization <span style="color:#9a9a9a">[DAC'<a href="https://arxiv.org/abs/2405.09548" target="_blank">24</a>]</span>, level-set optimization <span style="color:#9a9a9a">[ICCAD'<a href="https://arxiv.org/abs/2303.12529" target="_blank">21</a>]</span>, GPU acceleration.</li>
   <li>Deep learning in VLSI design: physics-informed networks for EDA problems <span style="color:#9a9a9a">[DAC'<a href="https://arxiv.org/abs/2303.08435" target="_blank">23</a>]</span>.</li>
-  <li>Scaling deep learning:
-  large language models, agent systems<span style="color:#9a9a9a">[arxiv'<a href="https://arxiv.org/abs/2408.12775" target="_blank">24</a>]</span>, LLM on EDA <span style="color:#9a9a9a">[arxiv'<a href="https://arxiv.org/abs/2406.05250" target="_blank">24</a>]</span>,
-  large-scale layout representation learning <span style="color:#9a9a9a">[ICCAD'<a href="https://www.cse.cuhk.edu.hk/~byu/papers/C146-ICCAD2022-LayouTransformer.pdf" target="_blank">22</a>]</span>.
-  </li>
 </ul>
 Check my <a href="https://gjchen.notion.site/" target="_blank">research overview here</a>.
 
