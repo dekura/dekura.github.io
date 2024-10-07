@@ -60,11 +60,11 @@ Check my <a href="https://gjchen.notion.site/" target="_blank">research overview
     </tr>
 <tr>
   <td style='padding-right:0;'>
-    <span class='cvdate'>2018&nbsp;-&nbsp;2019 </span>
+    <span class='cvdate'>2018 </span>
     <p markdown="1" style='margin: 0'>
     <img src="/images/logos/tencent.svg" alt="Logo" style="border:none;height:1.5rem;margin:0;padding:0">&nbsp;
     <strong>Tencent</strong> &nbsp;
-    <span style="color:grey;">Research Intern</span> \\
+    <span style="color:grey;">Intern</span> \\
 <span class='cvdate' style="color:grey;font-size:1.3rem;margin: 0">Shenzhen, China </span>
     </p>
     </td>
