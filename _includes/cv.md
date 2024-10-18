@@ -500,7 +500,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 ## <i class="fa fa-chevron-right"></i> News
 <div class="well well-sm" style="max-height: 15em; overflow: auto">
 <ul class="list-group">
-        <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>&nbsp;&nbsp;&nbsp;&nbsp;</span>Back to HK, offer offer come to me!</li>
+        <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>Oct. 15, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Back to HK, offer offer come to me!</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>Aug. 07, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Good day! My google scholar citation reached 200. Small step for others, big step for me!</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>July. 22, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Starting internship at Google DeepMind, Mountain View, CA.</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>June. 24, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Attending DAC 2024, San Francisco, CA.</li>
