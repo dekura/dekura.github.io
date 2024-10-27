@@ -485,7 +485,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 
 <tr id="tr-chen2024llm" >
 <td align='right'>
-[P2]
+[P3]
 </td>
 <td>
 LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Generation 
@@ -497,12 +497,24 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 
 <tr id="tr-lai2024analogcoder" >
 <td align='right'>
-[P1]
+[P2]
 </td>
 <td>
 AnalogCoder: Analog Circuit Design via Training-Free Code Generation 
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
  [<a href='https://arxiv.org/abs/2405.14918' target='_blank'>paper</a>]  arXiv 2024  <br>
+</td>
+</tr>
+
+
+<tr id="tr-chen2024intelligent" >
+<td align='right'>
+[P1]
+</td>
+<td>
+Intelligent OPC Engineer Assistant for Semiconductor Manufacturing 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+ [<a href='https://arxiv.org/abs/2408.12775' target='_blank'>paper</a>]  arXiv 2024  <br>
 </td>
 </tr>
 
