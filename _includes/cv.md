@@ -1,5 +1,5 @@
 <p align='justify'>
-I am a final-year Ph.D. candidate at Chinese University of Hong Kong (CUHK-CSE), where I have been fortunate to work with Professor <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> and co-supervised by Professor <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D. F. Wong</a>.
+I am a final-year Ph.D. candidate at Chinese University of Hong Kong (CUHK-CSE), where I have been fortunate to work with Professor <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> and co-supervised by Professor <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D. F. Wong</a>. My Chinese name is 陈国晋.
 </p>
 <p style="text-align: center;"><span style="color: red;">I am on the job market for 2024-2025, appreciate any opportunities!</span></p>
 <h3>Research Interests:</h3>
