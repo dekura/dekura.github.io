@@ -429,6 +429,21 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 
 <table class="table table-hover">
 
+<tr id="tr-TCAD_rulelearner" >
+<td align='right'>
+[J7]
+</td>
+<td>
+    RuleLearner: OPC Rule Extraction from Inverse Lithography Technique Engine 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+<br>
+    <em><a href='https://scarecrowyu.github.io/' target='_blank'>Ziyang&nbsp;Yu</a>, <a href='https://shelljane.github.io/' target='_blank'>Su&nbsp;Zheng</a>, <a href='https://wenqian1228.github.io/' target='_blank'>Wenqian&nbsp;Zhao</a>, <a href='https://sawydust1228.github.io/' target='_blank'>Shuo&nbsp;Yin</a>, <a href='https://xxliang99.github.io/' target='_blank'>Xiaoxiao&nbsp;Liang</a>, Guojin&nbsp;Chen, <a href='https://yuzhe630.github.io/' target='_blank'>Yuzhe&nbsp;Ma</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://scholar.google.com/citations?user=WPhoQiUAAAAJ' target='_blank'>Martin&nbsp;D.F.&nbsp;Wong</a></em><br>
+    TCAD 2024  <br>
+    
+</td>
+</tr>
+
+
 <tr id="tr-TODAES_DEEPOTF" >
 <td align='right'>
 [J6]
