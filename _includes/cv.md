@@ -91,57 +91,44 @@ To learn more about my research and its direction, be sure to click this link fo
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 240+ citations, h-index: 9+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 268+ citations, h-index: 9+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 [<a href="https://orcid.org/0000-0001-9457-9583" target="_blank">ORCID</a>]
-
-
-### <i class="fa fa-chevron-right"></i> Preprints
-
-<table class="table table-hover">
-
-<tr id="tr-chen2024llm" >
-<td align='right'>
-[P3]
-</td>
-<td>
-LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Generation 
-[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://arxiv.org/abs/2406.05250' target='_blank'>paper</a>]  [<a href='https://github.com/dekura/LLANA' target='_blank'>code</a>]  arXiv 2024  <br>
-</td>
-</tr>
-
-
-<tr id="tr-lai2024analogcoder" >
-<td align='right'>
-[P2]
-</td>
-<td>
-AnalogCoder: Analog Circuit Design via Training-Free Code Generation 
-[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://arxiv.org/abs/2405.14918' target='_blank'>paper</a>]  arXiv 2024  <br>
-</td>
-</tr>
-
-
-<tr id="tr-chen2024intelligent" >
-<td align='right'>
-[P1]
-</td>
-<td>
-Intelligent OPC Engineer Assistant for Semiconductor Manufacturing 
-[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
- [<a href='https://arxiv.org/abs/2408.12775' target='_blank'>paper</a>]  arXiv 2024  <br>
-</td>
-</tr>
-
-</table>
-
 
 
 ### <i class="fa fa-chevron-right"></i> Conference papers
 
 <table class="table table-hover">
+
+<tr id="tr-chen2025intelligent" style="background-color: #ffffd0">
+<td align='right'>
+[C19]
+</td>
+<td>
+    Intelligent OPC Engineer Assistant for Semiconductor Manufacturing 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+ [<a href='https://arxiv.org/abs/2408.12775' target='_blank'>paper</a>] <br>
+    <em>Guojin&nbsp;Chen, <a href='https://phdyang007.github.io/' target='_blank'>Haoyu&nbsp;Yang</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='https://research.nvidia.com/person/haoxing-mark-ren' target='_blank'>Haoxing&nbsp;Ren</a></em><br>
+    AAAI 2025  <br>
+    
+</td>
+</tr>
+
+
+<tr id="tr-lai2025analogcoder" >
+<td align='right'>
+[C18]
+</td>
+<td>
+    AnalogCoder: Analog Circuit Design via Training-Free Code Generation 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+ [<a href='https://arxiv.org/abs/2405.14918' target='_blank'>paper</a>] <br>
+    <em><a href='https://laiyao1.github.io/' target='_blank'>Yao&nbsp;Lai</a>, <a href='https://gjchen.me' target='_blank'>Sungyoung&nbsp;Lee</a>, Guojin&nbsp;Chen, <a href='https://gjchen.me' target='_blank'>Souradip&nbsp;Poddar</a>, <a href='https://gjchen.me' target='_blank'>Mengkang&nbsp;Hu</a>, <a href='https://users.ece.utexas.edu/~dpan/' target='_blank'>David&nbsp;Z&nbsp;Pan</a>, and <a href='http://luoping.me/' target='_blank'>Ping&nbsp;Luo</a></em><br>
+    AAAI 2025  <br>
+    
+</td>
+</tr>
+
 
 <tr id="tr-anonymous2024pace" >
 <td align='right'>
@@ -536,6 +523,25 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 </table>
 
 
+
+### <i class="fa fa-chevron-right"></i> Preprints
+
+<table class="table table-hover">
+
+<tr id="tr-chen2024llm" >
+<td align='right'>
+[P1]
+</td>
+<td>
+LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Generation 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+ [<a href='https://arxiv.org/abs/2406.05250' target='_blank'>paper</a>]  [<a href='https://github.com/dekura/LLANA' target='_blank'>code</a>]  arXiv 2024  <br>
+</td>
+</tr>
+
+</table>
+
+
 ## <i class="fa fa-chevron-right"></i> News
 <div class="well well-sm" style="max-height: 15em; overflow: auto">
 <ul class="list-group">
@@ -559,7 +565,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 161 | 2024</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 169 | 2024</span>
     <a href="https://github.com/TorchOPC/TorchLitho">TorchOPC/TorchLitho</a> &nbsp;
     Differentiable computational lithography with PyTorch
     <!--  -->
@@ -570,7 +576,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 10 | 2024</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 13 | 2024</span>
     <a href="https://github.com/dekura/LLANA">dekura/LLANA</a> &nbsp;
     LLM-Enhanced Bayesian Optimization for Efficient Analog Constraint Generation
     <!--  -->
@@ -581,7 +587,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 118 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 127 | 2023</span>
     <a href="https://github.com/OpenOPC/OpenILT">OpenOPC/OpenILT</a> &nbsp;
     Open-source inverse lithography technology (ILT) framework
     <!--  -->
@@ -592,7 +598,7 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>4.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 124 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 136 | 2023</span>
     <a href="https://github.com/ai4eda/awesome-AI4EDA">ai4eda/awesome-AI4EDA</a> &nbsp;
     A curated paper list of existing AI for EDA studies.
     <!--  -->
