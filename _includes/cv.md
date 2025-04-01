@@ -3,8 +3,8 @@ I am a final-year Ph.D. candidate at Chinese University of Hong Kong (CUHK-CSE),
 </p>
 <h3>Research Interests:</h3>
 <ul>
-  <li>Scaling deep learning:
-  large language models, agent systems<span style="color:#9a9a9a">[arxiv'<a href="https://arxiv.org/abs/2408.12775" target="_blank">24</a>]</span>, LLM on EDA <span style="color:#9a9a9a">[arxiv'<a href="https://arxiv.org/abs/2406.05250" target="_blank">24</a>]</span>,
+  <li>Large language models:
+  agent systems<span style="color:#9a9a9a">[arxiv'<a href="https://arxiv.org/abs/2408.12775" target="_blank">24</a>]</span>, LLM on EDA <span style="color:#9a9a9a">[arxiv'<a href="https://arxiv.org/abs/2406.05250" target="_blank">24</a>]</span>,
   large-scale layout representation learning <span style="color:#9a9a9a">[ICCAD'<a href="https://www.cse.cuhk.edu.hk/~byu/papers/C146-ICCAD2022-LayouTransformer.pdf" target="_blank">22</a>]</span>.
   </li>
   <li>Design for manufacturing:
