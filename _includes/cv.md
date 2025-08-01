@@ -1,18 +1,12 @@
 <p align='justify'>
-I am a final-year Ph.D. candidate at Chinese University of Hong Kong (CUHK-CSE), where I have been fortunate to work with Professor <a href="http://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> and co-supervised by Professor <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D. F. Wong</a>. My Chinese name is 陈国晋.
+I am a researcher at Huawei Noah's Ark Lab (Hong Kong Research Center). My Chinese name is 陈国晋. I received my Ph.D. degree from Chinese University of Hong Kong, supervised by Prof. <a href="https://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> & Prof. <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D.F. Wong</a>.
 </p>
 <h3>Research Interests:</h3>
 <ul>
-  <li>Large language models:
-  agent systems<span style="color:#9a9a9a">[arxiv'<a href="https://arxiv.org/abs/2408.12775" target="_blank">24</a>]</span>, LLM on EDA <span style="color:#9a9a9a">[arxiv'<a href="https://arxiv.org/abs/2406.05250" target="_blank">24</a>]</span>,
-  large-scale layout representation learning <span style="color:#9a9a9a">[ICCAD'<a href="https://www.cse.cuhk.edu.hk/~byu/papers/C146-ICCAD2022-LayouTransformer.pdf" target="_blank">22</a>]</span>.
-  </li>
-  <li>Design for manufacturing:
-  computational lithography <span style="color:#9a9a9a">[SPIE'<a href="https://www.cse.cuhk.edu.hk/~byu/papers/C201-SPIE2024-OpenLitho.pdf" target="_blank">24</a>'<a href="https://arxiv.org/abs/2303.14335" target="_blank">23</a>]</span>,
-  OPC <span style="color:#9a9a9a">[DAC'<a href="https://arxiv.org/abs/2408.08969" target="_blank">24</a>'<a href="https://arxiv.org/abs/2303.08435" target="_blank">23</a>,ICCAD'<a href="https://arxiv.org/abs/2408.08969" target="_blank">24</a>'<a href="https://www.cse.cuhk.edu.hk/~byu/papers/C148-ICCAD2022-AdaOPC.pdf" target="_blank">22</a>'<a href="https://arxiv.org/abs/2303.12529" target="_blank">21</a>'<a href="https://arxiv.org/abs/2008.00806" target="_blank">20</a>]</span>,
-  SMO <span style="color:#9a9a9a">[DAC'<a href="https://arxiv.org/abs/2405.09548" target="_blank">24</a>, TCAD'<a href="https://ieeexplore.ieee.org/document/10419017" target="_blank">24</a>]</span>.</li>
-  <li>Optimization: bi-level & multi-level optimization <span style="color:#9a9a9a">[DAC'<a href="https://arxiv.org/abs/2405.09548" target="_blank">24</a>]</span>, level-set optimization <span style="color:#9a9a9a">[ICCAD'<a href="https://arxiv.org/abs/2303.12529" target="_blank">21</a>]</span>, GPU acceleration.</li>
-  <li>Deep learning in VLSI design: physics-informed networks for EDA problems <span style="color:#9a9a9a">[DAC'<a href="https://arxiv.org/abs/2303.08435" target="_blank">23</a>]</span>.</li>
+  <li>Large language models: agentic native LLMs, multimodal LLMs.</li>
+  <li>Design for manufacturing: computational lithography, OPC, SMO.</li>
+  <li>Optimization: bi-level, multi-level optimization, level-set optimization, GPU acceleration.</li>
+  <li>Deep learning in VLSI design.</li>
 </ul>
 Check my <a href="https://gjchen.notion.site/" target="_blank">research overview here</a>.
 
@@ -90,7 +84,7 @@ To learn more about my research and its direction, be sure to click this link fo
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 335+ citations, h-index: 11+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 400+ citations, h-index: 11+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 [<a href="https://orcid.org/0000-0001-9457-9583" target="_blank">ORCID</a>]
 
@@ -574,6 +568,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 ## <i class="fa fa-chevron-right"></i> News
 <div class="well well-sm" style="max-height: 15em; overflow: auto">
 <ul class="list-group">
+        <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>July. 14, 2025&nbsp;&nbsp;&nbsp;&nbsp;</span>I start my new journey at Huawei Noah's Ark Lab, Hong Kong.</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>Mar. 20, 2025&nbsp;&nbsp;&nbsp;&nbsp;</span>My citation reached 300. Keep going!</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>Oct. 15, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Back to HK, offer offer come to me!</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>Aug. 07, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Good day! My google scholar citation reached 200. Small step for others, big step for me!</li>
@@ -595,7 +590,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 176 | 2024</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 192 | 2024</span>
     <a href="https://github.com/TorchOPC/TorchLitho">TorchOPC/TorchLitho</a> &nbsp;
     Differentiable computational lithography with PyTorch
     <!--  -->
@@ -606,7 +601,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 19 | 2024</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 21 | 2024</span>
     <a href="https://github.com/dekura/LLANA">dekura/LLANA</a> &nbsp;
     LLM-Enhanced Bayesian Optimization for Efficient Analog Constraint Generation
     <!--  -->
@@ -617,7 +612,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 151 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 173 | 2023</span>
     <a href="https://github.com/OpenOPC/OpenILT">OpenOPC/OpenILT</a> &nbsp;
     Open-source inverse lithography technology (ILT) framework
     <!--  -->
@@ -628,7 +623,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>4.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 144 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 165 | 2023</span>
     <a href="https://github.com/ai4eda/awesome-AI4EDA">ai4eda/awesome-AI4EDA</a> &nbsp;
     A curated paper list of existing AI for EDA studies.
     <!--  -->
