@@ -1,12 +1,11 @@
 <p align='justify'>
-I am a researcher at Huawei Noah's Ark Lab (Hong Kong Research Center). My Chinese name is 陈国晋. I received my Ph.D. degree from Chinese University of Hong Kong, supervised by Prof. <a href="https://www.cse.cuhk.edu.hk/~byu/" target="_blank">Bei Yu</a> & Prof. <a href="https://scholar.google.com/citations?user=WPhoQiUAAAAJ" target="_blank">Martin D.F. Wong</a>.
+I am a researcher at Huawei Noah's Ark Lab (Hong Kong Research Center). My Chinese name is 陈国晋. I earned my Ph.D. degree from Chinese University of Hong Kong.
 </p>
 <h3>Research Interests:</h3>
 <ul>
   <li>Large language models: agentic native LLMs, multimodal LLMs.</li>
   <li>Design for manufacturing: computational lithography, OPC, SMO.</li>
   <li>Optimization: bi-level, multi-level optimization, level-set optimization, GPU acceleration.</li>
-  <li>Deep learning in VLSI design.</li>
 </ul>
 Check my <a href="https://gjchen.notion.site/" target="_blank">research overview here</a>.
 
