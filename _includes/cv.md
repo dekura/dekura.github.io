@@ -3,11 +3,10 @@ I am a senior researcher at Huawei Hong Kong Research Center. I earned my Ph.D. 
 </p>
 <h3>Research Interests:</h3>
 <ul>
-  <li>Large language models: agentic native LLMs, multimodal LLMs.</li>
+  <li>Large language models: post-training, agentic native LLMs, multimodal LLMs.</li>
   <li>Design for manufacturing: computational lithography, OPC, SMO.</li>
   <li>Optimization: bi-level, multi-level optimization, level-set optimization, GPU acceleration.</li>
 </ul>
-Check my <a href="https://gjchen.notion.site/" target="_blank">research overview here</a>.
 
 
 ## <i class="fa fa-chevron-right"></i> Experiences
@@ -682,22 +681,5 @@ The list is under construction and you are welcomed to submit your publications 
   <span class='cvdate'>2022-2024</span>
       IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
   </td>
-</tr>
-</table>
-
-
-## <i class="fa fa-chevron-right"></i> Teaching
-<table class="table table-hover">
-<tr>
-  <td style='padding-right:0'><strong>Python Computing</strong> (AIST 1110), TA</td>
-  <td class='col-md-2' style='text-align:right; padding-left:0;'>F2022</td>
-</tr>
-<tr>
-  <td style='padding-right:0'><strong>Mobile Computing</strong> (CSCI 3310), TA</td>
-  <td class='col-md-2' style='text-align:right; padding-left:0;'>S2022</td>
-</tr>
-<tr>
-  <td style='padding-right:0'><strong>Numerical Optimization</strong> (AIST 3010), TA</td>
-  <td class='col-md-2' style='text-align:right; padding-left:0;'>F2021</td>
 </tr>
 </table>
