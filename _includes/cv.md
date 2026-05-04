@@ -82,7 +82,7 @@ To learn more about my research and its direction, be sure to click this link fo
 Representative publications that I am a primary author on are
 <span style='background-color: #ffffd0'>highlighted.</span>
 <br>
-[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 519+ citations, h-index: 12+]
+[<a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">Google Scholar</a>; 696+ citations, h-index: 14+]
 [<a href="/data/bibtex/all.bib" download="gjchen.bib">Download bibtex for all publications</a>]
 [<a href="https://orcid.org/0000-0001-9457-9583" target="_blank">ORCID</a>]
 
@@ -90,6 +90,21 @@ Representative publications that I am a primary author on are
 ### <i class="fa fa-chevron-right"></i> Conference papers
 
 <table class="table table-hover">
+
+<tr id="tr-lai2026lithogrpo" >
+<td align='right'>
+[C20]
+</td>
+<td>
+    Fast Inverse Lithography via GRPO Reinforced Flow Matching 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+ [<a href='https://openreview.net/forum?id=stDqIrBoRO' target='_blank'>paper</a>] <br>
+    <em><a href='https://laiyao1.github.io/' target='_blank'>Yao&nbsp;Lai</a>, Xuyuan&nbsp;Xiong, Zeyue&nbsp;Xue, Guojin&nbsp;Chen, Jing&nbsp;Wang, Xihui&nbsp;Liu, Rui&nbsp;Zhang, Robert&nbsp;D.&nbsp;Mullins, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, and <a href='http://luoping.me/' target='_blank'>Ping&nbsp;Luo</a></em><br>
+    ICML 2026  <br>
+    
+</td>
+</tr>
+
 
 <tr id="tr-chen2025intelligent" style="background-color: #ffffd0">
 <td align='right'>
@@ -407,6 +422,36 @@ As the feature size of advanced integrated circuits keeps shrinking, resolution 
 
 <table class="table table-hover">
 
+<tr id="tr-BiSMO_TCAD" style="background-color: #ffffd0">
+<td align='right'>
+[J11]
+</td>
+<td>
+    Efficient Bilevel Source Mask Optimization 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+<br>
+    <em>Guojin&nbsp;Chen, <a href='https://shipxu123.github.io/' target='_blank'>Peng&nbsp;Xu</a>, <a href='https://true-genghao.github.io/genghao/' target='_blank'>Hongquan&nbsp;He</a>, <a href='https://true-genghao.github.io/genghao/' target='_blank'>Hao&nbsp;Geng</a>, and <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a></em><br>
+    TCAD 2026  <br>
+    
+</td>
+</tr>
+
+
+<tr id="tr-TCAD_AnalogCoderPro" >
+<td align='right'>
+[J10]
+</td>
+<td>
+    AnalogCoder-Pro: Unifying Analog Circuit Generation and Optimization via Multi-modal LLMs 
+[<a href="/data/bibtex/all.bib" download="gjchen.bib">bibtex</a>]
+<br>
+    <em><a href='https://laiyao1.github.io/' target='_blank'>Yao&nbsp;Lai</a>, <a href='https://gjchen.me' target='_blank'>Souradip&nbsp;Poddar</a>, <a href='https://gjchen.me' target='_blank'>Sungyoung&nbsp;Lee</a>, Guojin&nbsp;Chen, <a href='https://gjchen.me' target='_blank'>Mengkang&nbsp;Hu</a>, <a href='https://www.cse.cuhk.edu.hk/~byu/' target='_blank'>Bei&nbsp;Yu</a>, <a href='http://luoping.me/' target='_blank'>Ping&nbsp;Luo</a>, and <a href='https://www.ece.utexas.edu/people/faculty/david-z-pan' target='_blank'>David&nbsp;Z.&nbsp;Pan</a></em><br>
+    TCAD 2026  <br>
+    
+</td>
+</tr>
+
+
 <tr id="tr-TCAD_DiffPatternFlex" >
 <td align='right'>
 [J9]
@@ -566,6 +611,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 ## <i class="fa fa-chevron-right"></i> News
 <div class="well well-sm" style="max-height: 15em; overflow: auto">
 <ul class="list-group">
+        <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>May. 1st, 2026&nbsp;&nbsp;&nbsp;&nbsp;</span>Differentiable OPC is now officialy open-sourced <a href="https://github.com/NVlabs/DiffOPC" target="_blank">[NVlabs/DiffOPC]</a>.</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>July. 14, 2025&nbsp;&nbsp;&nbsp;&nbsp;</span>I start my new journey at Huawei Noah's Ark Lab, Hong Kong.</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>Mar. 20, 2025&nbsp;&nbsp;&nbsp;&nbsp;</span>My citation reached 300. Keep going!</li>
         <li class="list-group-item col-md-12 col-xs-12 col-sm-12"><span class='col-md-2 col-xs-2'>Oct. 15, 2024&nbsp;&nbsp;&nbsp;&nbsp;</span>Back to HK, offer offer come to me!</li>
@@ -588,7 +634,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 206 | 2024</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 224 | 2024</span>
     <a href="https://github.com/TorchOPC/TorchLitho">TorchOPC/TorchLitho</a> &nbsp;
     Differentiable computational lithography with PyTorch
     <!--  -->
@@ -599,7 +645,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 28 | 2024</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 32 | 2024</span>
     <a href="https://github.com/dekura/LLANA">dekura/LLANA</a> &nbsp;
     LLM-Enhanced Bayesian Optimization for Efficient Analog Constraint Generation
     <!--  -->
@@ -610,7 +656,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 200 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 221 | 2023</span>
     <a href="https://github.com/OpenOPC/OpenILT">OpenOPC/OpenILT</a> &nbsp;
     Open-source inverse lithography technology (ILT) framework
     <!--  -->
@@ -621,7 +667,7 @@ LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Genera
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>4.</td>
   <td>
-    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 175 | 2023</span>
+    <span class='cvdate'><i class="fa fas fa-star" style="color: #FFD43B"></i> 198 | 2023</span>
     <a href="https://github.com/ai4eda/awesome-AI4EDA">ai4eda/awesome-AI4EDA</a> &nbsp;
     A curated paper list of existing AI for EDA studies.
     <!--  -->
