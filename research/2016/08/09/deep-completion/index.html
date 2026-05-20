@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Image Completion with Deep Learning in TensorFlow</title>
+
+  <meta name="author" content="Guojin Chen @ CUHK-CSE" />
+  <meta name="description" content="Home page of Guojin Chen @ CUHK-CSE. He is now PhD student at The Chinese University of Hong Kong (CUHK-CSE) and his research interests include deep learning in VLSI, reinforcement learning and computer vision. He is advised by Prof. Bei Yu." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="alternate" type="application/rss+xml" href="/research/atom.xml" />
+
+  <link href="/research/vendor/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/research/vendor/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/research/vendor/css/academicons.min.css" rel="stylesheet">
+  <link href="/research/vendor/pygments/default.css" rel="stylesheet">
+  <link href="/research/css/bamos.css" rel="stylesheet">
+  <link href="/research/css/quote.css" rel="stylesheet">
+  <link href="/research/css/sharingbuttons.css" rel="stylesheet">
+  <script src="/research/vendor/js/jquery.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="navbar-header">
+						  <a href="/research/" class="navbar-brand">
+                  <div>
+                      <img src="/research/images/me_face.png" class="img-circle"></img>
+                      Guojin Chen
+                  </div>
+              </a>
+						<button class="navbar-toggle" type="button" data-toggle="collapse"
+                    data-target="#navbar-main">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="navbar-collapse collapse" id="navbar-main">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="https://gjchen.notion.site/" target="_blank">Research</a>
+							</li>
+							
+						</ul>
+						<ul class="nav navbar-nav navbar-right" style="font-size: 1.5em">
+							<li>
+								<a href="http://github.com/dekura" target="_blank">
+									<i class="fa fa-lg fa-github"></i></a>
+							</li>
+							
+                            <li>
+                                <a href="https://scholar.google.com/citations?user=842nSvkAAAAJ" target="_blank">
+                                <i class="ai ai-google-scholar"></i></a>
+                            </li>
+                            <li>
+                                <a href="/research/atom.xml" target="_blank">
+                                    <i class="fa fa-rss"></i></a>
+                            </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<br/>
+<div class="container">
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
+  <h1>Image Completion with Deep Learning in TensorFlow</h1>
+<em>August  9, 2016</em>
+<br>
+
+<hr>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<!-- <ul id="toc"></ul> -->
+
+<!-- --- -->
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Content-aware fill is a powerful tool designers and photographers
+use to fill in unwanted or missing parts of images.
+Image completion and <a href="https://en.wikipedia.org/wiki/Inpainting">inpainting</a>
+are closely related technologies used to fill in
+missing or corrupted parts of images.
+There are many ways to do content-aware fill,
+image completion, and inpainting.
+In this blog post, I present Raymond Yeh and Chen Chen et al.’s paper
+“<a href="https://arxiv.org/abs/1607.07539">Semantic Image Inpainting with Perceptual and Contextual Losses</a>,”
+which was just posted on arXiv on July 26, 2016.
+This paper shows how to use deep learning for image completion with
+a <a href="https://arxiv.org/abs/1511.06434">DCGAN</a>.
+This blog post is meant for a general technical audience with some deeper
+portions for people with a machine learning background.
+I’ve added <code class="language-plaintext highlighter-rouge">[ML-Heavy]</code> tags to sections to indicate that the section
+can be skipped if you don’t want too many details.
+We will only look at the constrained case of completing missing
+pixels from images of faces.
+I have released all of the <a href="https://www.tensorflow.org/">TensorFlow</a>
+source code behind this post on GitHub at
+<a href="https://github.com/bamos/dcgan-completion.tensorflow">bamos/dcgan-completion.tensorflow</a>.</p>
+
+<p>We’ll approach image completion in three steps.</p>
+
+<ol>
+  <li><a href="#step-1-interpreting-images-as-samples-from-a-probability-distribution">We’ll first interpret images as being samples from a probability distribution</a>.</li>
+  <li><a href="#step-2-quickly-generating-fake-images">This interpretation lets us learn how to generate fake images</a>.</li>
+  <li><a href="#step-3-using-fake-image-generation-for-image-completion">Then we’ll find the best fake image for completion</a>.</li>
+</ol>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/content-aware-1.jpg" alt="" /></p>
+
+  <p class="image-caption">Photoshop example of automatically filling in missing image parts. (Image CC licensed, <a href="https://flic.kr/p/7Ye6Sj">source</a>.)</p>
+
+</div>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/content-aware-2.jpg" alt="" /></p>
+
+  <p class="image-caption">Photoshop example of automatically removing unwanted image parts. (Image CC licensed, <a href="https://flic.kr/p/8fh3Vb">source</a>.)</p>
+
+</div>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/completion.gif" alt="" /></p>
+
+  <p class="image-caption">
+    Completions generated by what we’ll cover in this blog post.
+    The centers of these images are being automatically generated.
+    The source code to create this is available <a href="http://github.com/bamos/dcgan-completion.tensorflow">here</a>.
+    <strong>These are not curated!</strong> I selected a random subset of images
+    from the LFW dataset.</p>
+
+</div>
+
+<hr />
+
+<h2 id="step-1-interpreting-images-as-samples-from-a-probability-distribution">Step 1: Interpreting images as samples from a probability distribution</h2>
+
+<h3 id="how-would-you-fill-in-the-missing-information">How would you fill in the missing information?</h3>
+
+<p>In the examples above, imagine you’re building a system to
+fill in the missing pieces.
+<em>How would you do it?
+How do you think the human brain does it?
+What kind of information would you use?</em></p>
+
+<p>In this post we will focus on two types of information:</p>
+
+<ol>
+  <li><strong>Contextual information:</strong> You can infer what
+missing pixels are based on information provided
+by surrounding pixels.</li>
+  <li><strong>Perceptual information:</strong> You interpret the
+filled in portions as being “normal,” like from what
+you’ve seen in real life or from other pictures.</li>
+</ol>
+
+<p>Both of these are important.
+Without contextual information, how do you know what to fill in?
+Without perceptual information, there are many valid completions
+for a context. Something that looks “normal” to a machine learning
+system might not look normal to humans.</p>
+
+<p>It would be nice to have an exact, intuitive algorithm that
+captures both of these properties that says step-by-step how
+to complete an image.
+Creating such an algorithm may be possible for specific cases,
+but in general, nobody knows how.
+Today’s best approaches use statistics and machine learning
+to learn an <em>approximate</em> technique.</p>
+
+<h3 id="but-where-does-statistics-fit-in-these-are-images">But where does statistics fit in? These are images.</h3>
+
+<p>To motivate the problem, let’s start by looking at a
+<a href="https://en.wikipedia.org/wiki/Probability_distribution">probability distribution</a>
+that is well-understood and can be represented concisely in closed form:
+a <a href="https://en.wikipedia.org/wiki/Normal_distribution">normal distribution</a>.
+Here’s the <a href="https://en.wikipedia.org/wiki/Probability_density_function">probability density function</a> (PDF) for a normal distribution.
+You can interpret the PDF as going over the <em>input</em> space horizontally
+with the vertical axis showing the probability that some value occurs.
+(If you’re interested, the code to create these plots is available at
+<a href="https://github.com/bamos/dcgan-completion.tensorflow/blob/master/simple-distributions.py">bamos/dcgan-completion.tensorflow:simple-distributions.py</a>.)</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/normal-pdf.png" alt="" /></p>
+
+  <p class="image-caption">PDF for a normal distribution.</p>
+
+</div>
+
+<p>Let’s <em>sample</em> from the distribution to get some data.
+Make sure you understand the connection between the
+PDF and the samples.</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/normal-samples.png" alt="" /></p>
+
+  <p class="image-caption">Samples from a normal distribution.</p>
+
+</div>
+
+<p>This is a 1D probability distribution because
+the input only goes along a single dimension.
+We can do the same thing in two dimensions.</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/normal-2d.png" alt="" /></p>
+
+  <p class="image-caption">PDF and samples from a 2D normal distribution.
+    The PDF is shown as a contour plot and the samples
+    are overlaid.</p>
+
+</div>
+
+<p>The key relationship between images and statistics is that
+<strong>we can interpret images as samples
+from a high-dimensional probability distribution.</strong>
+The probability distribution goes over the pixels of images.
+Imagine you’re taking a picture with your camera.
+This picture will have some finite number of pixels.
+When you take an image with your camera, you are
+sampling from this complex probability distribution.
+This distribution is what we’ll use to define what
+makes an image normal or not.
+With images, unlike with the normal distributions, we <strong>don’t</strong> know
+the true probability distribution and we can <strong>only</strong> collect samples.</p>
+
+<p>In this post, we’ll use color images represented by the
+<a href="https://en.wikipedia.org/wiki/RGB_color_model">RGB color model</a>.
+Our images will be 64 pixels wide and 64 pixels high,
+so our probability distribution has $64\cdot 64\cdot 3 \approx 12k$ dimensions.</p>
+
+<h3 id="so-how-can-we-complete-images">So how can we complete images?</h3>
+
+<p>Let’s first consider the multivariate normal distribution from before for intuition.
+Given $x=1$, what is the most probable $y$ value?
+We can find this by maximizing the value of the PDF over
+all possible $y$ values with $x=1$ fixed.</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/normal-2d-max.png" alt="" /></p>
+
+  <p class="image-caption">Finding the most probable $y$ value given some fixed $x$
+   in a multivariate normal distribution.</p>
+
+</div>
+
+<p>This concept naturally extends to our image probability distribution
+when we know some values and want to complete the missing values.
+Just pose it as a maximization problem where we search over all
+of the possible missing values.
+The completion will be the most probable image.</p>
+
+<p>Visually looking at the samples from the normal distribution,
+it seems reasonable that we could find the PDF given
+only samples. Just pick your favorite
+<a href="https://en.wikipedia.org/wiki/Statistical_model">statistical model</a>
+and fit it to the data.</p>
+
+<p>However we don’t use this method in practice.
+While the PDF is easy to recover for simple distributions,
+it’s difficult and often intractable for more complex
+distributions over images.
+The complexity partly comes from intricate
+<a href="https://en.wikipedia.org/wiki/Conditional_dependence">conditional dependencies</a>:
+the value of one pixel depends on the values of other pixels in the image.
+Also, maximizing over a general PDF is an extremely difficult
+and often intractable non-convex optimization problem.</p>
+
+<h2 id="step-2-quickly-generating-fake-images">Step 2: Quickly generating fake images</h2>
+
+<h3 id="learning-to-generate-new-samples-from-an-unknown-probability-distribution">Learning to generate new samples from an unknown probability distribution</h3>
+
+<p>Instead of learning how to compute the PDF, another well-studied
+idea in statistics is to learn how to generate new (random)
+samples with a
+<a href="https://en.wikipedia.org/wiki/Generative_model">generative model</a>.
+Generative models can often be difficult to train or intractable,
+but lately the deep learning community has made some
+amazing progress in this space.
+<a href="http://yann.lecun.com/">Yann LeCun</a> gives a great introduction to
+one way of training generative models (adversarial training) in
+<a href="https://www.quora.com/What-are-some-recent-and-potentially-upcoming-breakthroughs-in-deep-learning/answer/Yann-LeCun?srid=nZuy">this Quora post</a>,
+describing the idea as the most interesting idea in the last
+10 years in machine learning:</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/lecun-quora.png" alt="" /></p>
+
+  <p class="image-caption"><a href="http://yann.lecun.com/">Yann LeCun’s</a> introduction to
+   adversarial training from
+  <a href="https://www.quora.com/What-are-some-recent-and-potentially-upcoming-breakthroughs-in-deep-learning/answer/Yann-LeCun?srid=nZuy">this Quora post</a>.</p>
+
+</div>
+
+<div class="image-wrapper">
+
+  <p><img src="https://upload.wikimedia.org/wikipedia/en/4/46/Street_Fighter_II_%28arcade%29_screenshot.png" alt="" /></p>
+
+  <p class="image-caption">Street Fighter analogy for adversarial networks
+   from the <a href="http://soumith.ch/eyescream/">EyeScream post</a>.
+   The networks fight each other and improve together,
+   like two humans playing against each other in a game.
+   <a href="https://en.wikipedia.org/wiki/Street_Fighter#/media/File:Street_Fighter_II_(arcade)_screenshot.png">Image source</a>.</p>
+
+</div>
+
+<p>There are other ways to train generative models with deep learning,
+like <a href="http://arxiv.org/abs/1312.6114">Variational Autoencoders</a> (VAEs).
+In this post we’ll only focus on Generative Adversarial Nets (GANs).</p>
+
+<h3 id="ml-heavy-generative-adversarial-net-gan-building-blocks">[ML-Heavy] Generative Adversarial Net (GAN) building blocks</h3>
+
+<p>These ideas started with Ian Goodfellow et al.’s landmark paper
+“<a href="http://papers.nips.cc/paper/5423-generative-adversarial">Generative Adversarial Nets</a>”
+(GANs),
+published at the <a href="https://nips.cc/">Neural Information Processing Systems (NIPS)</a>
+conference in 2014.
+The idea is that we define a simple, well-known distribution
+and represent it as $p_z$.
+For the rest of this post, we’ll use $p_z$ as a uniform distribution
+between -1 and 1 (inclusively).
+We represent sampling a number from this distribution as
+$z\sim p_z$.
+If $p_z$ is 5-dimensional, we can sample it with one
+line of Python with <a href="http://www.numpy.org/">numpy</a>:</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">array</span><span class="p">([</span> <span class="mf">0.77356483</span><span class="p">,</span>  <span class="mf">0.95258473</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.18345086</span><span class="p">,</span>  <span class="mf">0.69224724</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.34718733</span><span class="p">])</span></code></pre>
+</figure>
+
+<p>Now this we have a simple distribution we can easily sample from,
+we’d like to define a function $G(z)$ that produces samples
+from our original probability distribution.</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">G</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
+   <span class="p">...</span>
+   <span class="k">return</span> <span class="n">imageSample</span>
+
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">imageSample</span> <span class="o">=</span> <span class="n">G</span><span class="p">(</span><span class="n">z</span><span class="p">)</span></code></pre>
+</figure>
+
+<p>So how do we define $G(z)$ so that it takes a vector on input
+and returns an image? We’ll use a deep neural network.
+There are many great introductions to deep neural network basics,
+so I won’t cover them here.
+Some great references that I recommend are
+<a href="http://cs231n.github.io/">Stanford’s CS231n course</a>,
+Ian Goodfellow et al.’s <a href="http://www.deeplearningbook.org/">Deep Learning Book</a>,
+<a href="http://setosa.io/ev/image-kernels/">Image Kernels Explained Visually</a>, and
+<a href="https://arxiv.org/abs/1603.07285">convolution arithmetic guide</a>.</p>
+
+<p>There are many ways we can structure $G(z)$ with deep learning.
+The original GAN paper proposed the idea, a training procedure,
+and preliminary experimental results.
+The idea has been greatly built on and improved.
+One of the most recent ideas was presented in the paper
+“<a href="https://arxiv.org/abs/1511.06434">Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks</a>” by
+Alec Radford, Luke Metz, and Soumith Chintala at the
+<a href="http://www.iclr.cc/">International Conference on Learning Representations</a>
+in 2016.
+This paper presents deep convolutional GANs (called DCGANs)
+that use <em>fractionally-strided</em> convolutions to <em>upsample</em> images.</p>
+
+<p><em>What is a fractionally-strided convolution and how do they upsample images?</em>
+Vincent Dumoulin and Francesco Visin’s paper
+“<a href="https://arxiv.org/abs/1603.07285">A guide to convolution arithmetic for deep learning</a>”
+and <a href="https://github.com/vdumoulin/conv_arithmetic">conv_arithmetic</a> project
+is a very well-written introduction to convolution arithmetic in deep learning.
+The visualizations are amazing and give great intuition into how
+fractionally-strided convolutions work.
+First, make sure you understand how a normal convolution slides a kernel
+over a (blue) input space to produce the (green) output space.
+Here, the output is smaller than the input.
+(If you don’t, go through
+<a href="http://cs231n.github.io/convolutional-networks/">the CS231n CNN section</a> or the
+<a href="https://arxiv.org/abs/1603.07285">convolution arithmetic guide</a>.)</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/padding_strides.gif" alt="" /></p>
+
+  <p class="image-caption">Illustration of a convolution from the input (blue) to output (green). This image is from <a href="https://github.com/vdumoulin/conv_arithmetic">vdumoulin/conv_arithmetic</a>.</p>
+
+</div>
+
+<p>Next, suppose that you have a 3x3 input.
+Our goal is to upsample so that the output is larger.
+You can interpret a fractionally-strided convolution as expanding
+the pixels so that there are zeros in-between the pixels.
+Then the convolution over this expanded space will
+result in a larger output space.
+Here, it’s 5x5.</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/padding_strides_transposed.gif" alt="" /></p>
+
+  <p class="image-caption">Illustration of a fractionally-strided convolution from the input (blue) to output (green). This image is from <a href="https://github.com/vdumoulin/conv_arithmetic">vdumoulin/conv_arithmetic</a>.</p>
+
+</div>
+
+<p>As a side-note, there are many names for convolutional layers that upsample:
+<a href="https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf">full convolution</a>,
+in-network upsampling, fractionally-strided convolution,
+backwards convolution, deconvolution, upconvolution, or
+transposed convolution. Using the term ‘deconvolution’ for this is
+strongly discouraged because it’s an over-loaded term:
+<a href="https://en.wikipedia.org/wiki/Deconvolution">the mathematical operation</a>
+or <a href="http://www.matthewzeiler.com/pubs/iccv2011/iccv2011.pdf">other uses in computer vision</a>
+have a completely different meaning.</p>
+
+<p>Now that we have fractionally-strided convolutions as building blocks,
+we can finally represent $G(z)$ so that it takes a vector $z\sim p_z$
+on input and outputs a 64x64x3 RGB image.</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/gen-architecture.png" alt="" /></p>
+
+  <p class="image-caption">One way to structure the generator $G(z)$ with a DCGAN.
+   This image is from the <a href="https://arxiv.org/abs/1511.06434">DCGAN paper</a>.</p>
+
+</div>
+
+<p>The <a href="https://arxiv.org/abs/1511.06434">DCGAN paper</a> also presents
+other tricks and modifications for training DCGANs like using
+batch normalization or leaky ReLUs if you’re interested.</p>
+
+<h3 id="using-gz-to-produce-fake-images">Using $G(z)$ to produce fake images</h3>
+
+<p>Let’s pause and appreciate how powerful this formulation of $G(z)$ is.
+The <a href="https://arxiv.org/abs/1511.06434">DCGAN paper</a> showed how a
+DCGAN can be trained on a dataset of bedroom images.
+Then sampling $G(z)$ will produce the following fake images of
+what the generator thinks bedrooms looks like.
+<strong>None of these images are in the original dataset!</strong></p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/generated-bedrooms.png" alt="" /></p>
+
+  <p class="image-caption">Generating bedroom images with a DCGAN.
+   This image is from the <a href="https://arxiv.org/abs/1511.06434">DCGAN paper</a>.</p>
+
+</div>
+
+<p>Also, you can perform vector arithmetic on the $z$ input space.
+The following is on a network trained to produce faces.</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/face-arithmetic.png" alt="" /></p>
+
+  <p class="image-caption">Face arithmetic with DCGANs.
+   This image is from the <a href="https://arxiv.org/abs/1511.06434">DCGAN paper</a>.</p>
+
+</div>
+
+<h3 id="ml-heavy-training-dcgans">[ML-Heavy] Training DCGANs</h3>
+
+<p>Now that we have defined $G(z)$ and have seen how powerful the formulation is,
+how do we train it?
+We have a lot of <a href="https://en.wikipedia.org/wiki/Latent_variable">latent variables</a>
+(or parameters)
+that we need to find.
+This is where using adversarial networks comes in.</p>
+
+<p>First let’s define some notation.
+Let the (unknown) probability distribution of our data be $p_{\rm data}$.
+Also we can interpret $G(z)$ (where $z\sim p_z$) as drawing samples
+from a probability distribution, let’s call it the generative
+probability distribution, $p_g$.</p>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Probability Distribution Notation</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$p_z$</td>
+      <td>The (known, simple) distribution $z$ goes over</td>
+    </tr>
+    <tr>
+      <td>$p_{\rm data}$</td>
+      <td>The (unknown) distribution over our images. This is where our images are sampled from.</td>
+    </tr>
+    <tr>
+      <td>$p_g$</td>
+      <td>The generative distribution that the generator $G$ samples from. We would like for $p_g=p_{\rm data}$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The discriminator network $D(x)$ takes some image $x$ on input
+and returns the probability that the image $x$ was sampled
+from $p_{\rm data}$.
+The discriminator should return a value closer to 1 when the image
+is from $p_{\rm data}$ and a value closer to 0 when the image is fake,
+like an image sampled from $p_g$.
+In DCGANs, $D(x)$ is a traditional convolutional network.</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/discrim-architecture.png" alt="" /></p>
+
+  <p class="image-caption">The discriminator convolutional network.
+   This image is from the <a href="https://arxiv.org/abs/1607.07539">inpainting paper</a>.</p>
+
+</div>
+
+<p>The goal of training the discriminator $D(x)$ is:</p>
+
+<ol>
+  <li>Maximize $D(x)$ for every image from the true data distribution
+$x\sim p_{\rm data}$.</li>
+  <li>Minimize $D(x)$ for every image not from the true data distribution
+$x\not\sim p_{\rm data}$.</li>
+</ol>
+
+<p>The goal of training the generator $G(z)$ is to
+produce samples that fool $D$.
+The output of the generator is an image and can
+be used as the input to the discriminator.
+Therefore, the generator wants to to maximize $D(G(z))$,
+or equivalently minimize $1-D(G(z))$ because $D$ is
+a probability estimate and only ranges between 0 and 1.</p>
+
+<p>As presented in the paper, training adversarial networks is
+done with the following
+<a href="https://en.wikipedia.org/wiki/Minimax">minimax game</a>.
+The <a href="https://en.wikipedia.org/wiki/Expected_value">expectations</a>
+in the first term go over the samples from the true data distribution
+and over samples from $p_z$ in the second term, which goes over
+$G(z)\sim p_g$.</p>
+
+\[\min_G \max_D {\mathbb E}_{x\sim p_{\rm data}} \log D(x) +
+                {\mathbb E}_{z\sim p_z}[\log (1-D(G(z)))]\]
+
+<p>We will train $D$ and $G$ by taking the gradients of
+this expression with respect to their parameters.
+We know how to quickly compute every part of this expression.
+The expectations are approximated in minibatches of size $m,$
+and the inner maximization can be approximated with $k$
+gradient steps. It turns out $k=1$ works well for training.</p>
+
+<p>Let $\theta_d$ be the parameters of the discriminator
+and $\theta_g$ be the parameters the generator.
+The gradients of the loss with respect to
+$\theta_d$ and $\theta_g$ can be computed with
+<a href="https://en.wikipedia.org/wiki/Backpropagation">backpropagation</a>
+because $D$ and $G$ are defined by well-understood neural network components.
+Here’s the training algorithm from the
+<a href="http://papers.nips.cc/paper/5423-generative-adversarial">GAN paper</a>.
+Ideally once this is finished, $p_g=p_{\rm data}$, so $G(z)$ will
+be able to produce new samples from $p_{\rm data}$.</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/gan-training.png" alt="" /></p>
+
+  <p class="image-caption">GAN training algorithm from the
+   <a href="http://papers.nips.cc/paper/5423-generative-adversarial">GAN paper</a>.</p>
+
+</div>
+
+<h3 id="existing-gan-and-dcgan-implementations">Existing GAN and DCGAN implementations</h3>
+
+<p>There are many great GAN and DCGAN implementations on GitHub
+you can browse:</p>
+
+<ul>
+  <li><a href="https://github.com/goodfeli/adversarial">goodfeli/adversarial</a>:
+Theano GAN implementation released by the authors of the GAN paper.</li>
+  <li><a href="https://github.com/tqchen/mxnet-gan">tqchen/mxnet-gan</a>:
+Unofficial MXNet GAN implementation.</li>
+  <li><a href="https://github.com/Newmu/dcgan_code">Newmu/dcgan_code</a>:
+Theano DCGAN implementation released by the authors of the DCGAN paper.</li>
+  <li><a href="https://github.com/soumith/dcgan.torch">soumith/dcgan.torch</a>:
+Torch DCGAN implementation by one of the authors (Soumith Chintala)
+of the DCGAN paper.</li>
+  <li><a href="https://github.com/carpedm20/DCGAN-tensorflow">carpedm20/DCGAN-tensorflow</a>:
+Unofficial TensorFlow DCGAN implementation.</li>
+  <li><a href="https://github.com/openai/improved-gan">openai/improved-gan</a>:
+Code behind <a href="https://arxiv.org/abs/1606.03498">OpenAI’s first paper</a>.
+Extensively modifies <code class="language-plaintext highlighter-rouge">carpedm20/DCGAN-tensorflow</code>.</li>
+  <li><a href="https://github.com/mattya/chainer-DCGAN">mattya/chainer-DCGAN</a>:
+Unofficial Chainer DCGAN implementation.</li>
+  <li><a href="https://github.com/jacobgil/keras-dcgan">jacobgil/keras-dcgan</a>:
+Unofficial (and incomplete) Keras DCGAN implementation.</li>
+</ul>
+
+<p>Moving forward, we will build on
+<a href="https://github.com/carpedm20/DCGAN-tensorflow">carpedm20/DCGAN-tensorflow</a>.</p>
+
+<h3 id="ml-heavy-dcgans-in-tensorflow">[ML-Heavy] DCGANs in TensorFlow</h3>
+
+<p>The implementation for this portion is in my
+<a href="https://github.com/bamos/dcgan-completion.tensorflow">bamos/dcgan-completion.tensorflow</a>
+GitHub repository.
+I strongly emphasize that the code in this portion is from
+Taehoon Kim’s
+<a href="https://github.com/carpedm20/DCGAN-tensorflow">carpedm20/DCGAN-tensorflow</a>
+repository.
+We’ll use my repository here so that we can easily use the
+image completion portions in the next section.</p>
+
+<p>The implementation is mostly in a Python class called <code class="language-plaintext highlighter-rouge">DCGAN</code> in
+<a href="https://github.com/bamos/dcgan-completion.tensorflow/blob/master/model.py">model.py</a>.
+It’s helpful to have everything in a class like this so that
+intermediate states can be saved after training and then
+loaded for later use.</p>
+
+<p>First let’s define the generator and discriminator architectures.
+The <code class="language-plaintext highlighter-rouge">linear</code>, <code class="language-plaintext highlighter-rouge">conv2d_transpose</code>, <code class="language-plaintext highlighter-rouge">conv2d</code>, and <code class="language-plaintext highlighter-rouge">lrelu</code> functions are defined in
+<a href="https://github.com/bamos/dcgan-completion.tensorflow/blob/master/ops.py">ops.py</a>.</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">generator</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">z_</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">h0_w</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">h0_b</span> <span class="o">=</span> <span class="n">linear</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">gf_dim</span><span class="o">*</span><span class="mi">8</span><span class="o">*</span><span class="mi">4</span><span class="o">*</span><span class="mi">4</span><span class="p">,</span>
+                                           <span class="s">'g_h0_lin'</span><span class="p">,</span> <span class="n">with_w</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="p">.</span><span class="n">h0</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">reshape</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">z_</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">gf_dim</span> <span class="o">*</span> <span class="mi">8</span><span class="p">])</span>
+    <span class="n">h0</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">relu</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">g_bn0</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">h0</span><span class="p">))</span>
+
+    <span class="bp">self</span><span class="p">.</span><span class="n">h1</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">h1_w</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">h1_b</span> <span class="o">=</span> <span class="n">conv2d_transpose</span><span class="p">(</span><span class="n">h0</span><span class="p">,</span>
+        <span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">batch_size</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">gf_dim</span><span class="o">*</span><span class="mi">4</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s">'g_h1'</span><span class="p">,</span> <span class="n">with_w</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">h1</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">relu</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">g_bn1</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">h1</span><span class="p">))</span>
+
+    <span class="n">h2</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">h2_w</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">h2_b</span> <span class="o">=</span> <span class="n">conv2d_transpose</span><span class="p">(</span><span class="n">h1</span><span class="p">,</span>
+        <span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">batch_size</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">gf_dim</span><span class="o">*</span><span class="mi">2</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s">'g_h2'</span><span class="p">,</span> <span class="n">with_w</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">h2</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">relu</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">g_bn2</span><span class="p">(</span><span class="n">h2</span><span class="p">))</span>
+
+    <span class="n">h3</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">h3_w</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">h3_b</span> <span class="o">=</span> <span class="n">conv2d_transpose</span><span class="p">(</span><span class="n">h2</span><span class="p">,</span>
+        <span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">batch_size</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">gf_dim</span><span class="o">*</span><span class="mi">1</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s">'g_h3'</span><span class="p">,</span> <span class="n">with_w</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">h3</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">relu</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">g_bn3</span><span class="p">(</span><span class="n">h3</span><span class="p">))</span>
+
+    <span class="n">h4</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">h4_w</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">h4_b</span> <span class="o">=</span> <span class="n">conv2d_transpose</span><span class="p">(</span><span class="n">h3</span><span class="p">,</span>
+        <span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">batch_size</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s">'g_h4'</span><span class="p">,</span> <span class="n">with_w</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">tf</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">tanh</span><span class="p">(</span><span class="n">h4</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">discriminator</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">reuse</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">reuse</span><span class="p">:</span>
+        <span class="n">tf</span><span class="p">.</span><span class="n">get_variable_scope</span><span class="p">().</span><span class="n">reuse_variables</span><span class="p">()</span>
+
+    <span class="n">h0</span> <span class="o">=</span> <span class="n">lrelu</span><span class="p">(</span><span class="n">conv2d</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">df_dim</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'d_h0_conv'</span><span class="p">))</span>
+    <span class="n">h1</span> <span class="o">=</span> <span class="n">lrelu</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">d_bn1</span><span class="p">(</span><span class="n">conv2d</span><span class="p">(</span><span class="n">h0</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">df_dim</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'d_h1_conv'</span><span class="p">)))</span>
+    <span class="n">h2</span> <span class="o">=</span> <span class="n">lrelu</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">d_bn2</span><span class="p">(</span><span class="n">conv2d</span><span class="p">(</span><span class="n">h1</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">df_dim</span><span class="o">*</span><span class="mi">4</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'d_h2_conv'</span><span class="p">)))</span>
+    <span class="n">h3</span> <span class="o">=</span> <span class="n">lrelu</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">d_bn3</span><span class="p">(</span><span class="n">conv2d</span><span class="p">(</span><span class="n">h2</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">df_dim</span><span class="o">*</span><span class="mi">8</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'d_h3_conv'</span><span class="p">)))</span>
+    <span class="n">h4</span> <span class="o">=</span> <span class="n">linear</span><span class="p">(</span><span class="n">tf</span><span class="p">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">h3</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8192</span><span class="p">]),</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'d_h3_lin'</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">tf</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">h4</span><span class="p">),</span> <span class="n">h4</span></code></pre>
+</figure>
+
+<p>When we’re initializing this class, we’ll use these functions to
+create the models. We need two versions of the discriminator
+that shares (or reuses) parameters. One for the minibatch of
+images from the data distribution and the other for the minibatch
+of images from the generator.</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><span class="bp">self</span><span class="p">.</span><span class="n">G</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">generator</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">z</span><span class="p">)</span>
+<span class="bp">self</span><span class="p">.</span><span class="n">D</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">D_logits</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">discriminator</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">images</span><span class="p">)</span>
+<span class="bp">self</span><span class="p">.</span><span class="n">D_</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">D_logits_</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">discriminator</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">G</span><span class="p">,</span> <span class="n">reuse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span></code></pre>
+</figure>
+
+<p>Next, we’ll define the loss functions. Instead of using the sums,
+we’ll use the
+<a href="https://en.wikipedia.org/wiki/Cross_entropy">cross entropy</a>
+between $D$’s predictions and what we want them to be
+because it works better.
+The discriminator wants the predictions on the “real” data
+to be all ones and the predictions on the “fake” data from
+the generator to be all zeros.
+The generator wants the discriminator’s predictions to
+be all ones.</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><span class="bp">self</span><span class="p">.</span><span class="n">d_loss_real</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">reduce_mean</span><span class="p">(</span>
+    <span class="n">tf</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">sigmoid_cross_entropy_with_logits</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">D_logits</span><span class="p">,</span>
+                                            <span class="n">tf</span><span class="p">.</span><span class="n">ones_like</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">D</span><span class="p">)))</span>
+<span class="bp">self</span><span class="p">.</span><span class="n">d_loss_fake</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">reduce_mean</span><span class="p">(</span>
+    <span class="n">tf</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">sigmoid_cross_entropy_with_logits</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">D_logits_</span><span class="p">,</span>
+                                            <span class="n">tf</span><span class="p">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">D_</span><span class="p">)))</span>
+<span class="bp">self</span><span class="p">.</span><span class="n">d_loss</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">d_loss_real</span> <span class="o">+</span> <span class="bp">self</span><span class="p">.</span><span class="n">d_loss_fake</span>
+
+<span class="bp">self</span><span class="p">.</span><span class="n">g_loss</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">reduce_mean</span><span class="p">(</span>
+    <span class="n">tf</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">sigmoid_cross_entropy_with_logits</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">D_logits_</span><span class="p">,</span>
+                                            <span class="n">tf</span><span class="p">.</span><span class="n">ones_like</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">D_</span><span class="p">)))</span></code></pre>
+</figure>
+
+<p>Gather the variables for each of the models
+so they can be trained separately.</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><span class="n">t_vars</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">trainable_variables</span><span class="p">()</span>
+
+<span class="bp">self</span><span class="p">.</span><span class="n">d_vars</span> <span class="o">=</span> <span class="p">[</span><span class="n">var</span> <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">t_vars</span> <span class="k">if</span> <span class="s">'d_'</span> <span class="ow">in</span> <span class="n">var</span><span class="p">.</span><span class="n">name</span><span class="p">]</span>
+<span class="bp">self</span><span class="p">.</span><span class="n">g_vars</span> <span class="o">=</span> <span class="p">[</span><span class="n">var</span> <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">t_vars</span> <span class="k">if</span> <span class="s">'g_'</span> <span class="ow">in</span> <span class="n">var</span><span class="p">.</span><span class="n">name</span><span class="p">]</span></code></pre>
+</figure>
+
+<p>Now we’re ready to optimize the parameters and
+we’ll use <a href="https://arxiv.org/abs/1412.6980">ADAM</a>,
+which is an adaptive non-convex optimization method
+commonly used in modern deep learning.
+ADAM is often competitive with SGD and (usually) doesn’t
+require hand-tuning of the learning rate, momentum, and
+other hyper-parameters.</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><span class="n">d_optim</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">train</span><span class="p">.</span><span class="n">AdamOptimizer</span><span class="p">(</span><span class="n">config</span><span class="p">.</span><span class="n">learning_rate</span><span class="p">,</span> <span class="n">beta1</span><span class="o">=</span><span class="n">config</span><span class="p">.</span><span class="n">beta1</span><span class="p">)</span> \
+                    <span class="p">.</span><span class="n">minimize</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">d_loss</span><span class="p">,</span> <span class="n">var_list</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">d_vars</span><span class="p">)</span>
+<span class="n">g_optim</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">train</span><span class="p">.</span><span class="n">AdamOptimizer</span><span class="p">(</span><span class="n">config</span><span class="p">.</span><span class="n">learning_rate</span><span class="p">,</span> <span class="n">beta1</span><span class="o">=</span><span class="n">config</span><span class="p">.</span><span class="n">beta1</span><span class="p">)</span> \
+                    <span class="p">.</span><span class="n">minimize</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">g_loss</span><span class="p">,</span> <span class="n">var_list</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">g_vars</span><span class="p">)</span></code></pre>
+</figure>
+
+<p>We’re ready to go through our data. In each epoch, we sample
+some images in a minibatch and run the optimizers to update
+the networks.
+Interestingly if $G$ is only updated once, the discriminator’s
+loss does not go to zero.
+Also, I think the additional calls at the end to <code class="language-plaintext highlighter-rouge">d_loss_fake</code>
+and <code class="language-plaintext highlighter-rouge">d_loss_real</code> are causing a little bit of unnecessary computation
+and are redundant because these values are computed
+as part of <code class="language-plaintext highlighter-rouge">d_optim</code> and <code class="language-plaintext highlighter-rouge">g_optim</code>.
+As an exercise in TensorFlow, you can try optimizing this part
+and send a PR to the original repo.
+(If you do, ping me and I’ll update it in mine too.)</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="n">config</span><span class="p">.</span><span class="n">epoch</span><span class="p">):</span>
+    <span class="p">...</span>
+    <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">batch_idxs</span><span class="p">):</span>
+        <span class="n">batch_images</span> <span class="o">=</span> <span class="p">...</span>
+        <span class="n">batch_z</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="n">config</span><span class="p">.</span><span class="n">batch_size</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">z_dim</span><span class="p">])</span> \
+                    <span class="p">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">float32</span><span class="p">)</span>
+
+        <span class="c1"># Update D network
+</span>        <span class="n">_</span><span class="p">,</span> <span class="n">summary_str</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">sess</span><span class="p">.</span><span class="n">run</span><span class="p">([</span><span class="n">d_optim</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">d_sum</span><span class="p">],</span>
+            <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span> <span class="bp">self</span><span class="p">.</span><span class="n">images</span><span class="p">:</span> <span class="n">batch_images</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">z</span><span class="p">:</span> <span class="n">batch_z</span> <span class="p">})</span>
+
+        <span class="c1"># Update G network
+</span>        <span class="n">_</span><span class="p">,</span> <span class="n">summary_str</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">sess</span><span class="p">.</span><span class="n">run</span><span class="p">([</span><span class="n">g_optim</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">g_sum</span><span class="p">],</span>
+            <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span> <span class="bp">self</span><span class="p">.</span><span class="n">z</span><span class="p">:</span> <span class="n">batch_z</span> <span class="p">})</span>
+
+        <span class="c1"># Run g_optim twice to make sure that d_loss does not go to zero
+</span>        <span class="c1"># (different from paper)
+</span>        <span class="n">_</span><span class="p">,</span> <span class="n">summary_str</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">sess</span><span class="p">.</span><span class="n">run</span><span class="p">([</span><span class="n">g_optim</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">g_sum</span><span class="p">],</span>
+            <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span> <span class="bp">self</span><span class="p">.</span><span class="n">z</span><span class="p">:</span> <span class="n">batch_z</span> <span class="p">})</span>
+
+        <span class="n">errD_fake</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">d_loss_fake</span><span class="p">.</span><span class="nb">eval</span><span class="p">({</span><span class="bp">self</span><span class="p">.</span><span class="n">z</span><span class="p">:</span> <span class="n">batch_z</span><span class="p">})</span>
+        <span class="n">errD_real</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">d_loss_real</span><span class="p">.</span><span class="nb">eval</span><span class="p">({</span><span class="bp">self</span><span class="p">.</span><span class="n">images</span><span class="p">:</span> <span class="n">batch_images</span><span class="p">})</span>
+        <span class="n">errG</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">g_loss</span><span class="p">.</span><span class="nb">eval</span><span class="p">({</span><span class="bp">self</span><span class="p">.</span><span class="n">z</span><span class="p">:</span> <span class="n">batch_z</span><span class="p">})</span></code></pre>
+</figure>
+
+<p>That’s it! Of course the full code has a little more book-keeping
+that you can check out in
+<a href="https://github.com/bamos/dcgan-completion.tensorflow/blob/master/model.py">model.py</a>.</p>
+
+<h3 id="running-dcgan-on-your-images">Running DCGAN on your images</h3>
+<p>If you skipped the last section, but are interested in running some code:
+The implementation for this portion is in my
+<a href="https://github.com/bamos/dcgan-completion.tensorflow">bamos/dcgan-completion.tensorflow</a>
+GitHub repository.
+I strongly emphasize that the code in this portion is from
+Taehoon Kim’s
+<a href="https://github.com/carpedm20/DCGAN-tensorflow">carpedm20/DCGAN-tensorflow</a>
+repository.
+We’ll use my repository here so that we can easily use the
+image completion portions in the next section.
+As a warning, if you don’t have a CUDA-enabled GPU, training the
+network in this portion may be prohibitively slow.</p>
+
+<p><strong>Please message me if the following doesn’t work for you!</strong></p>
+
+<p>First let’s clone my
+<a href="https://github.com/bamos/dcgan-completion.tensorflow">bamos/dcgan-completion.tensorflow</a>
+and
+<a href="http://cmusatyalab.github.io/openface">OpenFace</a>
+repositories.
+We’ll use OpenFace’s Python-only portions to pre-process images.
+Don’t worry, you won’t have to install OpenFace’s Torch dependency.
+Create a new working directory for this and clone the repositories:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">git clone https://github.com/cmusatyalab/openface.git
+git clone https://github.com/bamos/dcgan-completion.tensorflow.git</code></pre>
+</figure>
+
+<p>Next, install <a href="http://opencv.org/">OpenCV</a> and <a href="http://dlib.net/">dlib</a>
+for Python 2.
+(OpenFace currently uses Python 2, but if you’re interested,
+I’d be happy if you make it Python 3 compatible and
+<a href="https://github.com/cmusatyalab/openface/issues/172">send in a PR mentioning this issue</a>.)
+These can a little tricky to get set up and I’ve
+included a few notes on what versions I use and how I install
+in the <a href="http://cmusatyalab.github.io/openface/setup/">OpenFace setup guide</a>.
+Next, install OpenFace’s Python library so we can preprocess images.
+If you’re not using a virtual environment, you should use <code class="language-plaintext highlighter-rouge">sudo</code>
+when running <code class="language-plaintext highlighter-rouge">setup.py</code> to globally install OpenFace.
+(If you have trouble setting up this portion, you can also use
+our OpenFace docker build as described
+in the <a href="http://cmusatyalab.github.io/openface/setup/">OpenFace setup guide</a>.)</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>openface
+pip2 <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+python2 setup.py <span class="nb">install
+</span>models/get-models.sh
+<span class="nb">cd</span> ..</code></pre>
+</figure>
+
+<p>Next download a dataset of face images. It doesn’t matter if they
+have labels or not, we’ll get rid of them.
+A non-exhaustive list of options are:
+<a href="https://www.microsoft.com/en-us/research/project/msr-image-recognition-challenge-irc/">MS-Celeb-1M</a>,
+<a href="http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html">CelebA</a>,
+<a href="http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html">CASIA-WebFace</a>,
+<a href="http://vintage.winklerbros.net/facescrub.html">FaceScrub</a>,
+<a href="http://vis-www.cs.umass.edu/lfw/">LFW</a>,
+and
+<a href="http://megaface.cs.washington.edu/">MegaFace</a>.
+Place the dataset in <code class="language-plaintext highlighter-rouge">dcgan-completion.tensorflow/data/your-dataset/raw</code>
+to indicate it’s the dataset’s raw images.</p>
+
+<p>Now we’ll use OpenFace’s alignment tool to pre-process the images to be 64x64.</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">./openface/util/align-dlib.py data/dcgan-completion.tensorflow/data/your-dataset/raw align innerEyesAndBottomLip data/dcgan-completion.tensorflow/data/your-dataset/aligned <span class="nt">--size</span> 64</code></pre>
+</figure>
+
+<p>And finally we’ll flatten the aligned images directory so that
+it just contains images and no sub-directories.</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>dcgan-completion.tensorflow/data/your-dataset/aligned
+find <span class="nb">.</span> <span class="nt">-name</span> <span class="s1">'*.png'</span> <span class="nt">-exec</span> <span class="nb">mv</span> <span class="o">{}</span> <span class="nb">.</span> <span class="se">\;</span>
+find <span class="nb">.</span> <span class="nt">-type</span> d <span class="nt">-empty</span> <span class="nt">-delete</span>
+<span class="nb">cd</span> ../../..</code></pre>
+</figure>
+
+<p>We’re ready to train the DCGAN.
+After <a href="https://www.tensorflow.org/versions/r0.10/get_started/os_setup.html#download-and-setup">installing TensorFlow</a>,
+start the training.</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">./train-dcgan.py <span class="nt">--dataset</span> ./data/your-dataset/aligned <span class="nt">--epoch</span> 20</code></pre>
+</figure>
+
+<p>You can check what randomly sampled images from the generator look
+like in the <code class="language-plaintext highlighter-rouge">samples</code> directory.
+I’m training on the CASIA-WebFace and FaceScrub datasets because
+I had them on hand. After 14 epochs, the samples from mine look like:</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/dcgan-samples.png" alt="" /></p>
+
+  <p class="image-caption">Samples from my DCGAN after training for 14 epochs
+   with the combined CASIA-WebFace and FaceScrub dataset.</p>
+
+</div>
+
+<p>You can also view the TensorFlow graphs and loss functions
+with <a href="https://www.tensorflow.org/versions/r0.10/how_tos/summaries_and_tensorboard/index.html">TensorBoard</a>.</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">tensorboard <span class="nt">--logdir</span> ./logs</code></pre>
+</figure>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/dcgan-loss.png" alt="" /></p>
+
+  <p class="image-caption">TensorBoard loss visualizations. Will be updated in real-time when training.</p>
+
+</div>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/tensorboard-graph.gif" alt="" /></p>
+
+  <p class="image-caption">TensorBoard visualization of DCGAN networks.</p>
+
+</div>
+
+<h2 id="step-3-finding-the-best-fake-image-for-image-completion">Step 3: Finding the best fake image for image completion</h2>
+
+<h3 id="image-completion-with-dcgans">Image completion with DCGANs</h3>
+
+<p>Now that we have a trained discriminator $D(x)$ and generator $G(z)$,
+how can we use them to complete images?
+In this section I present the techniques in
+Raymond Yeh and Chen Chen et al.’s paper
+“<a href="https://arxiv.org/abs/1607.07539">Semantic Image Inpainting with Perceptual and Contextual Losses</a>,”
+which was just posted on arXiv on July 26, 2016.</p>
+
+<p>To do completion for some image $y$, something reasonable that
+<strong>doesn’t</strong> work is to maximize $D(y)$ over the missing pixels.
+This will result in something that’s neither from the data
+distribution ($p_{\rm data}$) nor the generative distribution ($p_g$).
+What we want is a reasonable projection of $y$ onto the generative distribution.</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/inpainting-projection.png" alt="" /></p>
+
+  <p class="image-caption">(a): Ideal reconstruction of $y$ onto the generative
+   distribution (the blue manifold).
+   (b): Failure example of trying to reconstruct $y$ by only
+   maximizing $D(y)$.
+   This image is from the <a href="https://arxiv.org/abs/1607.07539">inpainting paper</a>.</p>
+
+</div>
+
+<h3 id="ml-heavy-loss-function-for-projecting-onto-p_g">[ML-Heavy] Loss function for projecting onto $p_g$</h3>
+
+<p>To define a reasonable projection,
+let’s first define some notation for completing images.
+We use a <em>binary mask</em> $M$ that has values 0 or 1.
+A value of 1 represents the parts of the image we
+want to keep and a value of 0 represents the parts
+of the image we want to complete.
+We can now define how to complete an image $y$ given the
+binary mask $M$. Multiply the elements of $y$ by the elements
+of $M$. The element-wise product between two matrices is
+sometimes called the
+<a href="https://en.wikipedia.org/wiki/Hadamard_product_(matrices)">Hadamard product</a>
+and is represented as $M\odot y$.
+$M\odot y$ gives the original part of the image.</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/mask-example.png" alt="" /></p>
+
+  <p class="image-caption">Illustration of a binary mask.</p>
+
+</div>
+
+<p>Next, suppose we’ve found an image from the generator $G(\hat z)$
+for some $\hat z$ that gives a reasonable reconstruction of
+the missing portions.
+The completed pixels $(1-M)\odot G(\hat z)$ can be added to
+the original pixels to create the reconstructed image:</p>
+
+\[x_{\rm reconstructed} = M\odot y + (1-M)\odot G(\hat z)\]
+
+<p>Now all we need to do is find some $G(\hat z)$ that does a good
+job at completing the image.
+To find $\hat z$, let’s revisit our goals of recovering <strong>contextual</strong>
+and <strong>perceptual</strong> information from the beginning of this post
+and pose them in the context of DCGANs.
+We’ll do this by defining <a href="https://en.wikipedia.org/wiki/Loss_function">loss functions</a>
+for an arbitrary $z\sim p_z$.
+A smaller value of these loss functions means that $z$ is
+more suitable for completion than a larger value.</p>
+
+<p><strong>Contextual Loss</strong>: To keep the same context as the input image,
+make sure the known pixel locations in the input image $y$
+are similar to the pixels in $G(z)$.
+We need to penalize $G(z)$ for not creating a similar image for
+the pixels that we know about.
+Formally, we do this by element-wise subtracting the pixels in
+$y$ from $G(z)$ and looking at how much they differ:</p>
+
+\[{\mathcal L}_{\rm contextual}(z) = ||M\odot G(z) - M\odot y||_1,\]
+
+<p>where $||x||_1=\sum_i |x_i|$ is the
+<a href="https://en.wikipedia.org/wiki/Norm_(mathematics)#Taxicab_norm_or_Manhattan_norm">$\ell_1$ norm</a>
+of some vector $x$.
+The <a href="https://en.wikipedia.org/wiki/Norm_(mathematics)#Euclidean_norm">$\ell_2$ norm</a>
+is another reasonable choice, but the inpainting paper says
+that the $\ell_1$ norm works better in practice.</p>
+
+<p>In the ideal case, all of the pixels at known locations are
+the same between $y$ and $G(z)$.
+Then $G(z)_i - y_i = 0$ for the known pixels $i$ and thus
+${\mathcal L}_{\rm contextual}(z) = 0$.</p>
+
+<p><strong>Perceptual Loss</strong>: To recover an image that looks real,
+let’s make sure the discriminator is properly convinced
+that the image looks real.
+We’ll do this with the same criterion used in training
+the DCGAN:</p>
+
+\[{\mathcal L}_{\rm perceptual}(z) = \log (1 - D(G(z)))\]
+
+<hr />
+
+<p>We’re finally ready to find $\hat z$ with a combination of the
+contextual and perceptual losses:</p>
+
+\[{\mathcal L}(z) \equiv {\mathcal L}_{\rm contextual}(z) + \lambda {\mathcal L}_{\rm perceptual}(z)\]
+
+\[\hat z \equiv {\rm arg} \min_z {\mathcal L}(z)\]
+
+<p>where $\lambda$ is a hyper-parameter that controls how import the
+contextual loss is relative to the perceptual loss.
+(I use $\lambda=0.1$ by default and haven’t played with it too much.)
+Then as before, the reconstructed image fills in the missing
+values of $y$ with $G(\hat z)$:</p>
+
+\[x_{\rm reconstructed} = M\odot y + (1-M)\odot G(\hat z)\]
+
+<p>The inpainting paper also uses
+<a href="http://dl.acm.org/citation.cfm?id=882269">poisson blending</a>
+(<a href="http://www.ctralie.com/Teaching/PoissonImageEditing/">see Chris Traile’s post for an introduction to it</a>)
+to smooth the reconstructed image.</p>
+
+<h3 id="ml-heavy-tensorflow-implementation-of-image-completion-with-dcgans">[ML-Heavy] TensorFlow implementation of image completion with DCGANs</h3>
+
+<p>This section presents the changes I’ve added to
+<a href="https://github.com/bamos/dcgan-completion.tensorflow">bamos/dcgan-completion.tensorflow</a>
+that modifies Taehoon Kim’s
+<a href="https://github.com/carpedm20/DCGAN-tensorflow">carpedm20/DCGAN-tensorflow</a>
+for image completion.</p>
+
+<p>We can re-use a lot of the existing variables for completion.
+The only new variable we’ll add is a mask for completion:</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><span class="bp">self</span><span class="p">.</span><span class="n">mask</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="p">.</span><span class="n">float32</span><span class="p">,</span> <span class="p">[</span><span class="bp">None</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="p">.</span><span class="n">image_shape</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'mask'</span><span class="p">)</span></code></pre>
+</figure>
+
+<p>We’ll solve ${\rm arg} \min_z {\mathcal L}(z)$ iteratively with
+gradient descent with the gradients $\nabla_z {\mathcal L}(z)$.
+TensorFlow’s <a href="https://en.wikipedia.org/wiki/Automatic_differentiation">automatic differentiation</a>
+can compute this for us once we’ve defined the loss functions!
+So the entire idea of completion with DCGANs can be implemented by just
+adding four lines of TensorFlow code to an existing DCGAN implementation.
+(Of course implementing this also involves some non-TensorFlow code.)</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><span class="bp">self</span><span class="p">.</span><span class="n">contextual_loss</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">reduce_sum</span><span class="p">(</span>
+    <span class="n">tf</span><span class="p">.</span><span class="n">contrib</span><span class="p">.</span><span class="n">layers</span><span class="p">.</span><span class="n">flatten</span><span class="p">(</span>
+        <span class="n">tf</span><span class="p">.</span><span class="nb">abs</span><span class="p">(</span><span class="n">tf</span><span class="p">.</span><span class="n">mul</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">mask</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">G</span><span class="p">)</span> <span class="o">-</span> <span class="n">tf</span><span class="p">.</span><span class="n">mul</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">mask</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">images</span><span class="p">))),</span> <span class="mi">1</span><span class="p">)</span>
+<span class="bp">self</span><span class="p">.</span><span class="n">perceptual_loss</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">g_loss</span>
+<span class="bp">self</span><span class="p">.</span><span class="n">complete_loss</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">contextual_loss</span> <span class="o">+</span> <span class="bp">self</span><span class="p">.</span><span class="n">lam</span><span class="o">*</span><span class="bp">self</span><span class="p">.</span><span class="n">perceptual_loss</span>
+<span class="bp">self</span><span class="p">.</span><span class="n">grad_complete_loss</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">gradients</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">complete_loss</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">z</span><span class="p">)</span></code></pre>
+</figure>
+
+<p>Next, let’s define a mask. I’ve only added one for the center portions
+of images, but feel free to add something else like a random mask
+and send in a pull request.</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">config</span><span class="p">.</span><span class="n">maskType</span> <span class="o">==</span> <span class="s">'center'</span><span class="p">:</span>
+    <span class="n">scale</span> <span class="o">=</span> <span class="mf">0.25</span>
+    <span class="k">assert</span><span class="p">(</span><span class="n">scale</span> <span class="o">&lt;=</span> <span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">image_shape</span><span class="p">)</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">image_size</span><span class="o">*</span><span class="n">scale</span><span class="p">)</span>
+    <span class="n">u</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">image_size</span><span class="o">*</span><span class="p">(</span><span class="mf">1.0</span><span class="o">-</span><span class="n">scale</span><span class="p">))</span>
+    <span class="n">mask</span><span class="p">[</span><span class="n">l</span><span class="p">:</span><span class="n">u</span><span class="p">,</span> <span class="n">l</span><span class="p">:</span><span class="n">u</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="mf">0.0</span></code></pre>
+</figure>
+
+<p>For gradient descent, we’ll use
+<a href="http://www.stats.ox.ac.uk/~lienart/blog_opti_pgd.html">projected gradient descent</a>
+with minibatches and momentum to project $z$ to be in $[-1,1]$.</p>
+
+<figure class="highlight">
+  <pre><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">batch_idxs</span><span class="p">):</span>
+    <span class="n">batch_images</span> <span class="o">=</span> <span class="p">...</span>
+    <span class="n">batch_mask</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">batch_size</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="p">.</span><span class="n">image_shape</span><span class="p">)</span>
+    <span class="n">zhats</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">batch_size</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">z_dim</span><span class="p">))</span>
+
+    <span class="n">v</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="n">config</span><span class="p">.</span><span class="n">nIter</span><span class="p">):</span>
+        <span class="n">fd</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">z</span><span class="p">:</span> <span class="n">zhats</span><span class="p">,</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">mask</span><span class="p">:</span> <span class="n">batch_mask</span><span class="p">,</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">images</span><span class="p">:</span> <span class="n">batch_images</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">run</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">complete_loss</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">grad_complete_loss</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">G</span><span class="p">]</span>
+        <span class="n">loss</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">G_imgs</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">sess</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">run</span><span class="p">,</span> <span class="n">feed_dict</span><span class="o">=</span><span class="n">fd</span><span class="p">)</span>
+
+        <span class="n">v_prev</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">copy</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+        <span class="n">v</span> <span class="o">=</span> <span class="n">config</span><span class="p">.</span><span class="n">momentum</span><span class="o">*</span><span class="n">v</span> <span class="o">-</span> <span class="n">config</span><span class="p">.</span><span class="n">lr</span><span class="o">*</span><span class="n">g</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">zhats</span> <span class="o">+=</span> <span class="o">-</span><span class="n">config</span><span class="p">.</span><span class="n">momentum</span> <span class="o">*</span> <span class="n">v_prev</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">config</span><span class="p">.</span><span class="n">momentum</span><span class="p">)</span><span class="o">*</span><span class="n">v</span>
+        <span class="n">zhats</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">clip</span><span class="p">(</span><span class="n">zhats</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></code></pre>
+</figure>
+
+<h3 id="completing-your-images">Completing your images</h3>
+
+<p>Select some images to complete and place them in
+<code class="language-plaintext highlighter-rouge">dcgan-completion.tensorflow/your-test-data/raw</code>.
+Align them as before as
+<code class="language-plaintext highlighter-rouge">dcgan-completion.tensorflow/your-test-data/aligned</code>.
+I randomly selected images from the LFW for this.
+My DCGAN wasn’t trained on any of the identities in the LFW.</p>
+
+<p>You can run the completion on your images with:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">./complete.py ./data/your-test-data/aligned/<span class="k">*</span> <span class="nt">--outDir</span> outputImages</code></pre>
+</figure>
+
+<p>This will run and periodically output the completed images to <code class="language-plaintext highlighter-rouge">--outDir</code>.
+You can create create a gif from these with ImageMagick:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>outputImages
+convert <span class="nt">-delay</span> 10 <span class="nt">-loop</span> 0 completed/<span class="k">*</span>.png completion.gif</code></pre>
+</figure>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/completion.gif" alt="" /></p>
+
+  <p class="image-caption">
+    Final image completions.
+    The centers of these images are being automatically generated.
+    The source code to create this is available <a href="http://github.com/bamos/dcgan-completion.tensorflow">here</a>.
+    <strong>These are not curated!</strong> I selected a random subset of images
+    from the LFW dataset.</p>
+
+</div>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Thanks for reading, we made it!
+In this blog post, we covered one method of completing images that:</p>
+
+<ol>
+  <li><a href="#step-1-interpreting-images-as-samples-from-a-probability-distribution">Interprets images as being samples from a probability distribution</a>.</li>
+  <li><a href="#step-2-quickly-generating-fake-images">Generates fake images</a>.</li>
+  <li><a href="#step-3-using-fake-image-generation-for-image-completion">Finds the best fake image for completion</a>.</li>
+</ol>
+
+<p>My examples were on faces, but DCGANs can be trained on other
+types of images too.
+In general, GANs are difficult to train and we don’t yet
+know how to train them on certain classes of objects,
+<a href="https://www.quora.com/Do-generative-adversarial-networks-always-converge">nor on large images</a>.
+However they’re a promising model and I’m excited to
+see where GAN research takes us!</p>
+
+<p>Feel free to ping me on Twitter
+<a href="https://twitter.com/brandondamos">@brandondamos</a>,
+Github <a href="https://github.com/bamos">@bamos</a>,
+or <a href="/research/index.html">elsewhere</a> if you have any comments
+or suggestions on this post. Thanks!</p>
+
+<div class="image-wrapper">
+
+  <p><img src="/research/data/2016-08-09/gan-imagenet.png" alt="" /></p>
+
+  <p class="image-caption"> DCGAN samples (left) and improved GAN samples
+    (right, not covered in this post) on ImageNet showing
+    that we don’t yet understand how to use GANs on
+    every type of image.
+    This image is from the <a href="https://arxiv.org/abs/1606.03498">improved GAN paper</a>.</p>
+
+</div>
+
+<h2 id="citation-for-this-articleproject">Citation for this article/project</h2>
+
+<p>Please consider citing this project in your
+publications if it helps your research.
+The following is a <a href="http://www.bibtex.org/">BibTeX</a>
+and plaintext reference.
+The BibTeX entry requires the <code class="language-plaintext highlighter-rouge">url</code> LaTeX package.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@misc{amos2016image,
+    title        = {{Image Completion with Deep Learning in TensorFlow}},
+    author       = {Amos, Brandon},
+    howpublished = {\url{http://bamos.github.io/2016/08/09/deep-completion}},
+    note         = {Accessed: [Insert date here]}
+}
+
+Brandon Amos. Image Completion with Deep Learning in TensorFlow.
+http://bamos.github.io/2016/08/09/deep-completion.
+Accessed: [Insert date here]
+</code></pre></div></div>
+
+<h2 id="partial-bibliography-for-further-reading">Partial bibliography for further reading</h2>
+<ul>
+  <li>Raymond Yeh and Chen Chen et al.
+“<a href="https://arxiv.org/abs/1607.07539">Semantic Image Inpainting with Perceptual and Contextual Losses</a>:”
+Paper this post was based on.</li>
+  <li>D. Pathak et al.
+<a href="https://people.eecs.berkeley.edu/~pathak/context_encoder/">Context Encoders: Feature Learning by Inpainting</a> at CVPR 2016:
+Another recent method for inpainting that use similar loss functions
+and have released code
+on GitHub at <a href="https://github.com/pathak22/context-encoder">pathak22/context-encoder</a>.
+This method is less computationally expensive than Yeh and Chen et al.
+because they use a single forward network pass instead of
+solving an optimization problem that involves many
+forward and backward passes.</li>
+  <li>Ian Goodfellow et al.
+“<a href="http://papers.nips.cc/paper/5423-generative-adversarial">Generative Adversarial Nets</a>”</li>
+  <li>Vincent Dumoulin and Francesco Visin.
+“<a href="https://arxiv.org/abs/1603.07285">A guide to convolution arithmetic for deep learning</a>”</li>
+  <li>Alec Radford, Luke Metz, and Soumith Chintala.
+“<a href="https://arxiv.org/abs/1511.06434">Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks</a>”</li>
+  <li>Emily Denton et al.
+“<a href="http://arxiv.org/abs/1506.05751">Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks</a>:”
+Paper behind <a href="http://soumith.ch/eyescream/">the EyeScream Project</a>.</li>
+  <li>Tim Salimans et al.
+“<a href="https://arxiv.org/abs/1606.03498">Improved Techniques for Training GANs</a>:”
+OpenAI’s first paper. (Not discussed here.)</li>
+</ul>
+
+<h2 id="bonus-incomplete-thoughts-on-tensorflow-and-torch">Bonus: Incomplete Thoughts on TensorFlow and Torch</h2>
+<p>As a machine learning researcher, I mostly use numpy, Torch,
+and TensorFlow in my programs.
+<a href="https://vtechworks.lib.vt.edu/bitstream/handle/10919/49672/qnTOMS14.pdf">A few</a>
+<a href="http://dl.acm.org/citation.cfm?id=2663525">years</a>
+<a href="http://dl.acm.org/citation.cfm?id=2685662">ago</a>,
+I used Fortran.
+I implemented
+<a href="https://cmusatyalab.github.io/openface">OpenFace</a>
+as a Python library in numpy that calls into networks
+trained with Torch.
+Over the past few months, I’ve been using TensorFlow
+more seriously and have a few thoughts comparing Torch and TensorFlow.
+These are non-exhaustive and from my personal experiences as a user.</p>
+
+<p>If I am misunderstanding something here, please message me and I’ll
+add a correction. Due to the fast-paced nature of these
+frameworks, it’s easy to not have references to everything.</p>
+
+<ul>
+  <li>There are many great collections of tutorials, pre-trained models,
+and technologies for both Torch and TensorFlow in projects like
+<a href="https://github.com/carpedm20/awesome-torch">awesome-torch</a> and
+<a href="https://github.com/jtoy/awesome-tensorflow">awesome-tensorflow</a>.</li>
+  <li>I haven’t used <a href="https://github.com/torchnet/torchnet">torchnet</a>,
+but it seems promising.</li>
+  <li>Torch’s REPL is very nice and I always have it open when I’m
+developing in Torch to quickly try out operations.
+TensorFlow’s <code class="language-plaintext highlighter-rouge">InteractiveSession</code> is nice, but I find
+that trying things out interactively is a little slower
+since everything has to be defined symbolically
+and initialized in the session.
+I much prefer trying quick numpy operations in Python’s REPL
+over TensorFlow operations.</li>
+  <li>As with a lot of other programming, error messages in TensorFlow
+and Torch have their own learning curves.
+Debugging TensorFlow usually involves reasoning about the symbolic
+constructions while debugging Torch is more concrete.
+<a href="https://github.com/torch/nngraph/issues/107">Sometimes the error messages are confusing for me and I send in an issue only to find out that my error was obvious</a>.</li>
+  <li>
+    <p>Having Python support is critical for my research.
+I love the scientific Python programming stack and libraries like
+<a href="http://matplotlib.org/">matplotlib</a> and
+<a href="http://www.cvxpy.org/en/latest/">cvxpy</a>
+that don’t have an equivalent in Lua.
+This is why I wrote <a href="http://cmusatyalab.github.io/openface">OpenFace</a>
+to use Torch for training the neural network,
+but Python for everything else.</p>
+
+    <p>I can easily convert TensorFlow arrays to numpy format and use
+them with other Python code, but I have to work hard to do
+this with Torch.
+When I tried using <a href="https://github.com/htwaijry/npy4th">npy4th</a>,
+I found a bug (that I haven’t reported, sorry) that
+caused incorrect data to be saved.
+<a href="https://github.com/deepmind/torch-hdf5">Torch’s hdf5 bindings</a>
+seem to work well and can easily be loaded in Python.
+And for smaller things, I just manually write out
+logs to a CSV file.</p>
+
+    <p>Torch has some equivalents to Python, like
+<a href="https://github.com/torch/gnuplot">gnuplot wrappers</a>
+for some plotting, but I prefer the Python alternatives.
+There are some Python Torch wrappers like
+<a href="https://github.com/hughperkins/pytorch">pytorch</a> or
+<a href="https://github.com/imodpasteur/lutorpy">lutorpy</a>
+that might make this easier, but I haven’t tried them and
+my impression is that they’re not able to cover <em>every</em>
+Torch feature that can be done in Lua.</p>
+  </li>
+  <li>
+    <p>In Torch, it’s easy to do very detailed operations on tensors
+that can execute on the CPU or GPU.
+With TensorFlow, GPU operations need to be implemented symbolically.
+In Torch, it’s easy to drop into native C or CUDA
+if I need to add calls to a C or CUDA library.
+For example, I’ve created (CPU-only) Torch wrappers
+around the
+<a href="https://github.com/bamos/gurobi.torch">gurobi</a>
+and
+<a href="https://github.com/bamos/ecos.torch">ecos</a>
+C optimization libraries.</p>
+
+    <p>In TensorFlow, dropping into C or CUDA is definitely
+possible (and easy) on the CPU through numpy conversions,
+but I’m not sure how I would make a native CUDA call.
+It’s probably possible, but there are no documentation or
+examples on this.</p>
+  </li>
+  <li>TensorFlow (built-in) and
+Torch’s <a href="https://github.com/torch/nngraph">nngraph</a> package
+graph constructions are both nice.
+In my experiences for complex graphs, TensorFlow is able
+to optimize the computations and executes about twice as
+fast as Torch.
+I love nngraph’s visualizations, they’re much clearer than
+TensorBoard’s in my experiences.</li>
+  <li><a href="https://www.tensorflow.org/versions/r0.10/how_tos/summaries_and_tensorboard/index.html">TensorBoard</a>
+is convenient and okay, but I am currently <strong>not</strong> using it for a few reasons.
+(In this post, I only used it because
+<a href="https://github.com/carpedm20/DCGAN-tensorflow">carpedm20/DCGAN-tensorflow</a>
+uses it.)
+The plots are not publication-quality and modifications are
+very limited.
+For example, it’s (currently) impossible to add a rolling average.
+The TensorBoard data is stored in a protobuf format and
+<a href="http://stackoverflow.com/questions/36700404/tensorflow-opening-log-data-written-by-summarywriter">there’s currently no documentation or examples on loading the data in my own script</a>.
+My current solution is to just write out data to CSV files
+and load and plot them with another script.</li>
+  <li>I am not surprised to find bugs or missing features in Torch/Lua code.
+<a href="https://github.com/torch/torch7/pull/591">Here’s my PR removing an incorrect rank check to the LAPACK potrs call</a>.
+<a href="https://github.com/torch/cutorch/pull/364">I also had to add a potrs wrapper for CUDA</a>.
+<a href="https://github.com/tflearn/tflearn/pull/221">Sometimes I find minor bugs when using TensorFlow/tflearn</a>,
+but not as frequently and they’re usually minor.</li>
+  <li>Automatic differentiation in TensorFlow is nice.
+I can define my loss with one line of code and then get the gradients with
+one more line.
+I haven’t used
+<a href="https://github.com/twitter/torch-autograd">Torch’s autograd</a> package.</li>
+  <li>The Torch and TensorFlow communities are great at keeping up with the
+latest deep learning techniques. If a popular idea is released,
+Torch and TensorFlow implementations are quickly released.</li>
+  <li>Batch normalization is easier to use in Torch and in general
+it’s nice to not worry about explicitly defining all of my
+trainable variables like in TensorFlow.
+<a href="http://tflearn.org/">tflearn</a> makes this a little easier in
+TensorFlow, but I still prefer Torch’s way.</li>
+  <li>I am not surprised to learn about useful under-documented features
+in Torch and TensorFlow by reading through somebody else’s source code
+on GitHub.
+I described in my <a href="http://bamos.github.io/2016/01/19/openface-0.2.0/">last blog post</a>
+that I found a under-documented way to reduce Torch model sizes
+in OpenFace.</li>
+  <li>I prefer how models can be saved and loaded in Torch by passing
+the object to a function that serializes it and saves it to
+a single file on disk.
+In TensorFlow, saving and loading the graph is still functionally
+the same, but a little more involved.
+<a href="https://github.com/cmusatyalab/openface/issues/42">Loading Torch models on ARM is possible, but tricky</a>.
+I don’t have experience loading TensorFlow models on ARM.</li>
+  <li>When using multiple GPUs, setting <code class="language-plaintext highlighter-rouge">cutorch.setDevice</code> programmatically in Torch is
+slightly easier than exporting the <code class="language-plaintext highlighter-rouge">CUDA_VISIBLE_DEVICES</code> environment
+variable in TensorFlow.</li>
+  <li>TensorFlow’s long startup time is a slight annoyance if I want to
+quickly debug my code on small examples. In Torch, the startup time
+is negligible.</li>
+  <li>In Python, I like overriding the process name for long-running experiments
+with <a href="https://pypi.python.org/pypi/setproctitle">setproctitle</a> so that
+I can remember what’s running when I look at the running processes
+on my GPUs or CPUs.
+However in Torch/Lua, <a href="https://groups.google.com/forum/#!topic/torch7/nxzcYinc-i8">nobody on the mailing list was able
+to help me do this</a>.
+I also asked on a Lua IRC channel and somebody tried to help me,
+but we weren’t able to figure it out.</li>
+  <li>Torch’s <a href="https://github.com/torch/argcheck">argcheck</a> has a
+<a href="https://github.com/torch/argcheck/issues/3">serious limitation when functions have more than 9 optional arguments</a>.
+In Python, I’d like to start using <a href="http://www.mypy-lang.org/">mypy</a>
+for simple argument checking, but I’m not sure how well it
+works in practice with scientific Python.</li>
+  <li>I wrote
+<a href="https://github.com/bamos/gurobi.torch">gurobi</a>
+and
+<a href="https://github.com/bamos/ecos.torch">ecos</a>
+wrappers because there weren’t any
+LP or QP solvers in Torch.
+To my knowledge there still aren’t any other options.</li>
+</ul>
+
+
+</div>
+</div>
+</div>
+
+
+  <script src="/research/vendor/js/bootstrap.min.js"></script>
+  <script src="/research/vendor/js/anchor.min.js"></script>
+  <script src="/research/vendor/js/jquery.toc.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y70WDZ3X39"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y70WDZ3X39');
+  </script>
+</body>
+
+</html>
